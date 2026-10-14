@@ -58,7 +58,7 @@ Live page: **https://bluefroguk1.github.io/BurrowTracker/**
 
 * Store categories scraped: `CATEGORIES` in `scraper/scrape.py` (each one goes to the "models" or "extras" tab).
   When you add a category, its existing items count as the baseline, so they aren't all marked New.
-* Faction names: edit the `FACTIONS` map in `scraper/scrape.py`. The store's tags become factions;
-  models with no faction tag show as "Unaligned".
+* Factions: only the ten rulebook Allegiances (`VALID_FACTIONS` in `scraper/scrape.py`); `FACTIONS` maps store tags onto them.
+  Every other store tag (City Watch, Pirates, Rare Beast…) goes in the Tags column (`NON_SPECIES` tidies their names).
 * Low-stock threshold: `LOW_STOCK` in `scraper/scrape.py`.
 * Tests: `pip install -r scraper/requirements.txt && python -m unittest discover -s scraper/tests`

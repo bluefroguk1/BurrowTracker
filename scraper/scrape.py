@@ -59,46 +59,44 @@ USER_AGENT = ("Mozilla/5.0 (compatible; BurrowTracker/1.1; weekly stock check; "
 SIZES = {"small": "Small", "medium": "Medium", "large": "Large",
          "massive": "Massive", "enormous": "Enormous"}
 
-# Store tag (lower-case) -> faction shown in the table. Edit freely.
-FACTIONS = {
-    "city watch": "City Watch",
-    "town watch": "Town Guard",
-    "town guard": "Town Guard",
-    "clan": "Hillfolk Clans",
-    "hillfolk": "Hillfolk Clans",
-    "hillfolk clan": "Hillfolk Clans",
-    "freelances": "Freelances",
-    "freelance": "Freelances",
-    "old ones": "Old Ones",
-    "wildling": "Wildlings",
-    "wildlings": "Wildlings",
-    "pirate": "Pirates",
-    "pirates": "Pirates",
-    "routier": "Routiers",
-    "routiers": "Routiers",
-    "street gang": "Street Gangs",
-    "street gangs": "Street Gangs",
-    "townsfolk": "Townsfolk",
-    "undead": "Undead",
-    "witch hunter": "Witch Hunters",
-    "witch hunters": "Witch Hunters",
-    "artillery": "Artillery",
-    "artillerist": "Artillery",
-    "royalist": "Royalists",
-    "royalists": "Royalists",
-    "rogues": "Rogues",
-    "freebeasts": "Freebeasts",
-    "kindred": "Kindred",
-    "arcane conclave": "Arcane Conclave",
-}
-NO_FACTION = "Unaligned"
+# The ten Allegiances in the Burrows & Badgers 2nd Edition rulebook. Only these appear as factions.
+VALID_FACTIONS = ["Royalists", "Rogues", "Freebeasts", "Kindred", "Witch Hunters", "Wildlings",
+                  "Arcane Conclave", "Undead", "Routiers", "Hillfolk"]
 
-# Tags that are never the species; shown as small labels instead.
+# Store tag (lower-case) -> rulebook faction.
+FACTIONS = {
+    "royalist": "Royalists", "royalists": "Royalists",
+    "rogue": "Rogues", "rogues": "Rogues",
+    "freebeast": "Freebeasts", "freebeasts": "Freebeasts",
+    "kindred": "Kindred",
+    "witch hunter": "Witch Hunters", "witch hunters": "Witch Hunters",
+    "wildling": "Wildlings", "wildlings": "Wildlings", "old ones": "Wildlings",
+    "arcane conclave": "Arcane Conclave",
+    "undead": "Undead",
+    "routier": "Routiers", "routiers": "Routiers",
+    "hillfolk": "Hillfolk", "hillfolk clan": "Hillfolk", "hillfolk clans": "Hillfolk", "clan": "Hillfolk",
+}
+assert set(FACTIONS.values()) <= set(VALID_FACTIONS)
+
+# Other store tags -> tidy label for the Tags column (anything not listed is title-cased as-is).
 NON_SPECIES = {
     "ghast": "Mist Ghast",
     "stable ghast": "Stable Ghast",
     "rare beast": "Rare Beast",
     "magic user": "Magic User",
+    "city watch": "City Watch",
+    "town watch": "Town Guard",
+    "town guard": "Town Guard",
+    "freelance": "Freelances",
+    "freelances": "Freelances",
+    "pirate": "Pirates",
+    "pirates": "Pirates",
+    "street gang": "Street Gangs",
+    "street gangs": "Street Gangs",
+    "townsfolk": "Townsfolk",
+    "artillery": "Artillery",
+    "artillerist": "Artillery",
+    "tunneljack": "Tunneljack",
 }
 
 # Tags that can appear as a second species (e.g. "Medium, Stoat, Weasel").
@@ -179,7 +177,7 @@ def parse_title(title: str) -> dict:
         "name": name,
         "size": " / ".join(sorted(sizes, key=list(SIZES.values()).index)) or None,
         "species": " / ".join(species) or None,
-        "factions": factions or [NO_FACTION],
+        "factions": factions,
         "tags": extra,
     }
 

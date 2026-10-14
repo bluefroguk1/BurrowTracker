@@ -68,7 +68,7 @@ h1 { font: 700 clamp(28px, 4vw, 40px)/1.05 "Cormorant Garamond", Georgia, serif;
 .hint { font-size: 12px; color: var(--ink-3); text-align: right; max-width: 34ch; }
 
 .filters { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 14px 0 12px; border-bottom: 1px solid var(--line); }
-.frow { display: grid; grid-template-columns: 2fr repeat(4, 1fr); gap: 10px; }
+.frow { display: grid; grid-template-columns: 1.6fr repeat(5, 1fr); gap: 10px; }
 .frow2 { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; margin-top: 10px; font-size: 14px; color: var(--ink-2); }
 label.f { display: flex; flex-direction: column; gap: 3px; font-size: 12px; font-weight: 600; color: var(--ink-3); text-transform: uppercase; letter-spacing: .4px; }
 input[type=search], select { width: 100%; font: 14px Inter, sans-serif; color: var(--ink); background: var(--surface); border: 1px solid var(--line);
@@ -179,6 +179,9 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
   td.c-status { grid-column: 2; grid-row: 3; }
   td.c-link { grid-column: 3; grid-row: 3; text-align: right; }
   td.c-fac, td.c-sp, td.c-size { display: none; }
+  td.c-tags { grid-column: 2 / 4; grid-row: 4; }
+  td.c-tags:empty { display: none; }
+  td.c-tags .tags { margin-top: 4px; }
 }
 @media (min-width: 861px) { td.c-meta { display: none; } }
 </style>
@@ -206,6 +209,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     <div class="frow">
       <label class="f">Search<input type="search" id="q" placeholder="Name, species, faction…" autocomplete="off"></label>
       <label class="f">Faction<select id="fFaction"><option value="">All factions</option></select></label>
+      <label class="f">Tag<select id="fTag"><option value="">All tags</option></select></label>
       <label class="f">Species<select id="fSpecies"><option value="">All species</option></select></label>
       <label class="f">Size<select id="fSize"><option value="">All sizes</option></select></label>
       <label class="f">Stock<select id="fStatus">
@@ -235,6 +239,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
         <th data-key="name"><button type="button">Model <span class="arr">▲</span></button></th>
         <th data-key="faction"><button type="button">Faction <span class="arr">▲</span></button></th>
         <th data-key="species"><button type="button">Species <span class="arr">▲</span></button></th>
+        <th data-key="tags"><button type="button">Tags <span class="arr">▲</span></button></th>
         <th data-key="size"><button type="button">Size <span class="arr">▲</span></button></th>
         <th data-key="price"><button type="button">Price <span class="arr">▲</span></button></th>
         <th data-key="status"><button type="button">Stock <span class="arr">▲</span></button></th>
@@ -334,6 +339,21 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
         <div class="hint">${ready ? "Opens GitHub. Click “Run workflow” there. The table updates a couple of minutes after the run finishes. Limited to one poll per hour." : "Manual polls are limited to one per hour."}</div>` : ""}`;
   }
 
+  // The ten Allegiances in the 2nd Edition rulebook - the only values shown as factions.
+  const VALID_FACTIONS = ["Royalists", "Rogues", "Freebeasts", "Kindred", "Witch Hunters", "Wildlings",
+    "Arcane Conclave", "Undead", "Routiers", "Hillfolk"];
+  const FACTION_ALIASES = { "Hillfolk Clans": "Hillfolk", "Old Ones": "Wildlings" };
+  function normalise(m) {
+    // Data from older polls may hold store tags in "factions"; move them to tags.
+    const fac = [], tags = [...(m.tags || [])];
+    for (const f of m.factions || []) {
+      const v = FACTION_ALIASES[f] || f;
+      if (VALID_FACTIONS.includes(v)) { if (!fac.includes(v)) fac.push(v); }
+      else if (v !== "Unaligned" && !tags.includes(v)) tags.push(v);
+    }
+    m.factions = fac; m.tags = tags;
+    return m;
+  }
   function factionText(m) { return (m.factions || []).join(", "); }
 
   function fill(select, values, current) {
@@ -345,7 +365,8 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
 
   function fillFilters() {
     const ms = data.models;
-    fill($("fFaction"), ms.flatMap((m) => m.factions || []), store.get("fFaction"));
+    fill($("fFaction"), ms.flatMap((m) => m.factions || []).filter((f) => VALID_FACTIONS.includes(f)), store.get("fFaction"));
+    fill($("fTag"), ms.flatMap((m) => m.tags || []), store.get("fTag"));
     fill($("fSpecies"), ms.flatMap((m) => (m.species || "").split(" / ")), store.get("fSpecies"));
     const sizes = [...new Set(ms.map((m) => m.size).filter(Boolean))].sort((a, b) => (SIZE_ORDER[a] || 9) - (SIZE_ORDER[b] || 9));
     const s = $("fSize"); s.length = 1; sizes.forEach((v) => s.add(new Option(v, v)));
@@ -358,7 +379,8 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
 
   function matches(m) {
     const q = $("q").value.trim().toLowerCase();
-    const fac = $("fFaction").value, sp = $("fSpecies").value, sz = $("fSize").value, st = $("fStatus").value;
+    const fac = $("fFaction").value, sp = $("fSpecies").value, sz = $("fSize").value, st = $("fStatus").value, tg = $("fTag").value;
+    if (tg && !(m.tags || []).includes(tg)) return false;
     if ($("fHideGone").checked && m.listed === false && st !== "No longer listed") return false;
     if ($("fNew").checked && !m.is_new) return false;
     if (fac && !(m.factions || []).includes(fac)) return false;
@@ -380,7 +402,8 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     if (k === "price") { va = a.price ?? 1e9; vb = b.price ?? 1e9; }
     else if (k === "size") { va = SIZE_ORDER[a.size] || 9; vb = SIZE_ORDER[b.size] || 9; }
     else if (k === "status") { va = STATUS_ORDER[a.status] || 9; vb = STATUS_ORDER[b.status] || 9; }
-    else if (k === "faction") { va = factionText(a).toLowerCase(); vb = factionText(b).toLowerCase(); }
+    else if (k === "faction") { va = factionText(a).toLowerCase() || "~"; vb = factionText(b).toLowerCase() || "~"; }
+    else if (k === "tags") { va = (a.tags || []).join(", ").toLowerCase() || "~"; vb = (b.tags || []).join(", ").toLowerCase() || "~"; }
     else { va = (a[k] || "").toLowerCase(); vb = (b[k] || "").toLowerCase(); }
     if (va < vb) return -sort.dir;
     if (va > vb) return sort.dir;
@@ -393,16 +416,18 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     const qty = m.listed !== false && m.stock_qty > 0 ? `<span class="qty">${m.stock_qty} available</span>` : "";
     const badges = (m.is_new ? `<span class="badge new">New</span>` : "") + (m.is_restocked ? `<span class="badge back">Back in stock</span>` : "");
     const tags = (m.tags || []).length ? `<div class="tags">${m.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>` : "";
+    const facCell = (m.factions || []).length ? esc(factionText(m)) : `<span style="color:var(--ink-3)" title="No allegiance tag in the store">–</span>`;
     const img = m.image
       ? `<img class="thumb" loading="lazy" src="${esc(m.image)}" data-full="${esc(m.image_full || m.image)}" alt="${esc(m.name)}" referrerpolicy="no-referrer">`
       : `<span class="thumb missing" aria-hidden="true"></span>`;
     const metaLine = [factionText(m), m.species, m.size].filter(Boolean).map(esc).join(" · ");
     return `<tr class="${cls}">
       <td class="c-img">${img}</td>
-      <td class="c-name">${badges}<span class="name">${esc(m.name)}</span>${tags}</td>
+      <td class="c-name">${badges}<span class="name">${esc(m.name)}</span></td>
       <td class="c-meta">${metaLine}</td>
-      <td class="c-fac">${esc(factionText(m))}</td>
+      <td class="c-fac">${facCell}</td>
       <td class="c-sp">${esc(m.species || "–")}</td>
+      <td class="c-tags">${tags}</td>
       <td class="c-size">${esc(m.size || "–")}</td>
       <td class="c-price"><span class="price">${gbp(m.price)}${m.price_ex_vat != null ? `<small>${gbp(m.price_ex_vat)} ex VAT</small>` : ""}</span></td>
       <td class="c-status"><span class="status ${statusCls}">${esc(m.status)}</span>${qty}</td>
@@ -428,7 +453,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
   function render() {
     const list = data.models.filter(matches).sort(cmp);
     $("rows").innerHTML = list.length ? list.map(row).join("")
-      : `<tr><td colspan="9" class="empty">${data.models.length ? "No models match these filters." : "No data yet. Run the first poll to fill the table."}</td></tr>`;
+      : `<tr><td colspan="10" class="empty">${data.models.length ? "No models match these filters." : "No data yet. Run the first poll to fill the table."}</td></tr>`;
     $("count").textContent = `${list.length} of ${data.models.filter((m) => m.listed !== false).length} models`;
     document.querySelectorAll("th[data-key]").forEach((th) => {
       const on = th.dataset.key === sort.key;
@@ -436,14 +461,14 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
       th.querySelector(".arr").textContent = on && sort.dir < 0 ? "▼" : "▲";
     });
     renderSummary();
-    ["q", "fFaction", "fSpecies", "fSize", "fStatus"].forEach((id) => store.set(id, $(id).value));
+    ["q", "fFaction", "fTag", "fSpecies", "fSize", "fStatus"].forEach((id) => store.set(id, $(id).value));
     store.set("fNew", $("fNew").checked); store.set("fHideGone", $("fHideGone").checked); store.set("sort", sort);
   }
 
   // Events
-  ["q", "fFaction", "fSpecies", "fSize", "fStatus", "fNew", "fHideGone"].forEach((id) => $(id).addEventListener("input", render));
+  ["q", "fFaction", "fTag", "fSpecies", "fSize", "fStatus", "fNew", "fHideGone"].forEach((id) => $(id).addEventListener("input", render));
   $("reset").addEventListener("click", () => {
-    $("q").value = ""; ["fFaction", "fSpecies", "fSize", "fStatus"].forEach((id) => ($(id).value = ""));
+    $("q").value = ""; ["fFaction", "fTag", "fSpecies", "fSize", "fStatus"].forEach((id) => ($(id).value = ""));
     $("fNew").checked = false; $("fHideGone").checked = true; render();
   });
   document.querySelectorAll("th[data-key] button").forEach((b) => b.addEventListener("click", () => {
@@ -585,7 +610,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     .catch(() => ({ models: [] }))
     .then((d) => {
       data = d && Array.isArray(d.models) ? d : { models: [] };
-      const all = data.models;
+      const all = data.models.map(normalise);
       byId = Object.fromEntries(all.map((m) => [m.id, m]));
       extras = all.filter(isExtra);
       data.models = all.filter((m) => !isExtra(m));

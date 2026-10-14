@@ -267,6 +267,8 @@ class EndToEnd(unittest.TestCase):
                     {4555401: mini, 4555400: rules, 4562767: acc2}, {"9363670": BAND_PAGE})
         by = {m["id"]: m for m in self.state()["models"]}
         self.assertTrue(by["9999999"]["is_new"])
+        # Catalogue codes are attached by store id
+        self.assertEqual(by["9363670"]["codes"][0], "BB214")
         # Band contents come from cache on the second run (product page not re-fetched)
         self.assertEqual(len(by["9363670"]["contents"]), 5)
         self.assertEqual(by["9363670"]["contents_checked"], "2026-10-14T09:00:00Z")

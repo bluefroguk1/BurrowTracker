@@ -172,6 +172,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
   tr.is-new td { background: none; box-shadow: none; }
   td { border: 0; padding: 0; }
   td.c-img { grid-row: 1 / span 4; }
+  td.c-code { display: none; }
   td.c-name { grid-column: 2 / 4; }
   td.c-price { grid-column: 3; grid-row: 2; text-align: right; }
   td.c-meta { grid-column: 2; grid-row: 2; font-size: 13px; color: var(--ink-2); }
@@ -183,6 +184,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
   td.c-tags .tags { margin-top: 4px; }
 }
 @media (min-width: 861px) { td.c-meta { display: none; } }
+td.c-code { font-variant-numeric: tabular-nums; white-space: nowrap; color: var(--ink-2); font-size: 14px; }
 </style>
 </head>
 <body>
@@ -206,7 +208,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
 <div class="filters">
   <div class="wrap">
     <div class="frow">
-      <label class="f">Search<input type="search" id="q" placeholder="Name, species, faction…" autocomplete="off"></label>
+      <label class="f">Search<input type="search" id="q" placeholder="Name, code, species, faction…" autocomplete="off"></label>
       <label class="f">Faction<select id="fFaction"><option value="">All factions</option></select></label>
       <label class="f">Tag<select id="fTag"><option value="">All tags</option></select></label>
       <label class="f">Species<select id="fSpecies"><option value="">All species</option></select></label>
@@ -235,6 +237,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     <thead>
       <tr>
         <th style="width:88px">Image</th>
+        <th data-key="code"><button type="button">Code <span class="arr">▲</span></button></th>
         <th data-key="name"><button type="button">Model <span class="arr">▲</span></button></th>
         <th data-key="faction"><button type="button">Faction <span class="arr">▲</span></button></th>
         <th data-key="species"><button type="button">Species <span class="arr">▲</span></button></th>
@@ -325,6 +328,21 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     return m;
   }
   function factionText(m) { return (m.factions || []).join(", "); }
+  // Catalogue codes: "BB12", "BB01, BB75", or a run like "BB214–BB218" for a starter band.
+  function codeText(m) {
+    const c = m.codes || [];
+    if (c.length > 2) {
+      const n = c.map((x) => parseInt(x.slice(2), 10));
+      if (n.every((v, i) => i === 0 || v === n[i - 1] + 1)) return `${c[0]}–${c[c.length - 1]}`;
+    }
+    return c.join(", ");
+  }
+  function codeNum(m) {
+    const c = (m.codes || [])[0];
+    if (!c) return 1e9;
+    const x = c.match(/^BB(\d+)([a-z]?)$/i);
+    return x ? +x[1] + (x[2] ? (x[2].charCodeAt(0) - 96) / 100 : 0) : 1e9 - 1;
+  }
 
   function fill(select, values, current) {
     const opts = [...new Set(values)].filter(Boolean).sort((a, b) => a.localeCompare(b));
@@ -359,7 +377,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     if (st === "available" && !(m.status === "In stock" || m.status === "Low stock")) return false;
     if (st && st !== "available" && m.status !== st) return false;
     if (q) {
-      const hay = [m.name, m.title, m.species, factionText(m), m.size, ...(m.tags || [])].join(" ").toLowerCase();
+      const hay = [m.name, m.title, m.species, factionText(m), m.size, ...(m.tags || []), ...(m.codes || [])].join(" ").toLowerCase();
       if (!q.split(/\s+/).every((w) => hay.includes(w))) return false;
     }
     return true;
@@ -373,6 +391,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     else if (k === "size") { va = SIZE_ORDER[a.size] || 9; vb = SIZE_ORDER[b.size] || 9; }
     else if (k === "status") { va = STATUS_ORDER[a.status] || 9; vb = STATUS_ORDER[b.status] || 9; }
     else if (k === "faction") { va = factionText(a).toLowerCase() || "~"; vb = factionText(b).toLowerCase() || "~"; }
+    else if (k === "code") { va = codeNum(a); vb = codeNum(b); }
     else if (k === "tags") { va = (a.tags || []).join(", ").toLowerCase() || "~"; vb = (b.tags || []).join(", ").toLowerCase() || "~"; }
     else { va = (a[k] || "").toLowerCase(); vb = (b[k] || "").toLowerCase(); }
     if (va < vb) return -sort.dir;
@@ -390,9 +409,10 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     const img = m.image
       ? `<img class="thumb" loading="lazy" src="${esc(m.image)}" data-full="${esc(m.image_full || m.image)}" alt="${esc(m.name)}" referrerpolicy="no-referrer">`
       : `<span class="thumb missing" aria-hidden="true"></span>`;
-    const metaLine = [factionText(m), m.species, m.size].filter(Boolean).map(esc).join(" · ");
+    const metaLine = [codeText(m), factionText(m), m.species, m.size].filter(Boolean).map(esc).join(" · ");
     return `<tr class="${cls}">
       <td class="c-img">${img}</td>
+      <td class="c-code">${codeText(m) ? esc(codeText(m)) : `<span style="color:var(--ink-3)">–</span>`}</td>
       <td class="c-name">${badges}<span class="name">${esc(m.name)}</span></td>
       <td class="c-meta">${metaLine}</td>
       <td class="c-fac">${facCell}</td>
@@ -423,7 +443,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
   function render() {
     const list = data.models.filter(matches).sort(cmp);
     $("rows").innerHTML = list.length ? list.map(row).join("")
-      : `<tr><td colspan="10" class="empty">${data.models.length ? "No models match these filters." : "No data yet. Run the first poll to fill the table."}</td></tr>`;
+      : `<tr><td colspan="11" class="empty">${data.models.length ? "No models match these filters." : "No data yet. Run the first poll to fill the table."}</td></tr>`;
     $("count").textContent = `${list.length} of ${data.models.filter((m) => m.listed !== false).length} models`;
     document.querySelectorAll("th[data-key]").forEach((th) => {
       const on = th.dataset.key === sort.key;
@@ -509,7 +529,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     const qty = m.listed !== false && m.stock_qty > 0 ? `<span class="qty" style="display:inline;margin:0">${m.stock_qty} available</span>` : "";
     return `<article class="card ${band ? "band" : ""} ${m.is_new ? "is-new" : ""}">
       <div class="top">${img}<div>
-        <div class="cat">${esc(categoryOf(m))}</div>
+        <div class="cat">${esc(categoryOf(m))}${codeText(m) ? ` · ${esc(codeText(m))}` : ""}</div>
         <div>${badges}<span class="name">${esc(m.name)}</span></div>
         <div class="row"><span class="price">${gbp(m.price)}${m.price_ex_vat != null && m.price !== m.price_ex_vat ? `<small>${gbp(m.price_ex_vat)} ex VAT</small>` : ""}</span>
           ${statusPill(m)} ${qty}
@@ -526,7 +546,7 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
       if (st === "available" && !(m.status === "In stock" || m.status === "Low stock")) return false;
       if (st === "Out of stock" && m.status !== "Out of stock") return false;
       if (q) {
-        const hay = [m.name, m.title, categoryOf(m), ...(m.contents || []).map((c) => c.name)].join(" ").toLowerCase();
+        const hay = [m.name, m.title, categoryOf(m), ...(m.codes || []), ...(m.contents || []).flatMap((c) => [c.name, c.code])].join(" ").toLowerCase();
         if (!q.split(/\s+/).every((w) => hay.includes(w))) return false;
       }
       return true;
@@ -576,9 +596,15 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
   }, true);
 
   function fetchData() {
-    return fetch("data/models.json?v=" + Date.now(), { cache: "no-store" })
-      .then((r) => (r.ok ? r.json() : { models: [] }))
-      .catch(() => ({ models: [] }));
+    const get = (url, fallback) => fetch(url + "?v=" + Date.now(), { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : fallback)).catch(() => fallback);
+    return Promise.all([get("data/models.json", { models: [] }), get("data/catalogue_codes.json", { codes: {} })])
+      .then(([d, c]) => {
+        // Older data files have no codes yet; fill them in from the mapping.
+        const map = (c && c.codes) || {};
+        for (const m of (d && d.models) || []) if (!m.codes || !m.codes.length) m.codes = map[m.id] || [];
+        return d;
+      });
   }
   function applyData(d) {
     data = d && Array.isArray(d.models) ? d : { models: [] };

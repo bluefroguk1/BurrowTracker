@@ -60,5 +60,9 @@ Live page: **https://bluefroguk1.github.io/BurrowTracker/**
   When you add a category, its existing items count as the baseline, so they aren't all marked New.
 * Factions: only the ten rulebook Allegiances (`VALID_FACTIONS` in `scraper/scrape.py`); `FACTIONS` maps store tags onto them.
   Every other store tag (City Watch, Pirates, Rare Beast…) goes in the Tags column (`NON_SPECIES` tidies their names).
+* Catalogue codes (BB01…): `docs/data/catalogue_codes.json` maps store product IDs to codes from the
+  [February 2025 catalogue](https://burrowsandbadgers.com/downloads/burrows&badgers-catalogue-february2025.pdf).
+  New store products have no code until you add them there. Where the catalogue repeats a name
+  (e.g. three "Mouse Knight" codes), codes were assigned in the order the store added the products.
 * Low-stock threshold: `LOW_STOCK` in `scraper/scrape.py`.
 * Tests: `pip install -r scraper/requirements.txt && python -m unittest discover -s scraper/tests`

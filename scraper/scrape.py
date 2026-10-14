@@ -45,6 +45,8 @@ LISTING_URL = BASE + "/c/{cid}/{page}/{slug}.html"
 ROBOTS_URL = BASE + "/robots.txt"
 CONTENTS_MAX_AGE = timedelta(days=28)  # re-read a starter band's box contents at most every 4 weeks
 DATA_FILE = Path(__file__).resolve().parent.parent / "docs" / "data" / "models.json"
+# Catalogue codes (BB01...) by store product id - curated by hand, see the file itself.
+CODES_FILE = Path(__file__).resolve().parent.parent / "docs" / "data" / "catalogue_codes.json"
 
 UK = ZoneInfo("Europe/London")
 FRIDAY = 4                        # "New" badges last a week: from one Friday poll to the next
@@ -424,6 +426,13 @@ def should_run(state: dict, trigger: str, now: datetime) -> tuple[bool, str]:
     return True, "Scheduled daily poll."
 
 
+def load_codes() -> dict[str, list[str]]:
+    try:
+        return json.loads(CODES_FILE.read_text(encoding="utf-8")).get("codes", {})
+    except (OSError, ValueError):
+        return {}
+
+
 def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tuple[dict, int, int, int]:
     stamp = iso(now)
     first_run = not state.get("models") and not state.get("friday_polls")
@@ -443,6 +452,7 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
     tracked_before = set(state.get("tracked_categories") or (["Miniatures"] if old else []))
     added_cats = {c[-1] for c in CATEGORIES} - tracked_before
 
+    codes = load_codes()
     models, new_count, restocked = [], 0, 0
     current_ids = set()
     for item in scraped:
@@ -451,6 +461,7 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
         rec = dict(item)
         baseline = not prev and old and set(item.get("categories", [])) <= added_cats
         rec["first_seen"] = prev.get("first_seen") or (cutoff if baseline else stamp)
+        rec["codes"] = codes.get(item["id"], [])
         rec["last_seen"] = stamp
         rec["listed"] = True
         rec["restocked_at"] = prev.get("restocked_at")

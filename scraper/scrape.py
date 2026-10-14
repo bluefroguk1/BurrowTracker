@@ -502,11 +502,14 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--trigger", choices=["scheduled", "manual"], default="manual")
+    ap.add_argument("--force", action="store_true", help="manual poll even if the last one was under an hour ago")
     args = ap.parse_args()
 
     now = now_utc()
     state = load_state()
     ok, reason = should_run(state, args.trigger, now)
+    if not ok and args.force and args.trigger == "manual":
+        ok, reason = True, "Manual poll (one-hour limit overridden)."
     if not ok:
         summary(reason)
         return 0

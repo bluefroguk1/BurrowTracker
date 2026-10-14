@@ -6,8 +6,13 @@ on:
   schedule:
     - cron: "30 17 * * 5"
     - cron: "30 18 * * 5"
-  # "Run workflow" button = manual poll (limited to one per hour by the scraper).
+  # Actions tab -> "Poll Oathsworn store" -> "Run workflow" = manual poll.
   workflow_dispatch:
+    inputs:
+      force:
+        description: "Ignore the one-hour limit between polls"
+        type: boolean
+        default: false
   # Redeploy the page when you change the site or this workflow.
   push:
     branches: [main]
@@ -39,7 +44,7 @@ jobs:
       - run: pip install -r scraper/requirements.txt
 
       - name: Scrape
-        run: python scraper/scrape.py --trigger ${{ github.event_name == 'schedule' && 'scheduled' || 'manual' }}
+        run: python scraper/scrape.py --trigger ${{ github.event_name == 'schedule' && 'scheduled' || 'manual' }} ${{ inputs.force && '--force' || '' }}
 
       - name: Commit updated data
         run: |

@@ -193,6 +193,12 @@ class EndToEnd(unittest.TestCase):
         before = scrape.DATA_FILE.read_text()
         self.run_at("2026-10-14T09:30:00+00:00", "manual", p1)
         self.assertEqual(before, scrape.DATA_FILE.read_text())
+        # ...unless forced
+        os.environ["BB_NOW"] = "2026-10-14T09:35:00+00:00"
+        scrape.requests.Session = lambda: FakeSession(p1)
+        sys.argv = ["scrape.py", "--trigger", "manual", "--force"]
+        scrape.main()
+        self.assertEqual(self.state()["last_poll"], "2026-10-14T09:35:00Z")
 
         # Friday 17:30 UTC (= 18:30 BST): scheduled poll, new model D, B restocked, C gone
         p2 = {1: page([item("1", "A (Small, Mouse)"), item("2", "B (Medium, Cat)", qty=4),

@@ -25,6 +25,7 @@ import sys
 import time
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from urllib.robotparser import RobotFileParser
 from zoneinfo import ZoneInfo
 
 import requests
@@ -32,15 +33,17 @@ from bs4 import BeautifulSoup
 
 # --------------------------------------------------------------------------- config
 BASE = "https://www.oathswornminiatures.co.uk"
-# (category id, section, label). "models" = the main table; "extras" = the second tab.
+# (category id, url slug, section, label). "models" = the main table; "extras" = the second tab.
 # An item listed in several categories goes to "extras" if any of them is an extras category.
 CATEGORIES = [
-    (4555401, "models", "Miniatures"),
-    (4555400, "extras", "Game Rules & Starter Bands"),
-    (4562767, "extras", "Supplements & Accessories"),
+    (4555401, "miniatures", "models", "Miniatures"),
+    (4555400, "game-rules-starter-bands", "extras", "Game Rules & Starter Bands"),
+    (4562767, "supplements-accessories", "extras", "Supplements & Accessories"),
 ]
-PRODUCT_URL = BASE + "/p/{pid}/x.html"
-LISTING_URL = BASE + "/Listing/Category/?categoryId={cid}&page={page}&sortItem=0&sortDirection=0"
+# The store's robots.txt disallows /Listing/, so use the public category pages, which page the same way.
+LISTING_URL = BASE + "/c/{cid}/{page}/{slug}.html"
+ROBOTS_URL = BASE + "/robots.txt"
+CONTENTS_MAX_AGE = timedelta(days=28)  # re-read a starter band's box contents at most every 4 weeks
 DATA_FILE = Path(__file__).resolve().parent.parent / "docs" / "data" / "models.json"
 
 UK = ZoneInfo("Europe/London")
@@ -50,7 +53,8 @@ MANUAL_COOLDOWN = timedelta(hours=1)
 REQUEST_DELAY_S = 1.0             # be polite: one page per second
 MAX_PAGES = 60
 LOW_STOCK = 3                     # 1..LOW_STOCK units => "Low stock"
-USER_AGENT = "Mozilla/5.0 (compatible; BurrowsBadgersModelTracker/1.0; weekly stock check)"
+USER_AGENT = ("Mozilla/5.0 (compatible; BurrowTracker/1.1; weekly stock check; "
+              "+https://github.com/bluefroguk1/BurrowTracker)")
 
 SIZES = {"small": "Small", "medium": "Medium", "large": "Large",
          "massive": "Massive", "enormous": "Enormous"}
@@ -247,15 +251,41 @@ def parse_listing(html: str) -> tuple[list[dict], int]:
     return items, max(pages, default=1)
 
 
+class StoreBusy(RuntimeError):
+    """The store asked us to slow down (429/503) - stop the whole poll rather than retry."""
+
+
+_robots: RobotFileParser | None = None
+
+
+def load_robots(session: requests.Session) -> None:
+    """Read robots.txt once per poll; every later request is checked against it."""
+    global _robots
+    _robots = RobotFileParser()
+    try:
+        resp = session.get(ROBOTS_URL, timeout=30)
+        _robots.parse(resp.text.splitlines() if resp.status_code == 200 else [])
+    except requests.RequestException as exc:
+        print(f"  could not read robots.txt ({exc}); continuing with the default category pages only")
+        _robots.parse([])
+
+
 def fetch(session: requests.Session, url: str) -> str:
-    for attempt in range(3):
+    if _robots is not None and not _robots.can_fetch(USER_AGENT, url):
+        raise RuntimeError(f"robots.txt disallows {url} - not fetching it")
+    for attempt in range(2):
         try:
             resp = session.get(url, timeout=30)
+            if resp.status_code in (429, 503):
+                wait = resp.headers.get("Retry-After", "")
+                raise StoreBusy(f"store answered {resp.status_code} (Retry-After: {wait or 'not given'}) for {url}")
             resp.raise_for_status()
             return resp.text
+        except StoreBusy:
+            raise
         except requests.RequestException as exc:
             print(f"  retry {attempt + 1} for {url}: {exc}")
-            time.sleep(5 * (attempt + 1))
+            time.sleep(10 * (attempt + 1))
     raise RuntimeError(f"Could not fetch {url}")
 
 
@@ -316,12 +346,18 @@ def link_contents(contents: list[dict], models: list[dict]) -> None:
         c["model_id"] = hit["id"] if hit else None
 
 
-def scrape(session: requests.Session) -> list[dict]:
+def scrape(session: requests.Session, previous: dict[str, dict] | None = None,
+           now: datetime | None = None) -> list[dict]:
+    previous = previous or {}
+    now = now or now_utc()
+    load_robots(session)
     seen: dict[str, dict] = {}
-    for cid, section, label in CATEGORIES:
+    requests_made = 1  # robots.txt
+    for cid, slug, section, label in CATEGORIES:
         page, last, cat_ids = 1, 1, set()
         while page <= min(last, MAX_PAGES):
-            items, max_page = parse_listing(fetch(session, LISTING_URL.format(cid=cid, page=page)))
+            items, max_page = parse_listing(fetch(session, LISTING_URL.format(cid=cid, page=page, slug=slug)))
+            requests_made += 1
             last = max(last, max_page)
             fresh = [i for i in items if i["id"] not in cat_ids]
             print(f"  {label} page {page}/{last}: {len(items)} items")
@@ -339,15 +375,30 @@ def scrape(session: requests.Session) -> list[dict]:
     items = list(seen.values())
     models = [i for i in items if i["section"] == "models"]
     for i in items:
-        if "starter band" in i["title"].lower():
+        if "starter band" not in i["title"].lower():
+            continue
+        prev = previous.get(i["id"], {})
+        checked = prev.get("contents_checked")
+        fresh_enough = (prev.get("contents") and checked and prev.get("price") == i["price"]
+                        and now - parse_iso(checked) < CONTENTS_MAX_AGE)
+        if fresh_enough:
+            i["contents"], i["contents_checked"] = prev["contents"], checked
+            print(f"  {i['title']}: contents from cache (checked {checked[:10]})")
+        else:
             try:
-                i["contents"] = parse_contents(fetch(session, PRODUCT_URL.format(pid=i["id"])))
+                i["contents"] = parse_contents(fetch(session, i["url"]))
+                i["contents_checked"] = iso(now)
+                requests_made += 1
+            except StoreBusy:
+                raise
             except RuntimeError as exc:
                 print(f"  could not read contents of {i['title']}: {exc}")
-                i["contents"] = []
-            link_contents(i["contents"], models)
+                i["contents"] = prev.get("contents") or []
+                i["contents_checked"] = checked
             print(f"  {i['title']}: {len(i['contents'])} items in the box")
             time.sleep(REQUEST_DELAY_S)
+        link_contents(i["contents"], models)
+    print(f"  {requests_made} requests to the store in total")
     return items
 
 
@@ -399,7 +450,7 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
 
     # Categories added to the scraper since the last poll: their items are a baseline, not "New".
     tracked_before = set(state.get("tracked_categories") or (["Miniatures"] if old else []))
-    added_cats = {label for _, _, label in CATEGORIES} - tracked_before
+    added_cats = {c[-1] for c in CATEGORIES} - tracked_before
 
     models, new_count, restocked = [], 0, 0
     current_ids = set()
@@ -444,7 +495,7 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
         "new_since": cutoff,
         "manual_cooldown_minutes": int(MANUAL_COOLDOWN.total_seconds() // 60),
         "friday_polls": friday_polls,
-        "tracked_categories": [label for _, _, label in CATEGORIES],
+        "tracked_categories": [c[-1] for c in CATEGORIES],
         "polls": polls,
         "models": models,
     }, new_count, restocked, gone
@@ -465,7 +516,11 @@ def main() -> int:
 
     session = requests.Session()
     session.headers.update({"User-Agent": USER_AGENT, "Accept-Language": "en-GB,en;q=0.9"})
-    scraped = scrape(session)
+    try:
+        scraped = scrape(session, {m["id"]: m for m in state.get("models", [])}, now)
+    except StoreBusy as exc:
+        summary(f"Stopped early: {exc}. Nothing was changed; the next poll will try again.")
+        return 1
 
     previous = sum(1 for m in state.get("models", []) if m.get("listed", True))
     if not scraped or (previous >= 20 and len(scraped) < previous * 0.5):

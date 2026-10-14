@@ -34,7 +34,16 @@ Live page: **https://bluefroguk1.github.io/BurrowTracker/**
 * **Safety check:** if a poll finds fewer than half the models seen last time (site down or layout
   changed), the data is left unchanged and the run is marked as failed.
 
-The scraper reads about 21 listing pages plus the two starter band pages, one request per second, so a poll takes under a minute.
+### Being polite to the store
+
+* About 22 requests per poll (robots.txt, ~21 category pages, plus starter band pages only when needed), one per second.
+  That's once a week, plus at most one manual poll an hour.
+* Only uses URLs the store's `robots.txt` allows. It reads robots.txt at the start of every poll and refuses
+  any URL it disallows, so it follows the store's rules if they change.
+* Never opens individual product pages for stock or price; the category pages carry both.
+  A starter band's contents are re-read only when the band is new, its price changes, or the cached copy is 4 weeks old.
+* If the store answers "too many requests" or "unavailable" (HTTP 429/503), the poll stops at once and changes nothing.
+* Identifies itself in every request with a link to this repo, so the store owner can see what it is and get in touch.
 
 ## One-time setup
 

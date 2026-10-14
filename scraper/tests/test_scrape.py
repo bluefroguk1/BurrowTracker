@@ -34,7 +34,7 @@ def item(pid, alt, qty=6, price="3.12", vat="0.62"):
 
 
 class FakeResp:
-    def __init__(self, text): self.text = text
+    def __init__(self, text): self.text, self.status_code, self.headers = text, 200, {}
     def raise_for_status(self): pass
 
 
@@ -54,15 +54,19 @@ class FakeSession:
         self.pages, self.products, self.calls, self.headers = pages, products or {}, [], {}
 
     def get(self, url, timeout=None):
+        if url.endswith("/robots.txt"):
+            return FakeResp("User-agent: *\nDisallow: /Listing/\nDisallow: /Basket/\n")
         if "/p/" in url:
             pid = url.split("/p/")[1].split("/")[0]
             return FakeResp(self.products.get(pid, "<html></html>"))
-        cid = int(url.split("categoryId=")[1].split("&")[0])
-        n = int(url.split("page=")[1].split("&")[0])
+        assert "/Listing/" not in url, "scraper must not use robots-disallowed URLs"
+        cid, n = (int(x) for x in url.split("/c/")[1].split("/")[:2])
         self.calls.append((cid, n))
-        cat = self.pages.get(cid) if isinstance(next(iter(self.pages)), int) and cid in self.pages and isinstance(self.pages[cid], dict) else None
-        if cat is None:
-            cat = self.pages if cid == 4555401 and not isinstance(next(iter(self.pages.values())), dict) else {1: EMPTY}
+        nested = isinstance(next(iter(self.pages.values())), dict)
+        if nested:
+            cat = self.pages.get(cid, {1: EMPTY})
+        else:
+            cat = self.pages if cid == 4555401 else {1: EMPTY}
         return FakeResp(cat.get(n, cat[max(cat)]))  # site repeats last page
 
 
@@ -130,6 +134,25 @@ class StarterBands(unittest.TestCase):
         c = [{"name": "Otter Knight 1"}, {"name": "Rabbit Squire"}, {"name": "Objectives"}]
         scrape.link_contents(c, [{"id": "1", "name": "Otter Knight"}, {"id": "2", "name": "Rabbit Squire"}])
         self.assertEqual([x["model_id"] for x in c], ["1", "2", None])
+
+
+class Politeness(unittest.TestCase):
+    def test_robots_blocks(self):
+        sess = FakeSession({1: EMPTY})
+        scrape.load_robots(sess)
+        with self.assertRaises(RuntimeError):
+            scrape.fetch(sess, scrape.BASE + "/Listing/Category/?categoryId=1&page=1")
+        scrape.fetch(sess, scrape.LISTING_URL.format(cid=4555401, page=1, slug="miniatures"))
+
+    def test_busy_stops(self):
+        class Busy(FakeSession):
+            def get(self, url, timeout=None):
+                if url.endswith("/robots.txt"):
+                    return FakeResp("")
+                r = FakeResp(""); r.status_code = 429; r.headers = {"Retry-After": "120"}; return r
+        scrape.load_robots(Busy({1: EMPTY}))
+        with self.assertRaises(scrape.StoreBusy):
+            scrape.fetch(Busy({1: EMPTY}), scrape.BASE + "/c/1/1/x.html")
 
 
 class EndToEnd(unittest.TestCase):
@@ -231,6 +254,9 @@ class EndToEnd(unittest.TestCase):
                     {4555401: mini, 4555400: rules, 4562767: acc2}, {"9363670": BAND_PAGE})
         by = {m["id"]: m for m in self.state()["models"]}
         self.assertTrue(by["9999999"]["is_new"])
+        # Band contents come from cache on the second run (product page not re-fetched)
+        self.assertEqual(len(by["9363670"]["contents"]), 5)
+        self.assertEqual(by["9363670"]["contents_checked"], "2026-10-14T09:00:00Z")
 
     def test_abort_on_collapse(self):
         many = {1: page([item(str(i), f"M{i} (Small, Mouse)") for i in range(1, 41)], 1)}

@@ -19,15 +19,15 @@ Live page: **https://bluefroguk1.github.io/BurrowTracker/**
 | Web page (GitHub Pages) | `docs/index.html` |
 | Data (written by the scraper) | `docs/data/models.json` |
 
-* **Automatic poll:** every Friday at 18:30 UK time, just after the store's 6pm restock.
+* **Automatic poll:** every day at 18:30 UK time (on Fridays that's just after the store's 6pm restock).
   GitHub's schedule runs in UTC, so the workflow fires at 17:30 and 18:30 UTC and the
-  scraper ignores whichever one isn't 18:30 in the UK that week. GitHub can start scheduled
+  scraper skips whichever one isn't 18:30 in the UK that day. GitHub can start scheduled
   runs a few minutes late.
-* **Manual poll (repo owner only):** Actions → *Poll Oathsworn store* → **Run workflow**. If the store was
-  polled less than an hour ago the run stops without fetching anything, unless you tick
-  **Ignore the one-hour limit between polls**. The page has no poll button, so visitors can't start polls.
+* **Manual poll (repo owner only):** Actions → *Poll Oathsworn store* → **Run workflow**. It always runs.
+  The page has no poll button, so visitors can't start polls.
 * **New models:** a model gets a **New** badge and goes to the top of the table if it first
-  appeared after the previous Friday poll. It keeps the badge until the following Friday's poll.
+  appeared after the previous Friday poll. It keeps the badge until the following Friday's poll, so New
+  covers a week even though the store is checked daily.
   Models restocked from zero get a **Back in stock** badge on the same basis.
 * **Stock:** read from the store's listing pages. 0 = Out of stock, 1–3 = Low stock, otherwise In stock.
 * **Removed models** stay in the data as "No longer listed". They're hidden by default; untick the box to show them.
@@ -37,7 +37,7 @@ Live page: **https://bluefroguk1.github.io/BurrowTracker/**
 ### Being polite to the store
 
 * About 22 requests per poll (robots.txt, ~21 category pages, plus starter band pages only when needed), one per second.
-  That's once a week, plus at most one manual poll an hour.
+  That's once a day, plus any manual polls you run.
 * Only uses URLs the store's `robots.txt` allows. It reads robots.txt at the start of every poll and refuses
   any URL it disallows, so it follows the store's rules if they change.
 * Never opens individual product pages for stock or price; the category pages carry both.

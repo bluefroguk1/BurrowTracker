@@ -1,18 +1,13 @@
 name: Poll Oathsworn store
 
 on:
-  # Friday 18:30 UK time. GitHub cron is UTC, so both times are listed and the
-  # scraper ignores whichever one isn't 18:30 in the UK that week (BST vs GMT).
+  # Daily at 18:30 UK time. GitHub cron is UTC, so both times are listed and the
+  # scraper skips whichever one isn't 18:30 in the UK that day (BST vs GMT).
   schedule:
-    - cron: "30 17 * * 5"
-    - cron: "30 18 * * 5"
-  # Actions tab -> "Poll Oathsworn store" -> "Run workflow" = manual poll.
+    - cron: "30 17 * * *"
+    - cron: "30 18 * * *"
+  # Actions tab -> "Poll Oathsworn store" -> "Run workflow" = manual poll (always runs).
   workflow_dispatch:
-    inputs:
-      force:
-        description: "Ignore the one-hour limit between polls"
-        type: boolean
-        default: false
   # Redeploy the page when you change the site or this workflow.
   push:
     branches: [main]
@@ -44,7 +39,7 @@ jobs:
       - run: pip install -r scraper/requirements.txt
 
       - name: Scrape
-        run: python scraper/scrape.py --trigger ${{ github.event_name == 'schedule' && 'scheduled' || 'manual' }} ${{ inputs.force && '--force' || '' }}
+        run: python scraper/scrape.py --trigger ${{ github.event_name == 'schedule' && 'scheduled' || 'manual' }}
 
       - name: Commit updated data
         run: |

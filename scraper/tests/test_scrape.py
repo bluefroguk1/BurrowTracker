@@ -189,16 +189,13 @@ class EndToEnd(unittest.TestCase):
         self.assertEqual(len(s["models"]), 3)
         self.assertFalse(any(m["is_new"] for m in s["models"]))
 
-        # Manual again 30 min later -> rate limited, file unchanged
-        before = scrape.DATA_FILE.read_text()
-        self.run_at("2026-10-14T09:30:00+00:00", "manual", p1)
-        self.assertEqual(before, scrape.DATA_FILE.read_text())
-        # ...unless forced
-        os.environ["BB_NOW"] = "2026-10-14T09:35:00+00:00"
-        scrape.requests.Session = lambda: FakeSession(p1)
-        sys.argv = ["scrape.py", "--trigger", "manual", "--force"]
-        scrape.main()
-        self.assertEqual(self.state()["last_poll"], "2026-10-14T09:35:00Z")
+        # Manual again 5 min later -> no limit, runs
+        self.run_at("2026-10-14T09:05:00+00:00", "manual", p1)
+        self.assertEqual(self.state()["last_poll"], "2026-10-14T09:05:00Z")
+        # Daily scheduled poll on a Thursday evening runs, but doesn't move the weekly "New" window
+        self.run_at("2026-10-15T17:30:00+00:00", "scheduled", p1)
+        self.assertEqual(self.state()["last_poll_trigger"], "scheduled")
+        self.assertEqual(len(self.state()["friday_polls"]), 1)
 
         # Friday 17:30 UTC (= 18:30 BST): scheduled poll, new model D, B restocked, C gone
         p2 = {1: page([item("1", "A (Small, Mouse)"), item("2", "B (Medium, Cat)", qty=4),
@@ -216,8 +213,12 @@ class EndToEnd(unittest.TestCase):
         self.run_at("2026-10-16T18:30:00+00:00", "scheduled", p2)
         self.assertEqual(before, scrape.DATA_FILE.read_text())
 
-        # Not Friday -> scheduled skipped
+        # Saturday 18:30 UTC (19:30 BST) -> daily poll runs; D still new
         self.run_at("2026-10-17T18:30:00+00:00", "scheduled", p2)
+        self.assertTrue({m["id"]: m for m in self.state()["models"]}["4"]["is_new"])
+        # Saturday morning -> too early for the daily poll
+        before = scrape.DATA_FILE.read_text()
+        self.run_at("2026-10-18T08:00:00+00:00", "scheduled", p2)
         self.assertEqual(before, scrape.DATA_FILE.read_text())
 
         # Tuesday manual: E appears; D still new (until next Friday)

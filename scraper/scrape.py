@@ -2,17 +2,17 @@
 """
 Burrows & Badgers model tracker - scraper.
 
-Reads every product in the Oathsworn Miniatures "Burrows & Badgers > Miniatures"
-category and writes docs/data/models.json, which the GitHub Pages table reads.
+Reads the Burrows & Badgers categories of the Oathsworn Miniatures store and writes
+docs/data/models.json, which the GitHub Pages site reads.
 
 Usage:
-    python scraper/scrape.py --trigger scheduled   # used by the Friday cron
+    python scraper/scrape.py --trigger scheduled   # used by the daily cron
     python scraper/scrape.py --trigger manual      # used by "Run workflow"
 
 Rules:
-  * scheduled: only runs on a Friday at/after 18:30 UK time, once per Friday.
-  * manual:    refused if the last poll (of any kind) was less than an hour ago.
-  * A model is flagged "New" if it first appeared after the Friday poll before
+  * scheduled: runs once a day, at/after 18:30 UK time.
+  * manual:    always runs.
+  * An item is flagged "New" if it first appeared after the Friday poll before
     the most recent one (i.e. it stays "New" for a week, until the next Friday).
 """
 from __future__ import annotations
@@ -47,9 +47,8 @@ CONTENTS_MAX_AGE = timedelta(days=28)  # re-read a starter band's box contents a
 DATA_FILE = Path(__file__).resolve().parent.parent / "docs" / "data" / "models.json"
 
 UK = ZoneInfo("Europe/London")
-FRIDAY = 4
-SCHEDULE_TIME = (18, 30)          # UK local time
-MANUAL_COOLDOWN = timedelta(hours=1)
+FRIDAY = 4                        # "New" badges last a week: from one Friday poll to the next
+SCHEDULE_TIME = (18, 30)          # daily scheduled poll, UK local time
 REQUEST_DELAY_S = 1.0             # be polite: one page per second
 MAX_PAGES = 60
 LOW_STOCK = 3                     # 1..LOW_STOCK units => "Low stock"
@@ -413,22 +412,16 @@ def save_state(state: dict) -> None:
 
 
 def should_run(state: dict, trigger: str, now: datetime) -> tuple[bool, str]:
-    last = state.get("last_poll")
     if trigger == "manual":
-        if last and now - parse_iso(last) < MANUAL_COOLDOWN:
-            nxt = parse_iso(last) + MANUAL_COOLDOWN
-            return False, (f"Skipped: the store was last polled at "
-                           f"{parse_iso(last).astimezone(UK):%H:%M} UK time. Manual polls are limited "
-                           f"to one per hour - try again after {nxt.astimezone(UK):%H:%M}.")
         return True, "Manual poll."
-    # scheduled
+    # scheduled: once a day, from 18:30 UK time (the workflow fires at two UTC times to cover BST/GMT)
     local = now.astimezone(UK)
-    if local.weekday() != FRIDAY or (local.hour, local.minute) < SCHEDULE_TIME:
-        return False, f"Skipped: scheduled polls only run on Fridays from 18:30 UK time (now {local:%a %H:%M})."
+    if (local.hour, local.minute) < SCHEDULE_TIME:
+        return False, f"Skipped: scheduled polls run from 18:30 UK time (now {local:%a %H:%M})."
     for p in state.get("polls", []):
         if p.get("trigger") == "scheduled" and parse_iso(p["time"]).astimezone(UK).date() == local.date():
-            return False, "Skipped: this Friday's scheduled poll has already run."
-    return True, "Scheduled Friday poll."
+            return False, "Skipped: today's scheduled poll has already run."
+    return True, "Scheduled daily poll."
 
 
 def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tuple[dict, int, int, int]:
@@ -440,7 +433,7 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
     if first_run:
         state["seed_poll"] = stamp
         friday_polls.append(stamp)          # baseline: nothing is "new" on the first ever run
-    elif trigger == "scheduled":
+    elif trigger == "scheduled" and now.astimezone(UK).weekday() == FRIDAY:
         friday_polls.append(stamp)
     friday_polls = friday_polls[-12:]
     cutoff = friday_polls[-2] if len(friday_polls) >= 2 else friday_polls[-1]
@@ -491,7 +484,6 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
         "last_poll_trigger": trigger,
         "seed_poll": state.get("seed_poll", stamp),
         "new_since": cutoff,
-        "manual_cooldown_minutes": int(MANUAL_COOLDOWN.total_seconds() // 60),
         "friday_polls": friday_polls,
         "tracked_categories": [c[-1] for c in CATEGORIES],
         "polls": polls,
@@ -502,14 +494,11 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--trigger", choices=["scheduled", "manual"], default="manual")
-    ap.add_argument("--force", action="store_true", help="manual poll even if the last one was under an hour ago")
     args = ap.parse_args()
 
     now = now_utc()
     state = load_state()
     ok, reason = should_run(state, args.trigger, now)
-    if not ok and args.force and args.trigger == "manual":
-        ok, reason = True, "Manual poll (one-hour limit overridden)."
     if not ok:
         summary(reason)
         return 0

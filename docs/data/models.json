@@ -1,6 +1,6 @@
 {
- "source": "https://www.oathswornminiatures.co.uk/c/4555401/1/miniatures.html",
- "last_poll": "2026-10-14T09:25:53Z",
+ "source": "https://www.oathswornminiatures.co.uk/c/4553237/1/burrows-badgers.html",
+ "last_poll": "2026-10-14T10:28:19Z",
  "last_poll_trigger": "manual",
  "seed_poll": "2026-10-14T09:25:53Z",
  "new_since": "2026-10-14T09:25:53Z",
@@ -8,12 +8,26 @@
  "friday_polls": [
   "2026-10-14T09:25:53Z"
  ],
+ "tracked_categories": [
+  "Miniatures",
+  "Game Rules & Starter Bands",
+  "Supplements & Accessories"
+ ],
  "polls": [
   {
    "time": "2026-10-14T09:25:53Z",
    "trigger": "manual",
    "initial": true,
    "count": 217,
+   "new": 0,
+   "restocked": 0,
+   "delisted": 0
+  },
+  {
+   "time": "2026-10-14T10:28:19Z",
+   "trigger": "manual",
+   "initial": false,
+   "count": 227,
    "new": 0,
    "restocked": 0,
    "delisted": 0
@@ -26,11 +40,11 @@
    "name": "Abelard Snook",
    "size": "Large",
    "species": "Fox",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Townsfolk",
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554623/abelard-snook-large-fox-townsfolk-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E2/87720674_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/E2/87720674.jpg",
@@ -38,8 +52,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 14,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -51,10 +69,10 @@
    "name": "Adder Ganger",
    "size": "Medium",
    "species": "Adder",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554615/adder-ganger-medium-adder-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/D2/87720658_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/D2/87720658.jpg",
@@ -62,8 +80,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -75,9 +97,7 @@
    "name": "Adder Mage",
    "size": "Medium",
    "species": "Adder",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144256/adder-mage-medium-adder.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F7/87737847_250x250.jpg",
@@ -86,8 +106,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -99,9 +123,7 @@
    "name": "Adder Warrior",
    "size": "Medium",
    "species": "Adder",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311847/adder-warrior-medium-adder.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/40/87828032_250x250.jpg",
@@ -110,8 +132,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -123,11 +149,10 @@
    "name": "Apinya, Siamese Seeress",
    "size": "Medium",
    "species": "Cat",
-   "factions": [
-    "Freelances"
-   ],
+   "factions": [],
    "tags": [
-    "Rare Beast"
+    "Rare Beast",
+    "Freelances"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9144270/apinya-siamese-seeress-medium-cat-rare-beast-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/37/87828023_250x250.jpg",
@@ -136,8 +161,12 @@
    "price_ex_vat": 4.42,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -162,8 +191,12 @@
    "price_ex_vat": 5.0,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -176,7 +209,7 @@
    "size": "Massive",
    "species": "Badger",
    "factions": [
-    "Hillfolk Clans"
+    "Hillfolk"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578928/badger-hillfolk-clanbeast-massive-badger-clan.html",
@@ -186,8 +219,12 @@
    "price_ex_vat": 11.46,
    "stock_qty": 100,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -199,9 +236,7 @@
    "name": "Badger Mage",
    "size": "Massive",
    "species": "Badger",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346206/badger-mage-massive-badger.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/0B/87474955_250x250.jpg",
@@ -210,8 +245,12 @@
    "price_ex_vat": 11.46,
    "stock_qty": 99,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -223,9 +262,7 @@
    "name": "Badger Mercenary",
    "size": "Massive",
    "species": "Badger",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144230/badger-mercenary-massive-badger.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/C2/87474626_250x250.jpg",
@@ -234,8 +271,12 @@
    "price_ex_vat": 11.46,
    "stock_qty": 45,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -258,8 +299,12 @@
    "price_ex_vat": 11.46,
    "stock_qty": 58,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -271,9 +316,7 @@
    "name": "Badger Ranger",
    "size": "Massive",
    "species": "Badger",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528132/badger-ranger-massive-badger.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B9/87603129_250x250.jpg",
@@ -282,8 +325,12 @@
    "price_ex_vat": 11.46,
    "stock_qty": 70,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -295,9 +342,7 @@
    "name": "Badger Warrioress",
    "size": "Massive",
    "species": "Badger",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238532/badger-warrioress-massive-badger.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/85/87474821_250x250.jpg",
@@ -306,8 +351,12 @@
    "price_ex_vat": 11.46,
    "stock_qty": 100,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -319,9 +368,7 @@
    "name": "Barn Owl",
    "size": "Large",
    "species": "Raptor",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238534/barn-owl-large-raptor.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/AB/87474859_250x250.jpg",
@@ -330,8 +377,12 @@
    "price_ex_vat": 7.5,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -343,11 +394,11 @@
    "name": "Baron Filbert Devere",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554635/baron-filbert-devere-small-shrew-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/FA/87720698_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/FA/87720698.jpg",
@@ -355,8 +406,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -368,19 +423,21 @@
    "name": "Beagle Tracker",
    "size": "Medium",
    "species": "Hound",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144268/beagle-tracker-medium-hound.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/54/87474772_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/54/87474772.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 5,
+   "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -403,8 +460,12 @@
    "price_ex_vat": 12.5,
    "stock_qty": 45,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -416,19 +477,21 @@
    "name": "Beaver Hedge-Knight",
    "size": "Massive",
    "species": "Beaver",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578937/beaver-hedge-knight-massive-beaver.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/5A/87828314_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/5A/87828314.jpg",
    "price": 13.75,
    "price_ex_vat": 11.46,
-   "stock_qty": 47,
+   "stock_qty": 46,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -440,9 +503,7 @@
    "name": "Beaver Mercenary",
    "size": "Massive",
    "species": "Beaver",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346207/beaver-mercenary-massive-beaver.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/10/87474960_250x250.jpg",
@@ -451,8 +512,12 @@
    "price_ex_vat": 11.46,
    "stock_qty": 100,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -464,11 +529,10 @@
    "name": "Bila Durang, Platypus Hunter",
    "size": "Medium",
    "species": "Platypus",
-   "factions": [
-    "Freelances"
-   ],
+   "factions": [],
    "tags": [
-    "Rare Beast"
+    "Rare Beast",
+    "Freelances"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9144274/bila-durang-platypus-hunter-medium-platypus-rare-beast-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/67/87474791_250x250.jpg",
@@ -477,8 +541,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -490,11 +558,9 @@
    "name": "Black Rat Necromancer",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [
-    "Ghast",
+    "Mist Ghast",
     "Henlor Kremmel"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9529704/black-rat-necromancer-medium-black-rat-ghast-henlor-kremmel.html",
@@ -504,8 +570,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -517,9 +587,7 @@
    "name": "Black Rat Rogue",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144254/black-rat-rogue-medium-black-rat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/BA/87720634_250x250.jpg",
@@ -528,8 +596,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 1,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -541,9 +613,7 @@
    "name": "Black Rat Thug",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144253/black-rat-thug-medium-black-rat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/1A/87474714_250x250.jpg",
@@ -552,8 +622,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -565,11 +639,11 @@
    "name": "Black Rat Watchbeast",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554628/black-rat-watchbeast-medium-black-rat-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/EC/87720684_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/EC/87720684.jpg",
@@ -577,8 +651,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -590,9 +668,7 @@
    "name": "Black Rat Witch",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144252/black-rat-witch-medium-black-rat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/13/87474707_250x250.jpg",
@@ -601,8 +677,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -614,9 +694,7 @@
    "name": "Border Collie Reiver",
    "size": "Massive",
    "species": "Hound",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414746/border-collie-reiver-massive-hound.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/8A/87603082_250x250.jpg",
@@ -625,8 +703,12 @@
    "price_ex_vat": 11.25,
    "stock_qty": 19,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -638,19 +720,21 @@
    "name": "Border Terrier Knight",
    "size": "Medium",
    "species": "Hound",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311844/border-terrier-knight-medium-hound.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F0/87474928_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F0/87474928.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 2,
+   "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -662,11 +746,10 @@
    "name": "Brutus Testudo, Hermann's Tortoise",
    "size": "Medium",
    "species": "Tortoise",
-   "factions": [
-    "Freelances"
-   ],
+   "factions": [],
    "tags": [
-    "Rare Beast"
+    "Rare Beast",
+    "Freelances"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9144272/brutus-testudo-hermanns-tortoise-medium-tortoise-rare-beast-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/3D/87828029_250x250.jpg",
@@ -675,8 +758,12 @@
    "price_ex_vat": 5.42,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -688,19 +775,99 @@
    "name": "Bulldog Knight",
    "size": "Massive",
    "species": "Hound",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414747/bulldog-knight-massive-hound.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/75/87475061_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/75/87475061.jpg",
    "price": 15.0,
    "price_ex_vat": 12.5,
-   "stock_qty": 38,
+   "stock_qty": 37,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9253895",
+   "title": "Burrows & Badgers 2nd Edition Hardback Rulebook Osprey Games version.",
+   "name": "Burrows & Badgers 2nd Edition Hardback Rulebook Osprey Games version.",
+   "size": null,
+   "species": null,
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9253895/burrows-badgers-2nd-edition-hardback-rulebook-osprey-games-version.html",
+   "image": "https://static.shop033.com/resources/E9/167913/resized/02/87838210_250x250.jpg",
+   "image_full": "https://static.shop033.com/resources/E9/167913/picture/02/87838210.jpg",
+   "price": 30.0,
+   "price_ex_vat": 25.0,
+   "stock_qty": 9,
+   "status": "In stock",
+   "section": "extras",
+   "categories": [
+    "Game Rules & Starter Bands"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9327703",
+   "title": "Burrows & Badgers Northymbran Pennies",
+   "name": "Burrows & Badgers Northymbran Pennies",
+   "size": null,
+   "species": null,
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9327703/burrows-badgers-northymbran-pennies.html",
+   "image": "https://static.shop033.com/resources/E9/167913/resized/2A/87157546_250x250.jpg",
+   "image_full": "https://static.shop033.com/resources/E9/167913/picture/2A/87157546.jpg",
+   "price": 5.0,
+   "price_ex_vat": 4.17,
+   "stock_qty": 0,
+   "status": "Out of stock",
+   "section": "extras",
+   "categories": [
+    "Supplements & Accessories"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9583388",
+   "title": "Burrows & Badgers Roster Pad",
+   "name": "Burrows & Badgers Roster Pad",
+   "size": null,
+   "species": null,
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9583388/burrows-badgers-roster-pad.html",
+   "image": "https://static.shop033.com/resources/E9/167913/resized/51/87840593_250x250.jpg",
+   "image_full": "https://static.shop033.com/resources/E9/167913/picture/51/87840593.jpg",
+   "price": 10.0,
+   "price_ex_vat": 8.33,
+   "stock_qty": 42,
+   "status": "In stock",
+   "section": "extras",
+   "categories": [
+    "Supplements & Accessories"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -712,9 +879,7 @@
    "name": "Burrows & Badgers Starter Band A",
    "size": null,
    "species": null,
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9363670/burrows-badgers-starter-band-a.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/40/87840576_250x250.jpg",
@@ -723,8 +888,51 @@
    "price_ex_vat": 30.0,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "extras",
+   "categories": [
+    "Miniatures",
+    "Game Rules & Starter Bands"
+   ],
+   "contents": [
+    {
+     "code": "BB214",
+     "name": "Otter Knight 1",
+     "model_id": null
+    },
+    {
+     "code": "BB215",
+     "name": "Yorkshire Terrier Knight",
+     "model_id": null
+    },
+    {
+     "code": "BB216",
+     "name": "Hedgehog Magic User",
+     "model_id": null
+    },
+    {
+     "code": "BB217",
+     "name": "Rabbit Squire",
+     "model_id": null
+    },
+    {
+     "code": "BB218",
+     "name": "Mouse Squire",
+     "model_id": null
+    },
+    {
+     "code": "Acc15-a",
+     "name": "Objectives",
+     "model_id": null
+    },
+    {
+     "code": null,
+     "name": "Polyhedral dice",
+     "model_id": null
+    }
+   ],
+   "contents_checked": "2026-10-14T10:28:19Z",
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -736,9 +944,7 @@
    "name": "Burrows & Badgers Starter Band B",
    "size": null,
    "species": null,
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9363669/burrows-badgers-starter-band-b.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/43/87840579_250x250.jpg",
@@ -747,8 +953,51 @@
    "price_ex_vat": 30.0,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "extras",
+   "categories": [
+    "Miniatures",
+    "Game Rules & Starter Bands"
+   ],
+   "contents": [
+    {
+     "code": "BB219",
+     "name": "Fox Hunter",
+     "model_id": null
+    },
+    {
+     "code": "BB220",
+     "name": "Cat Hunter",
+     "model_id": null
+    },
+    {
+     "code": "BB221",
+     "name": "Squirrel Magic User",
+     "model_id": null
+    },
+    {
+     "code": "BB222",
+     "name": "Weasel Warrioress",
+     "model_id": null
+    },
+    {
+     "code": "BB223",
+     "name": "Little Owl Rogue",
+     "model_id": null
+    },
+    {
+     "code": "Acc14",
+     "name": "Objectives",
+     "model_id": null
+    },
+    {
+     "code": null,
+     "name": "Polyhedral dice",
+     "model_id": null
+    }
+   ],
+   "contents_checked": "2026-10-14T10:28:19Z",
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -760,9 +1009,7 @@
    "name": "Cat Duellist",
    "size": "Medium",
    "species": "Cat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414740/cat-duellist-medium-cat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/5E/87475038_250x250.jpg",
@@ -771,8 +1018,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -785,7 +1036,7 @@
    "size": "Medium",
    "species": "Cat",
    "factions": [
-    "Hillfolk Clans"
+    "Hillfolk"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528133/cat-hillfolk-clan-piper-medium-cat-hillfolk-clan.html",
@@ -793,10 +1044,14 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/BB/87603131.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 3,
+   "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -808,19 +1063,21 @@
    "name": "Cat Huntress",
    "size": "Medium",
    "species": "Cat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311854/cat-huntress-medium-cat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/C2/87720642_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/C2/87720642.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 5,
+   "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -832,20 +1089,24 @@
    "name": "Chihuahua Watch Sargeant",
    "size": "Medium",
    "species": "Hound",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554625/chihuahua-watch-sargeant-medium-hound-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E6/87720678_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/E6/87720678.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 5,
+   "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -858,7 +1119,7 @@
    "size": "Large",
    "species": "Wildcat",
    "factions": [
-    "Hillfolk Clans"
+    "Hillfolk"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346212/clan-wildcat-large-wildcat-clan.html",
@@ -866,10 +1127,14 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/1E/87474974.jpg",
    "price": 9.0,
    "price_ex_vat": 7.5,
-   "stock_qty": 8,
+   "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -890,10 +1155,14 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/0E/87707406.jpg",
    "price": 7.5,
    "price_ex_vat": 6.25,
-   "stock_qty": 8,
+   "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -905,9 +1174,7 @@
    "name": "Dandy HighwayFox",
    "size": "Large",
    "species": "Fox",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280251/dandy-highwayfox-large-fox.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E1/87474913_250x250.jpg",
@@ -916,8 +1183,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -929,9 +1200,7 @@
    "name": "Dormouse Archer",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144232/dormouse-archer-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/CD/87474637_250x250.jpg",
@@ -940,8 +1209,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 18,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -953,19 +1226,21 @@
    "name": "Dormouse Scout",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238530/dormouse-scout-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E1/87814113_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/E1/87814113.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 3,
+   "stock_qty": 2,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -977,19 +1252,21 @@
    "name": "Drunken Weasel",
    "size": "Medium",
    "species": "Weasel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9327415/drunken-weasel-medium-weasel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/11/87474705_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/11/87474705.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 9,
+   "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1001,10 +1278,10 @@
    "name": "Falconet and Bombard",
    "size": null,
    "species": "Cannon",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Artillery"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9568375/falconet-and-bombard-artillery-cannon.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/51/87757905_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/51/87757905.jpg",
@@ -1012,8 +1289,12 @@
    "price_ex_vat": 10.0,
    "stock_qty": 1,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1025,19 +1306,21 @@
    "name": "Feist Road Warden with Hunting Hornet",
    "size": "Large",
    "species": "Hound / Hornet",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528137/feist-road-warden-with-hunting-hornet-large-hound-hornet.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/C3/87603139_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/C3/87603139.jpg",
    "price": 7.5,
    "price_ex_vat": 6.25,
-   "stock_qty": 3,
+   "stock_qty": 2,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1049,19 +1332,21 @@
    "name": "Feist Tunneljack",
    "size": "Large",
    "species": "Hound",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9568373/feist-tunneljack-large-hound-.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/4F/87757903_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/4F/87757903.jpg",
    "price": 7.5,
    "price_ex_vat": 6.25,
-   "stock_qty": 7,
+   "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1073,9 +1358,7 @@
    "name": "Ferret Clan Warrior",
    "size": "Medium",
    "species": "Ferret",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280249/ferret-clan-warrior-medium-ferret.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/D9/87474905_250x250.jpg",
@@ -1084,8 +1367,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1097,9 +1384,7 @@
    "name": "Ferret Mercenary",
    "size": "Medium",
    "species": "Ferret",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414741/ferret-mercenary-medium-ferret.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/64/87475044_250x250.jpg",
@@ -1108,8 +1393,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1121,9 +1410,7 @@
    "name": "Ferret Rogue",
    "size": "Medium",
    "species": "Ferret",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144237/ferret-rogue-medium-ferret.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/EF/87474671_250x250.jpg",
@@ -1132,8 +1419,38 @@
    "price_ex_vat": 4.79,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9418111",
+   "title": "Ferret Rogue Bust (1/9th scale)",
+   "name": "Ferret Rogue Bust",
+   "size": null,
+   "species": "1/9th Scale",
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9418111/ferret-rogue-bust-19th-scale.html",
+   "image": "https://static.shop033.com/resources/E9/167913/resized/CD/87375565_250x250.jpg",
+   "image_full": "https://static.shop033.com/resources/E9/167913/picture/CD/87375565.jpg",
+   "price": 15.0,
+   "price_ex_vat": 12.5,
+   "stock_qty": 0,
+   "status": "Out of stock",
+   "section": "extras",
+   "categories": [
+    "Supplements & Accessories"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1145,9 +1462,7 @@
    "name": "Fox Brigand",
    "size": "Large",
    "species": "Fox",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144267/fox-brigand-large-fox.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/0C/87707404_250x250.jpg",
@@ -1156,8 +1471,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1169,9 +1488,7 @@
    "name": "Fox Huntress",
    "size": "Large",
    "species": "Fox",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144247/fox-huntress-large-fox.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/0A/87474698_250x250.jpg",
@@ -1180,8 +1497,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1204,8 +1525,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 13,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1217,19 +1542,21 @@
    "name": "Fox Kindred Knight",
    "size": "Large",
    "species": "Fox",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578910/fox-kindred-knight-large-fox.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/03/87828227_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/03/87828227.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 3,
+   "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1241,9 +1568,7 @@
    "name": "Fox Knight",
    "size": "Large",
    "species": "Fox",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528130/fox-knight-large-fox.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B5/87603125_250x250.jpg",
@@ -1252,8 +1577,12 @@
    "price_ex_vat": 6.25,
    "stock_qty": 1,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1265,9 +1594,7 @@
    "name": "Fox Mage",
    "size": "Large",
    "species": "Fox",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346214/fox-mage-large-fox.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/FC/87737852_250x250.jpg",
@@ -1276,8 +1603,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1289,9 +1620,7 @@
    "name": "Fox Rogue",
    "size": "Large",
    "species": "Fox",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144238/fox-rogue-large-fox.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F3/87474675_250x250.jpg",
@@ -1300,8 +1629,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1313,19 +1646,21 @@
    "name": "Frog Burgher",
    "size": "Medium",
    "species": "Frog",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346215/frog-burgher-medium-frog.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/26/87474982_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/26/87474982.jpg",
    "price": 5.5,
    "price_ex_vat": 4.58,
-   "stock_qty": 1,
-   "status": "Low stock",
+   "stock_qty": 0,
+   "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1337,19 +1672,21 @@
    "name": "Frog Fixer",
    "size": "Medium",
    "species": "Frog",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144275/frog-fixer-medium-frog.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/44/87828036_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/44/87828036.jpg",
    "price": 5.5,
    "price_ex_vat": 4.58,
-   "stock_qty": 5,
+   "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1362,8 +1699,7 @@
    "size": "Medium",
    "species": "Frog",
    "factions": [
-    "Wildlings",
-    "Old Ones"
+    "Wildlings"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528134/frog-wildling-warrior-medium-frog-wildlings-old-ones.html",
@@ -1373,8 +1709,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1386,19 +1726,21 @@
    "name": "Garrow One-eye, Hare Hedge Knight",
    "size": "Large",
    "species": "Hare",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9535607/garrow-one-eye-hare-hedge-knight-large-hare.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E6/87660006_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/E6/87660006.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 12,
+   "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1408,13 +1750,11 @@
    "id": "9144255",
    "title": "Gnarls & Thug, Shrew Slaver and Slave Badger (Massive, Badger, Small, Shrew, Freelances)",
    "name": "Gnarls & Thug, Shrew Slaver and Slave Badger",
-   "size": "Massive",
+   "size": "Small / Massive",
    "species": "Badger / Shrew",
-   "factions": [
-    "Freelances"
-   ],
+   "factions": [],
    "tags": [
-    "Small"
+    "Freelances"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9144255/gnarls-thug-shrew-slaver-and-slave-badger-massive-badger-small-shrew-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/22/87474722_250x250.jpg",
@@ -1423,8 +1763,12 @@
    "price_ex_vat": 12.5,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1436,19 +1780,21 @@
    "name": "Great Brown Rat",
    "size": "Large",
    "species": "Brown Rat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144245/great-brown-rat-large-brown-rat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/04/87474692_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/04/87474692.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 11,
+   "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1460,19 +1806,21 @@
    "name": "Great Cave Bear",
    "size": "Enormous",
    "species": "Bear",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9568378/great-cave-bear-enormous-bear.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/5B/87757915_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/5B/87757915.jpg",
    "price": 36.0,
    "price_ex_vat": 30.0,
-   "stock_qty": 31,
+   "stock_qty": 30,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1484,9 +1832,7 @@
    "name": "Great Crested Newt Knight",
    "size": "Small",
    "species": "Newt",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578918/great-crested-newt-knight-small-newt.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/20/87828256_250x250.jpg",
@@ -1495,8 +1841,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1508,9 +1858,7 @@
    "name": "Great Crested Newt Mage",
    "size": "Small",
    "species": "Newt",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578916/great-crested-newt-mage-small-newt.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/19/87828249_250x250.jpg",
@@ -1519,8 +1867,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1532,9 +1884,7 @@
    "name": "Great Crested Newt Wildling",
    "size": "Small",
    "species": "Newt",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578913/great-crested-newt-wildling-small-newt.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/0E/87828238_250x250.jpg",
@@ -1543,8 +1893,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1556,9 +1910,7 @@
    "name": "Green Lizard",
    "size": "Medium",
    "species": "Green Lizard",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [
     "Rare Beast"
    ],
@@ -1569,8 +1921,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 1,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1582,10 +1938,10 @@
    "name": "Gromley the Mouse-burglar",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Freelances"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144258/gromley-the-mouse-burglar-small-mouse-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/2B/87474731_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/2B/87474731.jpg",
@@ -1593,8 +1949,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1606,9 +1966,7 @@
    "name": "Grymlocke Grawloggson",
    "size": "Large",
    "species": "Hare",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578922/grymlocke-grawloggson-large-hare.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/29/87828265_250x250.jpg",
@@ -1617,8 +1975,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1630,11 +1992,10 @@
    "name": "Gwasila, Fennec Fox",
    "size": "Large",
    "species": "Fennec Fox",
-   "factions": [
-    "Freelances"
-   ],
+   "factions": [],
    "tags": [
-    "Rare Beast"
+    "Rare Beast",
+    "Freelances"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9144273/gwasila-fennec-fox-large-fennec-fox-rare-beast-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/63/87474787_250x250.jpg",
@@ -1643,8 +2004,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1656,9 +2021,7 @@
    "name": "Hare Barkeep",
    "size": "Large",
    "species": "Hare",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346216/hare-barkeep-large-hare.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/29/87474985_250x250.jpg",
@@ -1667,8 +2030,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1680,9 +2047,7 @@
    "name": "Hare Druidess",
    "size": "Large",
    "species": "Hare",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414742/hare-druidess-large-hare.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/67/87475047_250x250.jpg",
@@ -1691,8 +2056,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1704,9 +2073,7 @@
    "name": "Hare Hedge-Knight",
    "size": "Large",
    "species": "Hare",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578935/hare-hedge-knight-large-hare.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/54/87828308_250x250.jpg",
@@ -1715,8 +2082,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1728,9 +2099,7 @@
    "name": "Hare Heroine",
    "size": "Large",
    "species": "Hare",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238533/hare-heroine-large-hare.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/89/87474825_250x250.jpg",
@@ -1739,8 +2108,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 2,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1752,9 +2125,7 @@
    "name": "Hare Knight",
    "size": "Large",
    "species": "Hare",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311843/hare-knight-large-hare.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/EE/87474926_250x250.jpg",
@@ -1763,8 +2134,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 15,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1776,10 +2151,10 @@
    "name": "Hare Pugilist",
    "size": "Large",
    "species": "Hare",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554621/hare-pugilist-large-hare-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/DE/87720670_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/DE/87720670.jpg",
@@ -1787,8 +2162,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1800,9 +2179,7 @@
    "name": "Hare Warrior",
    "size": "Large",
    "species": "Hare",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144234/hare-warrior-large-hare.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/DB/87474651_250x250.jpg",
@@ -1811,8 +2188,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 14,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1824,9 +2205,7 @@
    "name": "Hare Warrior 2",
    "size": "Large",
    "species": "Hare",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528131/hare-warrior-2-large-hare.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B7/87603127_250x250.jpg",
@@ -1835,8 +2214,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1848,9 +2231,7 @@
    "name": "Hedgehog Alchemist",
    "size": "Medium",
    "species": "Hedgehog",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280245/hedgehog-alchemist-medium-hedgehog.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/CA/87474890_250x250.jpg",
@@ -1859,8 +2240,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1872,9 +2257,7 @@
    "name": "Hedgehog Clan Warrior",
    "size": "Medium",
    "species": "Hedgehog",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238527/hedgehog-clan-warrior-medium-hedgehog.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/76/87474806_250x250.jpg",
@@ -1883,8 +2266,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1896,10 +2283,10 @@
    "name": "Hedgehog Ganger",
    "size": "Medium",
    "species": "Hedgehog",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554620/hedgehog-ganger-medium-hedgehog-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/DC/87720668_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/DC/87720668.jpg",
@@ -1907,8 +2294,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 12,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1920,9 +2311,7 @@
    "name": "Hedgehog Huntress",
    "size": "Medium",
    "species": "Hedgehog",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414735/hedgehog-huntress-medium-hedgehog.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/50/87475024_250x250.jpg",
@@ -1931,8 +2320,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 13,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1944,9 +2337,7 @@
    "name": "Hedgehog Kindred Knight",
    "size": "Medium",
    "species": "Hedgehog",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578908/hedgehog-kindred-knight-medium-hedgehog.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/FC/87828220_250x250.jpg",
@@ -1955,8 +2346,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1968,9 +2363,7 @@
    "name": "Hedgehog Warrioress",
    "size": "Medium",
    "species": "Hedgehog",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144228/hedgehog-warrioress-medium-hedgehog.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B7/87474615_250x250.jpg",
@@ -1979,8 +2372,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 1,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1992,11 +2389,11 @@
    "name": "Hedgehog Watchbeast",
    "size": "Medium",
    "species": "Hedgehog",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554631/hedgehog-watchbeast-medium-hedgehog-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F2/87720690_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F2/87720690.jpg",
@@ -2004,8 +2401,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2028,8 +2429,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 12,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2041,9 +2446,7 @@
    "name": "Hen Harrier Kindred Knight",
    "size": "Large",
    "species": "Raptor",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578907/hen-harrier-kindred-knight-large-raptor.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F9/87828217_250x250.jpg",
@@ -2052,8 +2455,12 @@
    "price_ex_vat": 7.5,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2065,11 +2472,11 @@
    "name": "Horatio Briarthorn",
    "size": "Medium",
    "species": "Weasel",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Townsfolk",
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554624/horatio-briarthorn-medium-weasel-townsfolk-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E4/87720676_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/E4/87720676.jpg",
@@ -2077,8 +2484,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2090,19 +2501,21 @@
    "name": "Jackdaw Kindred Knight",
    "size": "Medium",
    "species": "Bird",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578911/jackdaw-kindred-knight-medium-bird.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/08/87828232_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/08/87828232.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 2,
+   "stock_qty": 1,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2114,9 +2527,7 @@
    "name": "Kingfisher Warrior",
    "size": "Small",
    "species": "Bird",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346217/kingfisher-warrior-small-bird.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/2B/87474987_250x250.jpg",
@@ -2125,8 +2536,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2138,10 +2553,10 @@
    "name": "Lady Jayne De'Ath, Fox Assassin",
    "size": "Large",
    "species": "Fox",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Freelances"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144261/lady-jayne-death-fox-assassin-large-fox-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/38/87474744_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/38/87474744.jpg",
@@ -2149,8 +2564,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2162,19 +2581,21 @@
    "name": "Long Eared Owl",
    "size": "Large",
    "species": "Raptor",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578917/long-eared-owllarge-raptor.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/1D/87828253_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/1D/87828253.jpg",
    "price": 9.0,
    "price_ex_vat": 7.5,
-   "stock_qty": 90,
+   "stock_qty": 89,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2186,19 +2607,21 @@
    "name": "Magpie Entrepreneur",
    "size": "Medium",
    "species": "Bird",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414743/magpie-entrepreneur-medium-bird.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/88/87603080_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/88/87603080.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 3,
+   "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2210,10 +2633,10 @@
    "name": "Marmot Butcher",
    "size": "Medium",
    "species": "Marmot",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Townsfolk"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554612/marmot-butcher-medium-marmot-townsfolk.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/CC/87720652_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/CC/87720652.jpg",
@@ -2221,8 +2644,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2234,9 +2661,7 @@
    "name": "Marmot Hedge-Knight",
    "size": "Medium",
    "species": "Marmot",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578934/marmot-hedge-knight-medium-marmot.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/51/87828305_250x250.jpg",
@@ -2245,8 +2670,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2258,9 +2687,7 @@
    "name": "Marmot Mercenary",
    "size": "Medium",
    "species": "Marmot",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144231/marmot-mercenary-medium-marmot.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/C7/87474631_250x250.jpg",
@@ -2269,8 +2696,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 12,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2286,7 +2717,7 @@
     "Undead"
    ],
    "tags": [
-    "Ghast"
+    "Mist Ghast"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9578932/massive-mist-ghast-massive-badger-undead-ghast.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/4C/87828300_250x250.jpg",
@@ -2295,8 +2726,12 @@
    "price_ex_vat": 9.17,
    "stock_qty": 64,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2307,11 +2742,13 @@
    "title": "Mist-ghasts 1 - Hare and Fox (Large, Ghast, Undead, Hare, Fox)",
    "name": "Mist-ghasts 1 - Hare and Fox",
    "size": "Large",
-   "species": "Ghast / Hare / Fox",
+   "species": "Hare / Fox",
    "factions": [
     "Undead"
    ],
-   "tags": [],
+   "tags": [
+    "Mist Ghast"
+   ],
    "url": "https://www.oathswornminiatures.co.uk/p/9528117/mist-ghasts-1---hare-and-fox-large-ghast-undead-hare-fox.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/94/87603092_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/94/87603092.jpg",
@@ -2319,8 +2756,12 @@
    "price_ex_vat": 10.0,
    "stock_qty": 12,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2330,13 +2771,13 @@
    "id": "9528118",
    "title": "Mist-ghasts 2 - Mouse, Squirrel & Bird (Small, Medium, Ghast, Undead, Mouse, Squirrel, Bird)",
    "name": "Mist-ghasts 2 - Mouse, Squirrel & Bird",
-   "size": "Small",
-   "species": "Medium / Mouse / Squirrel / Bird",
+   "size": "Small / Medium",
+   "species": "Mouse / Squirrel / Bird",
    "factions": [
     "Undead"
    ],
    "tags": [
-    "Ghast"
+    "Mist Ghast"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9528118/mist-ghasts-2---mouse-squirrel-bird-small-medium-ghast-undead-mouse-squirrel-bird.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/99/87603097_250x250.jpg",
@@ -2345,8 +2786,12 @@
    "price_ex_vat": 9.17,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2356,13 +2801,13 @@
    "id": "9528119",
    "title": "Mist-ghasts 3 - Shrews x2, Mouse, Mole (Small, Medium, Ghast, Undead, Mouse, Shrew, Mole)",
    "name": "Mist-ghasts 3 - Shrews x2, Mouse, Mole",
-   "size": "Small",
-   "species": "Medium / Mouse / Shrew / Mole",
+   "size": "Small / Medium",
+   "species": "Mouse / Shrew / Mole",
    "factions": [
     "Undead"
    ],
    "tags": [
-    "Ghast"
+    "Mist Ghast"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9528119/mist-ghasts-3---shrews-x2-mouse-mole-small-medium-ghast-undead-mouse-shrew-mole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/9F/87603103_250x250.jpg",
@@ -2371,8 +2816,12 @@
    "price_ex_vat": 8.33,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2384,9 +2833,7 @@
    "name": "Mole Barrow Warden",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578921/mole-barrow-warden-medium-mole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/26/87828262_250x250.jpg",
@@ -2395,8 +2842,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2408,9 +2859,7 @@
    "name": "Mole Friar",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144233/mole-friar-medium-mole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/D5/87474645_250x250.jpg",
@@ -2419,8 +2868,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 13,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2432,19 +2885,21 @@
    "name": "Mole Mercenary",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280244/mole-mercenary-medium-mole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/C4/87474884_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/C4/87474884.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 10,
+   "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2456,19 +2911,21 @@
    "name": "Mole Rogue",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414736/mole-rogue-medium-mole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/59/87664985_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/59/87664985.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 9,
+   "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2480,9 +2937,7 @@
    "name": "Mole Seeress",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311849/mole-seeress-medium-mole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/FD/87474941_250x250.jpg",
@@ -2491,8 +2946,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2504,9 +2963,7 @@
    "name": "Mole Smith with anvil",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346218/mole-smith-with-anvil-medium-mole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/2D/87474989_250x250.jpg",
@@ -2515,8 +2972,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2528,19 +2989,21 @@
    "name": "Mole Tunneljack",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9568368/mole-tunneljack-medium-mole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/41/87757889_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/41/87757889.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 15,
+   "stock_qty": 14,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2552,9 +3015,7 @@
    "name": "Mole Warrioress",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144229/mole-warrioress-medium-mole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/BB/87474619_250x250.jpg",
@@ -2563,8 +3024,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2576,11 +3041,11 @@
    "name": "Mole Watch Corporal",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554633/mole-watch-corporal-medium-mole-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F5/87720693_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F5/87720693.jpg",
@@ -2588,8 +3053,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2602,8 +3071,7 @@
    "size": "Medium",
    "species": "Mole",
    "factions": [
-    "Wildlings",
-    "Old Ones"
+    "Wildlings"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414734/mole-wildling-warrior-medium-mole-wildling-old-ones.html",
@@ -2613,8 +3081,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2626,10 +3098,10 @@
    "name": "Mouse Ganger",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554619/mouse-ganger-small-mouse-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/DA/87720666_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/DA/87720666.jpg",
@@ -2637,8 +3109,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2651,7 +3127,7 @@
    "size": "Small",
    "species": "Mouse",
    "factions": [
-    "Hillfolk Clans"
+    "Hillfolk"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311851/mouse-highlander-small-mouse-clan.html",
@@ -2661,8 +3137,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2674,9 +3154,7 @@
    "name": "Mouse Kindred Knight",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578912/mouse-kindred-knight-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/0B/87828235_250x250.jpg",
@@ -2685,8 +3163,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2698,19 +3180,21 @@
    "name": "Mouse Knight",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144227/mouse-knight-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B3/87474611_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/B3/87474611.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 7,
+   "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2722,9 +3206,7 @@
    "name": "Mouse Knight - Hooded",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578926/mouse-knight---hooded-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/38/87828280_250x250.jpg",
@@ -2733,8 +3215,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2746,9 +3232,7 @@
    "name": "Mouse Knight Vigilant",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9535608/mouse-knight-vigilant-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E7/87660007_250x250.jpg",
@@ -2757,8 +3241,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2770,9 +3258,7 @@
    "name": "Mouse Knight with sword, shield and crossbow",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311845/mouse-knight-with-sword-shield-and-crossbow-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F2/87474930_250x250.jpg",
@@ -2781,8 +3267,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2794,9 +3284,7 @@
    "name": "Mouse Maiden",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144277/mouse-maiden-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/72/87474802_250x250.jpg",
@@ -2805,8 +3293,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2818,19 +3310,23 @@
    "name": "Mouse Mother",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Townsfolk"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554610/mouse-mother-small-mousetownsfolk.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/C7/87720647_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/C7/87720647.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 5,
+   "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2842,9 +3338,7 @@
    "name": "Mouse Nun",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311848/mouse-nun-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/42/87828034_250x250.jpg",
@@ -2853,8 +3347,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2866,9 +3364,7 @@
    "name": "Mouse Ranger",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280242/mouse-ranger-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/BE/87474878_250x250.jpg",
@@ -2877,8 +3373,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2890,19 +3390,21 @@
    "name": "Mouse Scribe",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238537/mouse-scribe-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B5/87474869_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/B5/87474869.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 14,
+   "stock_qty": 13,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2914,19 +3416,21 @@
    "name": "Mouse Shieldmaiden",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280241/mouse-shieldmaiden-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/46/87828038_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/46/87828038.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 6,
+   "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2938,19 +3442,21 @@
    "name": "Mouse Soldier",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238526/mouse-soldier-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/BE/87720638_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/BE/87720638.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 14,
+   "stock_qty": 13,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2962,19 +3468,21 @@
    "name": "Mouse Tunneljack",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9568369/mouse-tunneljack-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/3B/87763259_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/3B/87763259.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 8,
+   "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2986,19 +3494,21 @@
    "name": "Mouse Wildling",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578915/mouse-wildling-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/15/87828245_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/15/87828245.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 8,
+   "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3021,8 +3531,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3034,9 +3548,7 @@
    "name": "Mouse Wizard",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [
     "Magic User"
    ],
@@ -3045,10 +3557,14 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/35/87828277.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 5,
+   "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3060,9 +3576,7 @@
    "name": "Mouse-burglar",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311850/mouse-burglar-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/3E/87763262_250x250.jpg",
@@ -3071,8 +3585,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3084,9 +3602,7 @@
    "name": "Mouse-keteer",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528136/mouse-keteer-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/C1/87603137_250x250.jpg",
@@ -3095,8 +3611,38 @@
    "price_ex_vat": 3.12,
    "stock_qty": 15,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9327860",
+   "title": "Mouse-oleum - the Tomb of the Mouse Lord",
+   "name": "Mouse-oleum - the Tomb of the Mouse Lord",
+   "size": null,
+   "species": null,
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9327860/mouse-oleum---the-tomb-of-the-mouse-lord.html",
+   "image": "https://static.shop033.com/resources/E9/167913/resized/26/87157542_250x250.jpg",
+   "image_full": "https://static.shop033.com/resources/E9/167913/picture/26/87157542.jpg",
+   "price": 8.0,
+   "price_ex_vat": 6.67,
+   "stock_qty": 74,
+   "status": "In stock",
+   "section": "extras",
+   "categories": [
+    "Supplements & Accessories"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3108,9 +3654,7 @@
    "name": "Nate the Wanderer, Mouse Hedge Knight",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9535606/nate-the-wanderer-mouse-hedge-knight-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E5/87660005_250x250.jpg",
@@ -3119,8 +3663,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3132,11 +3680,10 @@
    "name": "Necalli, Armadillo Warrior",
    "size": "Large",
    "species": "Armadillo",
-   "factions": [
-    "Freelances"
-   ],
+   "factions": [],
    "tags": [
-    "Rare Beast"
+    "Rare Beast",
+    "Freelances"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9144271/necalli-armadillo-warrior-large-armadillo-rare-beast-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/3A/87828026_250x250.jpg",
@@ -3145,8 +3692,12 @@
    "price_ex_vat": 6.25,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3158,9 +3709,7 @@
    "name": "Neddry Hardstriker, Stoat Shinty Star",
    "size": "Medium",
    "species": "Stoat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414749/neddry-hardstriker-stoat-shinty-star-medium-stoat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/7C/87475068_250x250.jpg",
@@ -3169,8 +3718,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 16,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3182,9 +3735,7 @@
    "name": "Noctule Bat Necromancer",
    "size": "Small",
    "species": "Bat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144276/noctule-bat-necromancer-small-bat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/80/87603072_250x250.jpg",
@@ -3193,8 +3744,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3206,9 +3761,7 @@
    "name": "Noctule Bat Necromancer 2",
    "size": "Small",
    "species": "Bat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528114/noctule-bat-necromancer-2-small-bat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/8C/87603084_250x250.jpg",
@@ -3217,8 +3770,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3230,9 +3787,7 @@
    "name": "Noctule Bat-sassin",
    "size": "Small",
    "species": "Bat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346213/noctule-bat-sassin-small-bat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/86/87603078_250x250.jpg",
@@ -3241,8 +3796,116 @@
    "price_ex_vat": 3.12,
    "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9353820",
+   "title": "Northymbran Monuments",
+   "name": "Northymbran Monuments",
+   "size": null,
+   "species": null,
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9353820/northymbran-monuments.html",
+   "image": "https://static.shop033.com/resources/E9/167913/resized/28/87157544_250x250.jpg",
+   "image_full": "https://static.shop033.com/resources/E9/167913/picture/28/87157544.jpg",
+   "price": 10.0,
+   "price_ex_vat": 8.33,
+   "stock_qty": 0,
+   "status": "Out of stock",
+   "section": "extras",
+   "categories": [
+    "Supplements & Accessories"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9346205",
+   "title": "Noticeboard and Signpost",
+   "name": "Noticeboard and Signpost",
+   "size": null,
+   "species": null,
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9346205/noticeboard-and-signpost.html",
+   "image": "https://static.shop033.com/resources/E9/167913/resized/29/87157545_250x250.jpg",
+   "image_full": "https://static.shop033.com/resources/E9/167913/picture/29/87157545.jpg",
+   "price": 5.0,
+   "price_ex_vat": 4.17,
+   "stock_qty": 4,
+   "status": "In stock",
+   "section": "extras",
+   "categories": [
+    "Supplements & Accessories"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9578929",
+   "title": "Objective Markers - Shields, Cash bags, Weapons",
+   "name": "Objective Markers - Shields, Cash bags, Weapons",
+   "size": null,
+   "species": null,
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9578929/objective-markers---shields-cash-bags-weapons.html",
+   "image": "https://static.shop033.com/resources/E9/167913/resized/42/87828290_250x250.jpg",
+   "image_full": "https://static.shop033.com/resources/E9/167913/picture/42/87828290.jpg",
+   "price": 5.0,
+   "price_ex_vat": 4.17,
+   "stock_qty": 6,
+   "status": "In stock",
+   "section": "extras",
+   "categories": [
+    "Supplements & Accessories"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9578930",
+   "title": "Objective Markers - Sleeping mouse, Buried chest, Scrolls/book",
+   "name": "Objective Markers - Sleeping mouse, Buried chest, Scrolls/book",
+   "size": null,
+   "species": null,
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9578930/objective-markers---sleeping-mouse-buried-chest-scrollsbook.html",
+   "image": "https://static.shop033.com/resources/E9/167913/resized/43/87828291_250x250.jpg",
+   "image_full": "https://static.shop033.com/resources/E9/167913/picture/43/87828291.jpg",
+   "price": 5.0,
+   "price_ex_vat": 4.17,
+   "stock_qty": 11,
+   "status": "In stock",
+   "section": "extras",
+   "categories": [
+    "Supplements & Accessories"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3254,9 +3917,7 @@
    "name": "Otter Hedge-Knight",
    "size": "Large",
    "species": "Otter",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578936/otter-hedge-knight-large-otter.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/56/87828310_250x250.jpg",
@@ -3265,8 +3926,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3278,9 +3943,7 @@
    "name": "Otter Hillfolk Clanbeast",
    "size": "Large",
    "species": "Otter",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578914/otter-hillfolk-clanbeast-large-otter.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/11/87828241_250x250.jpg",
@@ -3289,8 +3952,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3302,9 +3969,7 @@
    "name": "Otter Knight 2",
    "size": "Large",
    "species": "Otter",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9583387/otter-knight-2-large-otter.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/4E/87840590_250x250.jpg",
@@ -3313,8 +3978,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3326,9 +3995,7 @@
    "name": "Otter Mage",
    "size": "Large",
    "species": "Otter",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346220/otter-mage-large-otter.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/34/87474996_250x250.jpg",
@@ -3337,8 +4004,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3350,10 +4021,10 @@
    "name": "Otter Pirate",
    "size": "Large",
    "species": "Otter",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Pirates"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346208/otter-pirate-large-otter-pirate.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/13/87474963_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/13/87474963.jpg",
@@ -3361,8 +4032,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3374,9 +4049,7 @@
    "name": "Otter Ranger",
    "size": "Large",
    "species": "Otter",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311842/otter-ranger-large-otter.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/EC/87474924_250x250.jpg",
@@ -3385,8 +4058,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3398,10 +4075,10 @@
    "name": "Otter Rogue",
    "size": "Large",
    "species": "Otter",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Pirates"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144263/otter-rogue-large-otter-pirate.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/3E/87474750_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/3E/87474750.jpg",
@@ -3409,8 +4086,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3422,11 +4103,11 @@
    "name": "Otter Watch Captain",
    "size": "Large",
    "species": "Otter",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554634/otter-watch-captain-large-otter-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F8/87720696_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F8/87720696.jpg",
@@ -3434,8 +4115,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3458,8 +4143,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3471,10 +4160,10 @@
    "name": "Pi-rat",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Pirates"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311852/pi-rat-medium-black-rat-pirate.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F9/87737849_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F9/87737849.jpg",
@@ -3482,8 +4171,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 15,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3495,10 +4188,10 @@
    "name": "Pigeon Union Boss",
    "size": "Large",
    "species": "Bird",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Townsfolk"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554613/pigeon-union-boss-large-bird-townsfolk.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/CE/87720654_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/CE/87720654.jpg",
@@ -3506,8 +4199,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3519,10 +4216,10 @@
    "name": "Plague Doctor",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Townsfolk"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554614/plague-doctor-medium-black-rat-townsfolk.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/D0/87720656_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/D0/87720656.jpg",
@@ -3530,8 +4227,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3543,9 +4244,7 @@
    "name": "Polecat Pirate",
    "size": "Medium",
    "species": "Polecat / Ferret",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578923/polecat-pirate-medium-polecat-ferret.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/2E/87828270_250x250.jpg",
@@ -3554,8 +4253,38 @@
    "price_ex_vat": 4.58,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
+   "listed": true,
+   "restocked_at": null,
+   "is_new": false,
+   "is_restocked": false
+  },
+  {
+   "id": "9578322",
+   "title": "Polyhedral dice",
+   "name": "Polyhedral dice",
+   "size": null,
+   "species": null,
+   "factions": [],
+   "tags": [],
+   "url": "https://www.oathswornminiatures.co.uk/p/9578322/polyhedral-dice.html",
+   "image": "https://www.oathswornminiatures.co.uk/images/no-picture.png",
+   "image_full": "https://www.oathswornminiatures.co.uk/images/no-picture.png",
+   "price": 3.0,
+   "price_ex_vat": 2.5,
+   "stock_qty": 0,
+   "status": "Out of stock",
+   "section": "extras",
+   "categories": [
+    "Supplements & Accessories"
+   ],
+   "first_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3567,9 +4296,7 @@
    "name": "Praying Mouse",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346211/praying-mouse-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/EA/87474666_250x250.jpg",
@@ -3578,8 +4305,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3591,9 +4322,7 @@
    "name": "Puffin Captain",
    "size": "Large",
    "species": "Bird",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528129/puffin-captain-large-bird.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B3/87603123_250x250.jpg",
@@ -3602,8 +4331,12 @@
    "price_ex_vat": 7.5,
    "stock_qty": 12,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3615,19 +4348,21 @@
    "name": "Pug Bounty Hunter",
    "size": "Medium",
    "species": "Hound",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144266/pug-bounty-hunter-medium-hound.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/4B/87474763_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/4B/87474763.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 6,
+   "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3639,9 +4374,7 @@
    "name": "Rabbit archer",
    "size": "Medium",
    "species": "Rabbit",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280250/rabbit-archer-medium-rabbit.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/DD/87474909_250x250.jpg",
@@ -3650,8 +4383,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3663,10 +4400,10 @@
    "name": "Rabbit Guard Sergeant",
    "size": "Medium",
    "species": "Rabbit",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528135/rabbit-guard-sergeant-medium-rabbit-town-watch.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/BF/87603135_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/BF/87603135.jpg",
@@ -3674,8 +4411,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 12,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3687,9 +4428,7 @@
    "name": "Rabbit Heroine",
    "size": "Medium",
    "species": "Rabbit",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144264/rabbit-heroine-medium-rabbit.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/41/87474753_250x250.jpg",
@@ -3698,8 +4437,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3711,10 +4454,10 @@
    "name": "Rabbit Maid",
    "size": "Medium",
    "species": "Rabbit",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Townsfolk"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554611/rabbit-maid-medium-rabbit-townsfolk.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/CA/87720650_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/CA/87720650.jpg",
@@ -3722,8 +4465,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3735,9 +4482,7 @@
    "name": "Rabbit Tunneljack",
    "size": "Medium",
    "species": "Rabbit",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9568370/rabbit-tunneljack-medium-rabbit.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/47/87757895_250x250.jpg",
@@ -3746,8 +4491,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 4,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3759,10 +4508,10 @@
    "name": "Rat Alchemist",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554616/rat-alchemist-medium-black-rat-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/D4/87720660_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/D4/87720660.jpg",
@@ -3770,8 +4519,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3783,9 +4536,7 @@
    "name": "Rat Assassin",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144246/rat-assassin-medium-black-rat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/07/87474695_250x250.jpg",
@@ -3794,8 +4545,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 16,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3807,10 +4562,10 @@
    "name": "Rat Buccaneer",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Pirates"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414737/rat-buccaneer-medium-black-rat-pirate.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/57/87664983_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/57/87664983.jpg",
@@ -3818,8 +4573,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3831,9 +4590,7 @@
    "name": "Rat Warrior",
    "size": "Medium",
    "species": "Black Rat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144244/rat-warrior-medium-black-rat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/01/87474689_250x250.jpg",
@@ -3842,8 +4599,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3855,9 +4616,7 @@
    "name": "Raven Mage",
    "size": "Massive",
    "species": "Bird",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280253/raven-mage-massive-bird.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E8/87474920_250x250.jpg",
@@ -3866,8 +4625,12 @@
    "price_ex_vat": 11.46,
    "stock_qty": 67,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3879,19 +4642,21 @@
    "name": "Red Kite Mercenary",
    "size": "Massive",
    "species": "Raptor",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414748/red-kite-mercenary-massive-raptor.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/79/87475065_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/79/87475065.jpg",
    "price": 15.0,
    "price_ex_vat": 12.5,
-   "stock_qty": 30,
+   "stock_qty": 29,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3903,19 +4668,23 @@
    "name": "Rosalee Quickpaw, Mouse Battledancer",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Freelances"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9418110/rosalee-quickpaw-mouse-battledancer-small-mouse-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/82/87475074_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/82/87475074.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 10,
+   "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3927,9 +4696,7 @@
    "name": "Shrew Baker",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346210/shrew-baker-small-shrew.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/18/87474968_250x250.jpg",
@@ -3938,8 +4705,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3951,10 +4722,10 @@
    "name": "Shrew Ganger with blackjack",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554618/shrew-ganger-with-blackjack-small-shrew-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/D8/87720664_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/D8/87720664.jpg",
@@ -3962,8 +4733,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3986,8 +4761,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 13,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3999,9 +4778,7 @@
    "name": "Shrew Heroine",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414733/shrew-heroine-small-shrew.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/49/87475017_250x250.jpg",
@@ -4010,8 +4787,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4023,19 +4804,21 @@
    "name": "Shrew Knight Errant",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280240/shrew-knight-errant-small-shrew.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B8/87474872_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/B8/87474872.jpg",
    "price": 6.5,
    "price_ex_vat": 5.42,
-   "stock_qty": 8,
+   "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4047,10 +4830,10 @@
    "name": "Shrew Matron",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Townsfolk"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554609/shrew-matron-small-shrew-townsfolk.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/C5/87720645_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/C5/87720645.jpg",
@@ -4058,8 +4841,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4082,8 +4869,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4095,10 +4886,10 @@
    "name": "Shrew Pedlars",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Townsfolk"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578931/shrew-pedlars-small-shrew-townsfolk.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/4A/87828298_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/4A/87828298.jpg",
@@ -4106,8 +4897,12 @@
    "price_ex_vat": 5.42,
    "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4119,9 +4914,7 @@
    "name": "Shrew Pirate",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238531/shrew-pirate-small-shrew.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/82/87474818_250x250.jpg",
@@ -4130,8 +4923,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4143,9 +4940,7 @@
    "name": "Shrew Pirate 2",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280243/shrew-pirate-2-small-shrew.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F4/87737844_250x250.jpg",
@@ -4154,8 +4949,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4168,8 +4967,7 @@
    "size": "Small",
    "species": "Shrew",
    "factions": [
-    "Wildlings",
-    "Old Ones"
+    "Wildlings"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238528/shrew-shaman-small-shrew-wildling-old-ones.html",
@@ -4179,8 +4977,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4192,9 +4994,7 @@
    "name": "Shrew Warrior",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144236/shrew-warrior-small-shrew.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E6/87474662_250x250.jpg",
@@ -4203,8 +5003,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 19,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4216,11 +5020,11 @@
    "name": "Shrew Watchbeast",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554629/shrew-watchbeast-small-shrew-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/EE/87720686_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/EE/87720686.jpg",
@@ -4228,8 +5032,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 7,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4241,9 +5049,7 @@
    "name": "Shrew-zerker",
    "size": "Small",
    "species": "Shrew",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144260/shrew-zerker-small-shrew.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/33/87474739_250x250.jpg",
@@ -4252,8 +5058,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4265,9 +5075,7 @@
    "name": "Slygott, Great Brown Rat",
    "size": "Large",
    "species": "Brown Rat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9535610/slygott-great-brown-rat-large-brown-rat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/EB/87660011_250x250.jpg",
@@ -4276,8 +5084,12 @@
    "price_ex_vat": 6.25,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4289,9 +5101,7 @@
    "name": "Spare Shields 1 - Blank",
    "size": null,
    "species": null,
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9528128/spare-shields-1---blank.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B1/87603121_250x250.jpg",
@@ -4300,8 +5110,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4313,19 +5127,21 @@
    "name": "Sparrow Warrior",
    "size": "Small",
    "species": "Bird",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280247/sparrow-warrior-small-bird.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/D0/87474896_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/D0/87474896.jpg",
    "price": 4.5,
    "price_ex_vat": 3.75,
-   "stock_qty": 12,
+   "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4338,7 +5154,7 @@
    "size": "Small",
    "species": "Bird",
    "factions": [
-    "Hillfolk Clans"
+    "Hillfolk"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144259/sparrow-warrior-small-bird-clan.html",
@@ -4346,10 +5162,14 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/BC/87720636.jpg",
    "price": 4.5,
    "price_ex_vat": 3.75,
-   "stock_qty": 3,
+   "stock_qty": 2,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4361,20 +5181,24 @@
    "name": "Sparrow Watchbeast",
    "size": "Small",
    "species": "Sparrow / Bird",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554630/sparrow-watchbeast-small-sparrow-bird-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F0/87720688_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F0/87720688.jpg",
    "price": 4.5,
    "price_ex_vat": 3.75,
-   "stock_qty": 15,
+   "stock_qty": 14,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4386,19 +5210,21 @@
    "name": "Sparrowhawk Warrior",
    "size": "Medium",
    "species": "Raptor",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311846/sparrowhawk-warrior-medium-raptor.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/F5/87474933_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F5/87474933.jpg",
    "price": 6.5,
    "price_ex_vat": 5.42,
-   "stock_qty": 3,
+   "stock_qty": 2,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4411,7 +5237,7 @@
    "size": "Medium",
    "species": "Squirrel",
    "factions": [
-    "Hillfolk Clans"
+    "Hillfolk"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414738/squirrel-clan-warrior-medium-squirrel-hillfolk-clan.html",
@@ -4421,8 +5247,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4434,10 +5264,10 @@
    "name": "Squirrel Ganger",
    "size": "Medium",
    "species": "Squirrel",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554617/squirrel-ganger-medium-squirrel-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/D6/87720662_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/D6/87720662.jpg",
@@ -4445,8 +5275,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4458,9 +5292,7 @@
    "name": "Squirrel Hedge-Knight",
    "size": "Medium",
    "species": "Squirrel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578933/squirrel-hedge-knight-medium-squirrel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/4E/87828302_250x250.jpg",
@@ -4469,8 +5301,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4482,9 +5318,7 @@
    "name": "Squirrel Knight",
    "size": "Medium",
    "species": "Squirrel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280246/squirrel-knight-medium-squirrel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/CD/87474893_250x250.jpg",
@@ -4493,8 +5327,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4506,9 +5344,7 @@
    "name": "Squirrel Ranger",
    "size": "Medium",
    "species": "Squirrel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346219/squirrel-ranger-medium-squirrel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/30/87474992_250x250.jpg",
@@ -4517,8 +5353,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4530,9 +5370,7 @@
    "name": "Squirrel Rogue",
    "size": "Medium",
    "species": "Squirrel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144235/squirrel-rogue-medium-squirrel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E4/87474660_250x250.jpg",
@@ -4541,8 +5379,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4554,11 +5396,11 @@
    "name": "Squirrel Watch Corporal",
    "size": "Medium",
    "species": "Squirrel",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554627/squirrel-watch-corporal-medium-squirrel-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/EA/87720682_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/EA/87720682.jpg",
@@ -4566,8 +5408,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 3,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4579,9 +5425,7 @@
    "name": "Squirrel Witch",
    "size": "Medium",
    "species": "Squirrel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238529/squirrel-witch-medium-squirrel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/7C/87474812_250x250.jpg",
@@ -4590,8 +5434,12 @@
    "price_ex_vat": 4.17,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4616,8 +5464,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 12,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4642,8 +5494,12 @@
    "price_ex_vat": 7.5,
    "stock_qty": 45,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4666,8 +5522,12 @@
    "price_ex_vat": 5.0,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4679,19 +5539,21 @@
    "name": "Starling Rogue",
    "size": "Medium",
    "species": "Bird",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9311853/starling-rogue-medium-bird.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E4/87814116_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/E4/87814116.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 3,
+   "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4703,10 +5565,10 @@
    "name": "Stoat Ganger",
    "size": "Medium",
    "species": "Stoat / Weasel",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Street Gangs"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554622/stoat-ganger-medium-stoat-weasel-street-gang.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E0/87720672_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/E0/87720672.jpg",
@@ -4714,8 +5576,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 11,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4727,9 +5593,7 @@
    "name": "Stoatbart family",
    "size": "Medium",
    "species": "Stoat / Weasel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9353817/stoatbart-family-medium-stoat-weasel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/3D/87475005_250x250.jpg",
@@ -4738,8 +5602,12 @@
    "price_ex_vat": 12.5,
    "stock_qty": 2,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4751,9 +5619,7 @@
    "name": "Stoatbart Haulage Complete set",
    "size": "Medium",
    "species": "Stoat / Weasel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9353819/stoatbart-haulage-complete-set-medium-stoat-weasel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/41/87475009_250x250.jpg",
@@ -4762,8 +5628,12 @@
    "price_ex_vat": 29.17,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4775,9 +5645,7 @@
    "name": "Stoatbart Haulage Wagon",
    "size": "Medium",
    "species": "Stoat / Weasel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9353818/stoatbart-haulage-wagon-medium-stoat-weasel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/40/87475008_250x250.jpg",
@@ -4786,8 +5654,12 @@
    "price_ex_vat": 19.17,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4799,19 +5671,23 @@
    "name": "Tarrin Crum, Mole Alchemist",
    "size": "Medium",
    "species": "Mole",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Artillery"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9568377/tarrin-crum-mole-alchemist-medium-mole-artillerist-artillery.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/54/87757908_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/54/87757908.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 6,
+   "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4824,8 +5700,7 @@
    "size": "Medium",
    "species": "Toad",
    "factions": [
-    "Wildlings",
-    "Old Ones"
+    "Wildlings"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144243/toad-animist-medium-toad-wildling-old-ones.html",
@@ -4833,10 +5708,14 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/FD/87474685.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 9,
+   "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4849,8 +5728,7 @@
    "size": "Medium",
    "species": "Toad",
    "factions": [
-    "Wildlings",
-    "Old Ones"
+    "Wildlings"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280248/toad-mage-medium-toad-wildling-old-ones.html",
@@ -4860,8 +5738,12 @@
    "price_ex_vat": 4.58,
    "stock_qty": 8,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4874,8 +5756,7 @@
    "size": "Medium",
    "species": "Toad",
    "factions": [
-    "Wildlings",
-    "Old Ones"
+    "Wildlings"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414744/toad-war-mother-medium-toad-wildling-old-ones.html",
@@ -4885,8 +5766,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4898,9 +5783,7 @@
    "name": "Town Watch-mouse",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9353816/town-watch-mouse-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/1C/87474972_250x250.jpg",
@@ -4909,8 +5792,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 13,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4922,9 +5809,7 @@
    "name": "Town Watch-Mouse",
    "size": "Small",
    "species": "Mouse",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414732/town-watch-mouse-small-mouse.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/45/87475013_250x250.jpg",
@@ -4933,8 +5818,12 @@
    "price_ex_vat": 3.12,
    "stock_qty": 14,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4946,9 +5835,7 @@
    "name": "Vixen Bounty Hunter",
    "size": "Large",
    "species": "Fox",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414745/vixen-bounty-hunter-large-fox.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/70/87475056_250x250.jpg",
@@ -4957,8 +5844,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 0,
    "status": "Out of stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4970,10 +5861,10 @@
    "name": "Von Wodr, Otter Mercenary",
    "size": "Large",
    "species": "Otter",
-   "factions": [
+   "factions": [],
+   "tags": [
     "Freelances"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144265/von-wodr-otter-mercenary-large-otter-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/45/87474757_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/45/87474757.jpg",
@@ -4981,8 +5872,12 @@
    "price_ex_vat": 5.62,
    "stock_qty": 5,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4994,9 +5889,7 @@
    "name": "Water Vole Kindred Knight",
    "size": "Medium",
    "species": "Water Vole",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9578909/water-vole-kindred-knight-medium-water-vole.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/FF/87828223_250x250.jpg",
@@ -5005,8 +5898,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 13,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5018,9 +5915,7 @@
    "name": "Weasel Artillery Crew",
    "size": "Medium",
    "species": "Stoat / Weasel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9568376/weasel-artillery-crew-medium-stoat-weasel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/52/87757906_250x250.jpg",
@@ -5029,8 +5924,12 @@
    "price_ex_vat": 12.5,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5042,9 +5941,7 @@
    "name": "Weasel Brigand",
    "size": "Medium",
    "species": "Weasel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9346209/weasel-brigand-medium-weasel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/15/87474965_250x250.jpg",
@@ -5053,8 +5950,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 13,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5066,9 +5967,7 @@
    "name": "Weasel Rogue",
    "size": "Medium",
    "species": "Weasel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144251/weasel-rogue-medium-weasel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/0E/87474702_250x250.jpg",
@@ -5077,8 +5976,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5090,9 +5993,7 @@
    "name": "Weasel Soldier",
    "size": "Medium",
    "species": "Weasel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9280252/weasel-soldier-medium-weasel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E5/87474917_250x250.jpg",
@@ -5101,8 +6002,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 9,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5114,9 +6019,7 @@
    "name": "Weasel Tunneljack",
    "size": "Medium",
    "species": "Weasel",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9568372/weasel-tunneljack-medium-weasel.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/4B/87757899_250x250.jpg",
@@ -5125,8 +6028,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 17,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5149,8 +6056,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 18,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5162,11 +6073,10 @@
    "name": "Weekah Tegalega, Raccoon Huntress",
    "size": "Large",
    "species": "Raccoon",
-   "factions": [
-    "Freelances"
-   ],
+   "factions": [],
    "tags": [
-    "Rare Beast"
+    "Rare Beast",
+    "Freelances"
    ],
    "url": "https://www.oathswornminiatures.co.uk/p/9144269/weekah-tegalega-raccoon-huntress-large-raccoon-rare-beast-freelances.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/34/87828020_250x250.jpg",
@@ -5175,8 +6085,12 @@
    "price_ex_vat": 4.79,
    "stock_qty": 6,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5189,7 +6103,7 @@
    "size": "Medium",
    "species": "Hound",
    "factions": [
-    "Hillfolk Clans"
+    "Hillfolk"
    ],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9414739/west-highland-terrier-medium-hound-hillfolk-clan.html",
@@ -5197,10 +6111,14 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/82/87603074.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 3,
+   "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5212,19 +6130,21 @@
    "name": "Wildcat Hustler",
    "size": "Large",
    "species": "Wildcat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9238536/wildcat-hustler-large-wildcat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/B1/87474865_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/B1/87474865.jpg",
    "price": 9.0,
    "price_ex_vat": 7.5,
-   "stock_qty": 3,
+   "stock_qty": 2,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5236,9 +6156,7 @@
    "name": "Wildcat Warrior",
    "size": "Large",
    "species": "Wildcat",
-   "factions": [
-    "Unaligned"
-   ],
+   "factions": [],
    "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9144242/wildcat-warrior-large-wildcat.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/FA/87474682_250x250.jpg",
@@ -5247,8 +6165,12 @@
    "price_ex_vat": 7.5,
    "stock_qty": 10,
    "status": "In stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5260,20 +6182,24 @@
    "name": "Yorkshire Terrier Watchbeast",
    "size": "Medium",
    "species": "Hound",
-   "factions": [
+   "factions": [],
+   "tags": [
     "City Watch",
     "Town Guard"
    ],
-   "tags": [],
    "url": "https://www.oathswornminiatures.co.uk/p/9554626/yorkshire-terrier-watchbeast-medium-hound-city-watch-town-guard.html",
    "image": "https://static.shop033.com/resources/E9/167913/resized/E8/87720680_250x250.jpg",
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/E8/87720680.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 3,
+   "stock_qty": 2,
    "status": "Low stock",
+   "section": "models",
+   "categories": [
+    "Miniatures"
+   ],
    "first_seen": "2026-10-14T09:25:53Z",
-   "last_seen": "2026-10-14T09:25:53Z",
+   "last_seen": "2026-10-14T10:28:19Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,

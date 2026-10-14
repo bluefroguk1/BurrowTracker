@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Burrows &amp; Badgers Models</title>
+<meta name="description" content="Every Burrows & Badgers miniature in the Oathsworn store, with faction, species, price and stock - updated every Friday evening.">
+<!-- Optional: set to "owner/repo" if the page isn't served from owner.github.io/repo -->
+<meta name="github-repo" content="bluefroguk1/BurrowTracker">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f6f1e7;
+  --surface: #fffdf8;
+  --surface-2: #efe7d6;
+  --ink: #2a241c;
+  --ink-2: #5e5446;
+  --ink-3: #8a7e6c;
+  --line: #ddd2bd;
+  --accent: #6b3a1f;
+  --accent-ink: #fff8ee;
+  --new: #b5401f;
+  --ok: #2f6b3a;
+  --ok-bg: #e2efdf;
+  --low: #8a5a00;
+  --low-bg: #f7ebcc;
+  --out: #9b2f2f;
+  --out-bg: #f6dfdb;
+  --gone: #6c665d;
+  --gone-bg: #e9e5de;
+  --focus: #c27a2c;
+  --shadow: 0 1px 2px rgba(60,40,10,.06), 0 4px 16px rgba(60,40,10,.06);
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #17140f; --surface: #201c16; --surface-2: #2a251d; --ink: #efe6d6; --ink-2: #c4b8a4;
+    --ink-3: #8f8473; --line: #3a3328; --accent: #d39a62; --accent-ink: #1b1510; --new: #ef7a52;
+    --ok: #8fcf98; --ok-bg: #1f3323; --low: #e7bb5c; --low-bg: #3a2f14; --out: #ef8f86; --out-bg: #3d1f1c;
+    --gone: #aaa293; --gone-bg: #2c2923; --focus: #e2a25a; --shadow: none; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #17140f; --surface: #201c16; --surface-2: #2a251d; --ink: #efe6d6; --ink-2: #c4b8a4;
+  --ink-3: #8f8473; --line: #3a3328; --accent: #d39a62; --accent-ink: #1b1510; --new: #ef7a52;
+  --ok: #8fcf98; --ok-bg: #1f3323; --low: #e7bb5c; --low-bg: #3a2f14; --out: #ef8f86; --out-bg: #3d1f1c;
+  --gone: #aaa293; --gone-bg: #2c2923; --focus: #e2a25a; --shadow: none; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--bg); color: var(--ink); font: 15px/1.5 Inter, system-ui, sans-serif; }
+a { color: var(--accent); }
+:focus-visible { outline: 2px solid var(--focus); outline-offset: 2px; }
+.wrap { max-width: 1240px; margin: 0 auto; padding: 0 16px; }
+
+header { padding: 28px 0 18px; border-bottom: 1px solid var(--line); }
+.head { display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: flex-end; justify-content: space-between; }
+h1 { font: 700 clamp(28px, 4vw, 40px)/1.05 "Cormorant Garamond", Georgia, serif; margin: 0 0 6px; letter-spacing: .2px; }
+.sub { color: var(--ink-2); margin: 0; max-width: 60ch; }
+.meta { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; font-size: 13px; color: var(--ink-2); }
+.meta b { color: var(--ink); font-weight: 600; }
+.btn { display: inline-flex; align-items: center; gap: 6px; border: 1px solid var(--accent); background: var(--accent); color: var(--accent-ink);
+  border-radius: 8px; padding: 7px 12px; font: 600 13px Inter, sans-serif; text-decoration: none; cursor: pointer; }
+.btn.ghost { background: transparent; color: var(--accent); }
+.btn[aria-disabled="true"] { opacity: .55; pointer-events: none; }
+.hint { font-size: 12px; color: var(--ink-3); text-align: right; max-width: 34ch; }
+
+.filters { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 14px 0 12px; border-bottom: 1px solid var(--line); }
+.frow { display: grid; grid-template-columns: 2fr repeat(4, 1fr); gap: 10px; }
+.frow2 { display: flex; flex-wrap: wrap; gap: 8px 18px; align-items: center; margin-top: 10px; font-size: 14px; color: var(--ink-2); }
+label.f { display: flex; flex-direction: column; gap: 3px; font-size: 12px; font-weight: 600; color: var(--ink-3); text-transform: uppercase; letter-spacing: .4px; }
+input[type=search], select { width: 100%; font: 14px Inter, sans-serif; color: var(--ink); background: var(--surface); border: 1px solid var(--line);
+  border-radius: 8px; padding: 8px 10px; min-height: 38px; }
+.chk { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+.chk input { accent-color: var(--accent); width: 16px; height: 16px; }
+.count { margin-left: auto; font-weight: 600; color: var(--ink); }
+.linkbtn { background: none; border: 0; color: var(--accent); font: 600 14px Inter, sans-serif; cursor: pointer; padding: 0; }
+
+.summary { display: flex; gap: 8px; flex-wrap: wrap; padding: 14px 0 4px; }
+.pill { background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px 11px; font-size: 13px; color: var(--ink-2); cursor: pointer; }
+.pill b { color: var(--ink); }
+.pill[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+
+table { width: 100%; border-collapse: separate; border-spacing: 0; margin: 10px 0 40px; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 12px; overflow: hidden; box-shadow: var(--shadow); }
+th { text-align: left; font: 600 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: .4px; color: var(--ink-3);
+  background: var(--surface-2); padding: 10px 12px; border-bottom: 1px solid var(--line); white-space: nowrap; }
+th button { all: unset; cursor: pointer; display: inline-flex; gap: 4px; align-items: center; }
+th button:focus-visible { outline: 2px solid var(--focus); }
+th .arr { opacity: .35; font-size: 10px; }
+th[aria-sort] .arr { opacity: 1; color: var(--accent); }
+td { padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: middle; }
+tr:last-child td { border-bottom: 0; }
+tr.is-new td { background: color-mix(in srgb, var(--new) 7%, var(--surface)); }
+tr.is-new td:first-child { box-shadow: inset 3px 0 0 var(--new); }
+tr.gone td { opacity: .6; }
+.thumb { width: 64px; height: 64px; border-radius: 8px; background: var(--surface-2); display: block; object-fit: contain; cursor: zoom-in; border: 1px solid var(--line); }
+.thumb.missing { cursor: default; }
+.name { font-weight: 600; }
+.tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
+.tag { font-size: 11px; padding: 1px 7px; border-radius: 999px; background: var(--surface-2); color: var(--ink-2); }
+.badge { display: inline-block; font: 700 10.5px Inter, sans-serif; letter-spacing: .6px; text-transform: uppercase; padding: 2px 7px; border-radius: 5px; vertical-align: 2px; margin-right: 6px; }
+.badge.new { background: var(--new); color: #fff; }
+.badge.back { background: var(--ok-bg); color: var(--ok); }
+.status { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600; padding: 3px 9px; border-radius: 999px; white-space: nowrap; }
+.status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.s-in { color: var(--ok); background: var(--ok-bg); }
+.s-low { color: var(--low); background: var(--low-bg); }
+.s-out { color: var(--out); background: var(--out-bg); }
+.s-gone, .s-unk { color: var(--gone); background: var(--gone-bg); }
+.qty { display: block; font-size: 12px; color: var(--ink-3); margin-top: 2px; }
+.price { font-variant-numeric: tabular-nums; white-space: nowrap; font-weight: 600; }
+.price small { display: block; font-weight: 400; color: var(--ink-3); font-size: 12px; }
+.empty { padding: 48px 16px; text-align: center; color: var(--ink-2); }
+
+dialog { border: 0; padding: 0; border-radius: 12px; background: var(--surface); color: var(--ink); max-width: min(92vw, 720px); box-shadow: 0 10px 40px rgba(0,0,0,.35); }
+dialog::backdrop { background: rgba(20,14,6,.7); }
+dialog img { display: block; max-width: 100%; max-height: 75vh; margin: 0 auto; background: #fff; }
+dialog .cap { display: flex; justify-content: space-between; gap: 12px; align-items: center; padding: 12px 16px; }
+footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
+
+@media (max-width: 860px) {
+  .filters { position: static; }
+  .frow { grid-template-columns: 1fr 1fr; }
+  .frow label:first-child { grid-column: 1 / -1; }
+  .meta { align-items: flex-start; }
+  .hint { text-align: left; }
+  thead { display: none; }
+  table, tbody, tr, td { display: block; }
+  table { background: transparent; border: 0; box-shadow: none; }
+  tr { display: grid; grid-template-columns: 76px 1fr auto; gap: 2px 12px; background: var(--surface); border: 1px solid var(--line);
+    border-radius: 12px; padding: 12px; margin-bottom: 10px; }
+  tr.is-new { box-shadow: inset 3px 0 0 var(--new); }
+  tr.is-new td { background: none; box-shadow: none; }
+  td { border: 0; padding: 0; }
+  td.c-img { grid-row: 1 / span 4; }
+  td.c-name { grid-column: 2 / 4; }
+  td.c-price { grid-column: 3; grid-row: 2; text-align: right; }
+  td.c-meta { grid-column: 2; grid-row: 2; font-size: 13px; color: var(--ink-2); }
+  td.c-status { grid-column: 2; grid-row: 3; }
+  td.c-link { grid-column: 3; grid-row: 3; text-align: right; }
+  td.c-fac, td.c-sp, td.c-size { display: none; }
+}
+@media (min-width: 861px) { td.c-meta { display: none; } }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap head">
+    <div>
+      <h1>Burrows &amp; Badgers Models</h1>
+      <p class="sub">Every miniature in the Oathsworn Miniatures store, in one searchable list. Updated every Friday at 6:30pm, just after the store restocks.</p>
+    </div>
+    <div class="meta" id="meta">
+      <div>Loading…</div>
+    </div>
+  </div>
+</header>
+
+<div class="filters">
+  <div class="wrap">
+    <div class="frow">
+      <label class="f">Search<input type="search" id="q" placeholder="Name, species, faction…" autocomplete="off"></label>
+      <label class="f">Faction<select id="fFaction"><option value="">All factions</option></select></label>
+      <label class="f">Species<select id="fSpecies"><option value="">All species</option></select></label>
+      <label class="f">Size<select id="fSize"><option value="">All sizes</option></select></label>
+      <label class="f">Stock<select id="fStatus">
+        <option value="">Any stock</option>
+        <option value="available">In stock (incl. low)</option>
+        <option value="In stock">In stock</option>
+        <option value="Low stock">Low stock</option>
+        <option value="Out of stock">Out of stock</option>
+        <option value="No longer listed">No longer listed</option>
+      </select></label>
+    </div>
+    <div class="frow2">
+      <label class="chk"><input type="checkbox" id="fNew"> New only</label>
+      <label class="chk"><input type="checkbox" id="fHideGone" checked> Hide models no longer listed</label>
+      <button class="linkbtn" id="reset" type="button">Clear filters</button>
+      <span class="count" id="count" aria-live="polite"></span>
+    </div>
+  </div>
+</div>
+
+<main class="wrap">
+  <div class="summary" id="summary"></div>
+  <table id="tbl">
+    <thead>
+      <tr>
+        <th style="width:88px">Image</th>
+        <th data-key="name"><button type="button">Model <span class="arr">▲</span></button></th>
+        <th data-key="faction"><button type="button">Faction <span class="arr">▲</span></button></th>
+        <th data-key="species"><button type="button">Species <span class="arr">▲</span></button></th>
+        <th data-key="size"><button type="button">Size <span class="arr">▲</span></button></th>
+        <th data-key="price"><button type="button">Price <span class="arr">▲</span></button></th>
+        <th data-key="status"><button type="button">Stock <span class="arr">▲</span></button></th>
+        <th>Store</th>
+      </tr>
+    </thead>
+    <tbody id="rows"></tbody>
+  </table>
+</main>
+
+<footer class="wrap">
+  Data from <a id="src" href="https://www.oathswornminiatures.co.uk/c/4553237/1/burrows-badgers.html" rel="noopener">oathswornminiatures.co.uk</a>.
+  Prices include VAT. Stock shown is as of the last poll, so check the store before ordering. This is an unofficial fan tool.
+</footer>
+
+<dialog id="zoom" aria-label="Model image">
+  <img id="zoomImg" alt="">
+  <div class="cap"><span id="zoomCap"></span><button class="btn ghost" id="zoomClose" type="button">Close</button></div>
+</dialog>
+
+<script>
+(() => {
+  const SIZE_ORDER = { Small: 1, Medium: 2, Large: 3, Massive: 4, Enormous: 5 };
+  const STATUS_ORDER = { "In stock": 1, "Low stock": 2, "Out of stock": 3, "Unknown": 4, "No longer listed": 5 };
+  const STATUS_CLASS = { "In stock": "s-in", "Low stock": "s-low", "Out of stock": "s-out", "No longer listed": "s-gone" };
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const gbp = (n) => n == null ? "–" : "£" + n.toFixed(2);
+  const ukTime = (iso, opts) => new Date(iso).toLocaleString("en-GB", { timeZone: "Europe/London", ...opts });
+  const store = {
+    get(k) { try { return JSON.parse(localStorage.getItem("bb:" + k)); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem("bb:" + k, JSON.stringify(v)); } catch {} },
+  };
+
+  let data = { models: [] };
+  let sort = store.get("sort") || { key: "name", dir: 1 };
+
+  function repoSlug() {
+    const meta = document.querySelector('meta[name="github-repo"]').content.trim();
+    if (meta) return meta;
+    const m = location.hostname.match(/^([^.]+)\.github\.io$/i);
+    const seg = location.pathname.split("/").filter(Boolean)[0];
+    if (m) return seg ? `${m[1]}/${seg}` : `${m[1]}/${m[1]}.github.io`;
+    return null;
+  }
+
+  function nextFriday(now = new Date()) {
+    // Next Friday 18:30 Europe/London, computed by stepping forward day by day.
+    for (let d = 0; d < 8; d++) {
+      const t = new Date(now.getTime() + d * 86400000);
+      const parts = Object.fromEntries(new Intl.DateTimeFormat("en-GB", { timeZone: "Europe/London", weekday: "short", hour: "2-digit", minute: "2-digit", hour12: false })
+        .formatToParts(t).map((p) => [p.type, p.value]));
+      if (parts.weekday === "Fri" && (d > 0 || +parts.hour * 60 + +parts.minute < 18 * 60 + 30)) return t;
+    }
+    return null;
+  }
+
+  function renderMeta() {
+    const el = $("meta");
+    const slug = repoSlug();
+    const actions = slug ? `https://github.com/${slug}/actions/workflows/poll.yml` : null;
+    if (!data.last_poll) {
+      el.innerHTML = `<div>No data yet. The first poll will fill this table.</div>` +
+        (actions ? `<a class="btn" href="${actions}" target="_blank" rel="noopener">Poll the store now ↗</a>` : "");
+      return;
+    }
+    const last = new Date(data.last_poll);
+    const cool = (data.manual_cooldown_minutes || 60) * 60000;
+    const readyAt = new Date(last.getTime() + cool);
+    const ready = Date.now() >= readyAt.getTime();
+    const nf = nextFriday();
+    el.innerHTML = `
+      <div>Last polled <b>${esc(ukTime(data.last_poll, { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }))}</b>
+        ${data.last_poll_trigger === "manual" ? "(manual)" : ""}</div>
+      <div>Next scheduled poll: <b>${nf ? esc(ukTime(nf.toISOString(), { weekday: "short", day: "numeric", month: "short" })) + ", 18:30" : "Friday 18:30"}</b></div>
+      ${actions ? `<a class="btn ${ready ? "" : "ghost"}" href="${actions}" target="_blank" rel="noopener" ${ready ? "" : 'aria-disabled="true"'}>
+        ${ready ? "Poll the store now ↗" : "Manual poll available at " + esc(ukTime(readyAt.toISOString(), { hour: "2-digit", minute: "2-digit" }))}</a>
+        <div class="hint">${ready ? "Opens GitHub. Click “Run workflow” there. The table updates a couple of minutes after the run finishes. Limited to one poll per hour." : "Manual polls are limited to one per hour."}</div>` : ""}`;
+  }
+
+  function factionText(m) { return (m.factions || []).join(", "); }
+
+  function fill(select, values, current) {
+    const opts = [...new Set(values)].filter(Boolean).sort((a, b) => a.localeCompare(b));
+    select.length = 1;
+    for (const v of opts) select.add(new Option(v, v));
+    if (current && opts.includes(current)) select.value = current;
+  }
+
+  function fillFilters() {
+    const ms = data.models;
+    fill($("fFaction"), ms.flatMap((m) => m.factions || []), store.get("fFaction"));
+    fill($("fSpecies"), ms.flatMap((m) => (m.species || "").split(" / ")), store.get("fSpecies"));
+    const sizes = [...new Set(ms.map((m) => m.size).filter(Boolean))].sort((a, b) => (SIZE_ORDER[a] || 9) - (SIZE_ORDER[b] || 9));
+    const s = $("fSize"); s.length = 1; sizes.forEach((v) => s.add(new Option(v, v)));
+    const cs = store.get("fSize"); if (cs && sizes.includes(cs)) s.value = cs;
+    const st = store.get("fStatus"); if (st) $("fStatus").value = st;
+    $("q").value = store.get("q") || "";
+    $("fNew").checked = !!store.get("fNew");
+    const hg = store.get("fHideGone"); $("fHideGone").checked = hg === null ? true : !!hg;
+  }
+
+  function matches(m) {
+    const q = $("q").value.trim().toLowerCase();
+    const fac = $("fFaction").value, sp = $("fSpecies").value, sz = $("fSize").value, st = $("fStatus").value;
+    if ($("fHideGone").checked && m.listed === false && st !== "No longer listed") return false;
+    if ($("fNew").checked && !m.is_new) return false;
+    if (fac && !(m.factions || []).includes(fac)) return false;
+    if (sp && !(m.species || "").split(" / ").includes(sp)) return false;
+    if (sz && m.size !== sz) return false;
+    if (st === "available" && !(m.status === "In stock" || m.status === "Low stock")) return false;
+    if (st && st !== "available" && m.status !== st) return false;
+    if (q) {
+      const hay = [m.name, m.title, m.species, factionText(m), m.size, ...(m.tags || [])].join(" ").toLowerCase();
+      if (!q.split(/\s+/).every((w) => hay.includes(w))) return false;
+    }
+    return true;
+  }
+
+  function cmp(a, b) {
+    if (a.is_new !== b.is_new) return a.is_new ? -1 : 1;            // New always on top
+    const k = sort.key;
+    let va, vb;
+    if (k === "price") { va = a.price ?? 1e9; vb = b.price ?? 1e9; }
+    else if (k === "size") { va = SIZE_ORDER[a.size] || 9; vb = SIZE_ORDER[b.size] || 9; }
+    else if (k === "status") { va = STATUS_ORDER[a.status] || 9; vb = STATUS_ORDER[b.status] || 9; }
+    else if (k === "faction") { va = factionText(a).toLowerCase(); vb = factionText(b).toLowerCase(); }
+    else { va = (a[k] || "").toLowerCase(); vb = (b[k] || "").toLowerCase(); }
+    if (va < vb) return -sort.dir;
+    if (va > vb) return sort.dir;
+    return (a.name || "").localeCompare(b.name || "");
+  }
+
+  function row(m) {
+    const cls = [m.is_new ? "is-new" : "", m.listed === false ? "gone" : ""].join(" ");
+    const statusCls = STATUS_CLASS[m.status] || "s-unk";
+    const qty = m.listed !== false && m.stock_qty > 0 ? `<span class="qty">${m.stock_qty} available</span>` : "";
+    const badges = (m.is_new ? `<span class="badge new">New</span>` : "") + (m.is_restocked ? `<span class="badge back">Back in stock</span>` : "");
+    const tags = (m.tags || []).length ? `<div class="tags">${m.tags.map((t) => `<span class="tag">${esc(t)}</span>`).join("")}</div>` : "";
+    const img = m.image
+      ? `<img class="thumb" loading="lazy" src="${esc(m.image)}" data-full="${esc(m.image_full || m.image)}" alt="${esc(m.name)}" referrerpolicy="no-referrer">`
+      : `<span class="thumb missing" aria-hidden="true"></span>`;
+    const metaLine = [factionText(m), m.species, m.size].filter(Boolean).map(esc).join(" · ");
+    return `<tr class="${cls}">
+      <td class="c-img">${img}</td>
+      <td class="c-name">${badges}<span class="name">${esc(m.name)}</span>${tags}</td>
+      <td class="c-meta">${metaLine}</td>
+      <td class="c-fac">${esc(factionText(m))}</td>
+      <td class="c-sp">${esc(m.species || "–")}</td>
+      <td class="c-size">${esc(m.size || "–")}</td>
+      <td class="c-price"><span class="price">${gbp(m.price)}${m.price_ex_vat != null ? `<small>${gbp(m.price_ex_vat)} ex VAT</small>` : ""}</span></td>
+      <td class="c-status"><span class="status ${statusCls}">${esc(m.status)}</span>${qty}</td>
+      <td class="c-link"><a href="${esc(m.url)}" target="_blank" rel="noopener">View&nbsp;↗</a></td>
+    </tr>`;
+  }
+
+  function renderSummary() {
+    const live = data.models.filter((m) => m.listed !== false);
+    const n = (f) => live.filter(f).length;
+    const items = [
+      ["fNew", "New", n((m) => m.is_new)],
+      ["available", "In stock", n((m) => m.status === "In stock" || m.status === "Low stock")],
+      ["Out of stock", "Out of stock", n((m) => m.status === "Out of stock")],
+    ];
+    $("summary").innerHTML = `<span class="pill" style="cursor:default"><b>${live.length}</b> models listed</span>` +
+      items.map(([k, label, c]) => {
+        const on = k === "fNew" ? $("fNew").checked : $("fStatus").value === k;
+        return `<button class="pill" type="button" data-pill="${esc(k)}" aria-pressed="${on}"><b>${c}</b> ${label}</button>`;
+      }).join("");
+  }
+
+  function render() {
+    const list = data.models.filter(matches).sort(cmp);
+    $("rows").innerHTML = list.length ? list.map(row).join("")
+      : `<tr><td colspan="9" class="empty">${data.models.length ? "No models match these filters." : "No data yet. Run the first poll to fill the table."}</td></tr>`;
+    $("count").textContent = `${list.length} of ${data.models.filter((m) => m.listed !== false).length} models`;
+    document.querySelectorAll("th[data-key]").forEach((th) => {
+      const on = th.dataset.key === sort.key;
+      on ? th.setAttribute("aria-sort", sort.dir > 0 ? "ascending" : "descending") : th.removeAttribute("aria-sort");
+      th.querySelector(".arr").textContent = on && sort.dir < 0 ? "▼" : "▲";
+    });
+    renderSummary();
+    ["q", "fFaction", "fSpecies", "fSize", "fStatus"].forEach((id) => store.set(id, $(id).value));
+    store.set("fNew", $("fNew").checked); store.set("fHideGone", $("fHideGone").checked); store.set("sort", sort);
+  }
+
+  // Events
+  ["q", "fFaction", "fSpecies", "fSize", "fStatus", "fNew", "fHideGone"].forEach((id) => $(id).addEventListener("input", render));
+  $("reset").addEventListener("click", () => {
+    $("q").value = ""; ["fFaction", "fSpecies", "fSize", "fStatus"].forEach((id) => ($(id).value = ""));
+    $("fNew").checked = false; $("fHideGone").checked = true; render();
+  });
+  document.querySelectorAll("th[data-key] button").forEach((b) => b.addEventListener("click", () => {
+    const key = b.parentElement.dataset.key;
+    sort = sort.key === key ? { key, dir: -sort.dir } : { key, dir: 1 };
+    render();
+  }));
+  $("summary").addEventListener("click", (e) => {
+    const p = e.target.closest("[data-pill]"); if (!p) return;
+    const k = p.dataset.pill;
+    if (k === "fNew") $("fNew").checked = !$("fNew").checked;
+    else $("fStatus").value = $("fStatus").value === k ? "" : k;
+    render();
+  });
+  $("rows").addEventListener("click", (e) => {
+    const img = e.target.closest("img.thumb"); if (!img) return;
+    $("zoomImg").src = img.dataset.full; $("zoomImg").alt = img.alt; $("zoomCap").textContent = img.alt;
+    $("zoom").showModal();
+  });
+  $("rows").addEventListener("error", (e) => {
+    const img = e.target;
+    if (img.tagName !== "IMG") return;
+    if (img.dataset.full && img.src !== img.dataset.full && !img.dataset.retried) { img.dataset.retried = 1; img.src = img.dataset.full; return; }
+    const ph = document.createElement("span"); ph.className = "thumb missing"; ph.title = "Image unavailable"; img.replaceWith(ph);
+  }, true);
+  $("zoomClose").addEventListener("click", () => $("zoom").close());
+  $("zoom").addEventListener("click", (e) => { if (e.target === $("zoom")) $("zoom").close(); });
+
+  fetch("data/models.json?v=" + Date.now(), { cache: "no-store" })
+    .then((r) => (r.ok ? r.json() : { models: [] }))
+    .catch(() => ({ models: [] }))
+    .then((d) => {
+      data = d && Array.isArray(d.models) ? d : { models: [] };
+      if (data.source) $("src").href = data.source;
+      fillFilters(); renderMeta(); render();
+    });
+})();
+</script>
+</body>
+</html>

@@ -38,12 +38,32 @@ class FakeResp:
     def raise_for_status(self): pass
 
 
+EMPTY = "<html><body><div class='DataViewCellOut'></div></body></html>"
+
+# Starter band product page markup copied from the live store (Oct 2026).
+BAND_PAGE = """<div class="long-description"><div>Five metal miniatures, three metal Objective markers, and a set of
+polyhedral dice, ideal to use as a first Band for the Burrows and Badgers Skirmish Miniatures Game.</div>
+<div>Contains:</div><div>BB214<span> </span>Otter Knight 1</div><div>BB215<span> </span>Yorkshire Terrier Knight</div>
+<div>BB216<span> </span>Hedgehog Magic User</div><div>Acc15-a<span> </span>Objectives</div><div>Polyhedral dice</div>
+<div>SUPPLIED UNPAINTED.<br></div>&nbsp;Please note: Price is exclusive of VAT.<br></div>"""
+
+
 class FakeSession:
-    def __init__(self, pages): self.pages, self.calls, self.headers = pages, [], {}
+    """pages: {page_no: html} for Miniatures, or {category_id: {page_no: html}}."""
+    def __init__(self, pages, products=None):
+        self.pages, self.products, self.calls, self.headers = pages, products or {}, [], {}
+
     def get(self, url, timeout=None):
+        if "/p/" in url:
+            pid = url.split("/p/")[1].split("/")[0]
+            return FakeResp(self.products.get(pid, "<html></html>"))
+        cid = int(url.split("categoryId=")[1].split("&")[0])
         n = int(url.split("page=")[1].split("&")[0])
-        self.calls.append(n)
-        return FakeResp(self.pages.get(n, self.pages[max(self.pages)]))  # site repeats last page
+        self.calls.append((cid, n))
+        cat = self.pages.get(cid) if isinstance(next(iter(self.pages)), int) and cid in self.pages and isinstance(self.pages[cid], dict) else None
+        if cat is None:
+            cat = self.pages if cid == 4555401 and not isinstance(next(iter(self.pages.values())), dict) else {1: EMPTY}
+        return FakeResp(cat.get(n, cat[max(cat)]))  # site repeats last page
 
 
 class ParseTitle(unittest.TestCase):
@@ -65,6 +85,11 @@ class ParseTitle(unittest.TestCase):
         self.assertEqual(r["tags"], ["Rare Beast"])
         r = scrape.parse_title("Black Rat Rogue (Medium, Black rat)")
         self.assertEqual(r["species"], "Black Rat")
+
+    def test_multiple_sizes_and_ghasts(self):
+        r = scrape.parse_title("Mist-ghasts 2 - Mouse, Squirrel & Bird (Small, Medium, Ghast, Undead, Mouse, Squirrel, Bird)")
+        self.assertEqual((r["size"], r["species"], r["factions"]), ("Small / Medium", "Mouse / Squirrel / Bird", ["Undead"]))
+        self.assertEqual(r["tags"], ["Mist Ghast"])
 
     def test_no_tags(self):
         r = scrape.parse_title("Burrows & Badgers Starter Band A")
@@ -88,6 +113,25 @@ class ParseListing(unittest.TestCase):
         self.assertEqual(b["price"], 5.75)
 
 
+class StarterBands(unittest.TestCase):
+    def test_contents(self):
+        c = scrape.parse_contents(BAND_PAGE)
+        self.assertEqual([x["name"] for x in c],
+                         ["Otter Knight 1", "Yorkshire Terrier Knight", "Hedgehog Magic User", "Objectives", "Polyhedral dice"])
+        self.assertEqual(c[0]["code"], "BB214")
+        self.assertEqual(c[3]["code"], "Acc15-a")
+        self.assertIsNone(c[4]["code"])
+
+    def test_inline_contents(self):
+        html = '<div class="long-description">Five minis. Contains: BB219 Fox Hunter BB220 Cat Hunter Acc14 Objectives SUPPLIED UNPAINTED.</div>'
+        self.assertEqual([x["name"] for x in scrape.parse_contents(html)], ["Fox Hunter", "Cat Hunter", "Objectives"])
+
+    def test_link(self):
+        c = [{"name": "Otter Knight 1"}, {"name": "Rabbit Squire"}, {"name": "Objectives"}]
+        scrape.link_contents(c, [{"id": "1", "name": "Otter Knight"}, {"id": "2", "name": "Rabbit Squire"}])
+        self.assertEqual([x["model_id"] for x in c], ["1", "2", None])
+
+
 class EndToEnd(unittest.TestCase):
     def setUp(self):
         self.tmp = tempfile.TemporaryDirectory()
@@ -98,9 +142,9 @@ class EndToEnd(unittest.TestCase):
         self.tmp.cleanup()
         os.environ.pop("BB_NOW", None)
 
-    def run_at(self, when, trigger, pages):
+    def run_at(self, when, trigger, pages, products=None):
         os.environ["BB_NOW"] = when
-        scrape.requests.Session = lambda: FakeSession(pages)
+        scrape.requests.Session = lambda: FakeSession(pages, products)
         sys.argv = ["scrape.py", "--trigger", trigger]
         return scrape.main()
 
@@ -161,6 +205,32 @@ class EndToEnd(unittest.TestCase):
         s_before = scrape.DATA_FILE.read_text()
         self.run_at("2026-11-13T17:30:00+00:00", "scheduled", p3)
         self.assertEqual(s_before, scrape.DATA_FILE.read_text())
+
+    def test_sections_and_new_category_baseline(self):
+        mini = {1: page([item("1", "A (Small, Mouse)"), item("9363670", "Burrows & Badgers Starter Band A", qty=0)], 1)}
+        # State from before extras were tracked: Miniatures only
+        saved, scrape.CATEGORIES = scrape.CATEGORIES, scrape.CATEGORIES[:1]
+        self.run_at("2026-10-09T17:30:00+00:00", "scheduled", {4555401: mini})
+        scrape.CATEGORIES = saved
+        rules = {1: page([item("9253895", "Burrows & Badgers 2nd Edition Hardback Rulebook", price="25.00", vat="0.00"),
+                          item("9363670", "Burrows & Badgers Starter Band A", qty=0)], 1)}
+        acc = {1: page([item("9583388", "Burrows & Badgers Roster Pad")], 1)}
+        self.run_at("2026-10-14T09:00:00+00:00", "manual",
+                    {4555401: mini, 4555400: rules, 4562767: acc}, {"9363670": BAND_PAGE})
+        by = {m["id"]: m for m in self.state()["models"]}
+        self.assertEqual(by["1"]["section"], "models")
+        self.assertEqual(by["9363670"]["section"], "extras")
+        self.assertEqual(by["9363670"]["categories"], ["Miniatures", "Game Rules & Starter Bands"])
+        self.assertEqual(len(by["9363670"]["contents"]), 5)
+        self.assertEqual(by["9253895"]["section"], "extras")
+        # Newly tracked categories are a baseline, not "New"
+        self.assertFalse(by["9253895"]["is_new"] or by["9583388"]["is_new"])
+        # ...but a genuinely new accessory later is
+        acc2 = {1: page([item("9583388", "Burrows & Badgers Roster Pad"), item("9999999", "Dice Bag")], 1)}
+        self.run_at("2026-10-14T11:00:00+00:00", "manual",
+                    {4555401: mini, 4555400: rules, 4562767: acc2}, {"9363670": BAND_PAGE})
+        by = {m["id"]: m for m in self.state()["models"]}
+        self.assertTrue(by["9999999"]["is_new"])
 
     def test_abort_on_collapse(self):
         many = {1: page([item(str(i), f"M{i} (Small, Mouse)") for i in range(1, 41)], 1)}

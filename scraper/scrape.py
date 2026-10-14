@@ -32,7 +32,14 @@ from bs4 import BeautifulSoup
 
 # --------------------------------------------------------------------------- config
 BASE = "https://www.oathswornminiatures.co.uk"
-CATEGORY_IDS = [4555401]  # Burrows & Badgers > Miniatures
+# (category id, section, label). "models" = the main table; "extras" = the second tab.
+# An item listed in several categories goes to "extras" if any of them is an extras category.
+CATEGORIES = [
+    (4555401, "models", "Miniatures"),
+    (4555400, "extras", "Game Rules & Starter Bands"),
+    (4562767, "extras", "Supplements & Accessories"),
+]
+PRODUCT_URL = BASE + "/p/{pid}/x.html"
 LISTING_URL = BASE + "/Listing/Category/?categoryId={cid}&page={page}&sortItem=0&sortDirection=0"
 DATA_FILE = Path(__file__).resolve().parent.parent / "docs" / "data" / "models.json"
 
@@ -81,6 +88,14 @@ FACTIONS = {
     "arcane conclave": "Arcane Conclave",
 }
 NO_FACTION = "Unaligned"
+
+# Tags that are never the species; shown as small labels instead.
+NON_SPECIES = {
+    "ghast": "Mist Ghast",
+    "stable ghast": "Stable Ghast",
+    "rare beast": "Rare Beast",
+    "magic user": "Magic User",
+}
 
 # Tags that can appear as a second species (e.g. "Medium, Stoat, Weasel").
 SPECIES = {
@@ -137,11 +152,15 @@ def parse_title(title: str) -> dict:
     name = title[: m.start()].strip() if m else title
     tags = [t.strip() for t in m.group(1).split(",") if t.strip()] if m else []
 
-    size, species, factions, extra = None, [], [], []
+    sizes, species, factions, extra = [], [], [], []
     for tag in tags:
         low = tag.lower()
-        if low in SIZES and size is None:
-            size = SIZES[low]
+        if low in SIZES:
+            if SIZES[low] not in sizes:
+                sizes.append(SIZES[low])
+        elif low in NON_SPECIES:
+            if NON_SPECIES[low] not in extra:
+                extra.append(NON_SPECIES[low])
         elif low in FACTIONS:
             f = FACTIONS[low]
             if f not in factions:
@@ -154,7 +173,7 @@ def parse_title(title: str) -> dict:
             extra.append(title_case(tag))
     return {
         "name": name,
-        "size": size,
+        "size": " / ".join(sorted(sizes, key=list(SIZES.values()).index)) or None,
         "species": " / ".join(species) or None,
         "factions": factions or [NO_FACTION],
         "tags": extra,
@@ -228,34 +247,108 @@ def parse_listing(html: str) -> tuple[list[dict], int]:
     return items, max(pages, default=1)
 
 
+def fetch(session: requests.Session, url: str) -> str:
+    for attempt in range(3):
+        try:
+            resp = session.get(url, timeout=30)
+            resp.raise_for_status()
+            return resp.text
+        except requests.RequestException as exc:
+            print(f"  retry {attempt + 1} for {url}: {exc}")
+            time.sleep(5 * (attempt + 1))
+    raise RuntimeError(f"Could not fetch {url}")
+
+
+CODE_RE = re.compile(r"^(?:[A-Z][A-Za-z]{1,3}\d+[A-Za-z]?(?:-[a-z0-9]+)?)\b")
+STOP_RE = re.compile(r"supplied unpainted|please note|price is exclusive", re.I)
+
+
+def parse_contents(html: str) -> list[dict]:
+    """Starter band product page -> [{code, name}] from the 'Contains:' list."""
+    soup = BeautifulSoup(html, "html.parser")
+    box = soup.select_one(".long-description") or soup.select_one(".listing-description")
+    if not box:
+        return []
+    for tag in box.find_all(["div", "p", "li", "br", "tr", "h1", "h2", "h3", "h4"]):
+        tag.insert_before("\n")
+        tag.insert_after("\n")
+    lines = [re.sub(r"\s+", " ", ln).strip() for ln in box.get_text().split("\n")]
+    lines = [ln for ln in lines if ln]
+    # Find the "Contains" marker; it may be on its own line or inline ("... Contains: BB214 ...").
+    marker = re.compile(r"\bcontains\b\s*:?\s*", re.I)
+    idx = next((i for i, ln in enumerate(lines) if marker.search(ln)), None)
+    if idx is None:
+        return []
+    rest = lines[idx][marker.search(lines[idx]).end():]
+    tail = ([rest] if rest else []) + lines[idx + 1:]
+    if len(tail) == 1:  # everything on one line: split before each product code
+        tail = [t.strip() for t in re.split(r"\s(?=[A-Z][A-Za-z]{1,3}\d+[A-Za-z]?(?:-[a-z0-9]+)?\s)", tail[0]) if t.strip()]
+    out = []
+    for ln in tail:
+        if STOP_RE.search(ln):
+            ln = STOP_RE.split(ln)[0].strip(" .")
+            if ln:
+                out.append(ln)
+            break
+        out.append(ln)
+    items = []
+    for ln in out:
+        m = CODE_RE.match(ln)
+        code = m.group(0) if m else None
+        name = ln[m.end():].strip(" :-") if m else ln
+        if name:
+            items.append({"code": code, "name": name})
+    return items
+
+
+def norm(s: str) -> str:
+    return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
+
+
+def link_contents(contents: list[dict], models: list[dict]) -> None:
+    """Point each starter-band item at the matching model in the Models table, if any."""
+    by_name = {}
+    for m in models:
+        by_name.setdefault(norm(m["name"]), m)
+    for c in contents:
+        n = norm(c["name"])
+        hit = by_name.get(n) or by_name.get(re.sub(r" 1$", "", n))
+        c["model_id"] = hit["id"] if hit else None
+
+
 def scrape(session: requests.Session) -> list[dict]:
     seen: dict[str, dict] = {}
-    for cid in CATEGORY_IDS:
-        page, last = 1, 1
+    for cid, section, label in CATEGORIES:
+        page, last, cat_ids = 1, 1, set()
         while page <= min(last, MAX_PAGES):
-            url = LISTING_URL.format(cid=cid, page=page)
-            resp = None
-            for attempt in range(3):
-                try:
-                    resp = session.get(url, timeout=30)
-                    resp.raise_for_status()
-                    break
-                except requests.RequestException as exc:
-                    print(f"  retry {attempt + 1} for page {page}: {exc}")
-                    time.sleep(5 * (attempt + 1))
-            else:
-                raise RuntimeError(f"Could not fetch {url}")
-            items, max_page = parse_listing(resp.text)
+            items, max_page = parse_listing(fetch(session, LISTING_URL.format(cid=cid, page=page)))
             last = max(last, max_page)
-            fresh = [i for i in items if i["id"] not in seen]
-            print(f"  category {cid} page {page}/{last}: {len(items)} items ({len(fresh)} new to this run)")
+            fresh = [i for i in items if i["id"] not in cat_ids]
+            print(f"  {label} page {page}/{last}: {len(items)} items")
             if not fresh:
                 break  # past the end, or the site repeated a page
             for i in fresh:
-                seen[i["id"]] = i
+                cat_ids.add(i["id"])
+                rec = seen.setdefault(i["id"], {**i, "section": section, "categories": []})
+                rec["categories"].append(label)
+                if section == "extras":
+                    rec["section"] = "extras"
             page += 1
             time.sleep(REQUEST_DELAY_S)
-    return list(seen.values())
+
+    items = list(seen.values())
+    models = [i for i in items if i["section"] == "models"]
+    for i in items:
+        if "starter band" in i["title"].lower():
+            try:
+                i["contents"] = parse_contents(fetch(session, PRODUCT_URL.format(pid=i["id"])))
+            except RuntimeError as exc:
+                print(f"  could not read contents of {i['title']}: {exc}")
+                i["contents"] = []
+            link_contents(i["contents"], models)
+            print(f"  {i['title']}: {len(i['contents'])} items in the box")
+            time.sleep(REQUEST_DELAY_S)
+    return items
 
 
 # --------------------------------------------------------------------------- state
@@ -304,13 +397,18 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
     cutoff = friday_polls[-2] if len(friday_polls) >= 2 else friday_polls[-1]
     cutoff_dt = parse_iso(cutoff)
 
+    # Categories added to the scraper since the last poll: their items are a baseline, not "New".
+    tracked_before = set(state.get("tracked_categories") or (["Miniatures"] if old else []))
+    added_cats = {label for _, _, label in CATEGORIES} - tracked_before
+
     models, new_count, restocked = [], 0, 0
     current_ids = set()
     for item in scraped:
         current_ids.add(item["id"])
         prev = old.get(item["id"], {})
         rec = dict(item)
-        rec["first_seen"] = prev.get("first_seen", stamp)
+        baseline = not prev and old and set(item.get("categories", [])) <= added_cats
+        rec["first_seen"] = prev.get("first_seen") or (cutoff if baseline else stamp)
         rec["last_seen"] = stamp
         rec["listed"] = True
         rec["restocked_at"] = prev.get("restocked_at")
@@ -339,13 +437,14 @@ def merge(state: dict, scraped: list[dict], trigger: str, now: datetime) -> tupl
     }])[-50:]
 
     return {
-        "source": BASE + "/c/4555401/1/miniatures.html",
+        "source": BASE + "/c/4553237/1/burrows-badgers.html",
         "last_poll": stamp,
         "last_poll_trigger": trigger,
         "seed_poll": state.get("seed_poll", stamp),
         "new_since": cutoff,
         "manual_cooldown_minutes": int(MANUAL_COOLDOWN.total_seconds() // 60),
         "friday_polls": friday_polls,
+        "tracked_categories": [label for _, _, label in CATEGORIES],
         "polls": polls,
         "models": models,
     }, new_count, restocked, gone
@@ -376,7 +475,12 @@ def main() -> int:
 
     new_state, new_count, restocked, gone = merge(state, scraped, args.trigger, now)
     save_state(new_state)
-    summary(f"Found **{len(scraped)}** models - {new_count} new, {restocked} back in stock, {gone} no longer listed.")
+    n_models = sum(1 for i in scraped if i["section"] == "models")
+    bands = [i for i in scraped if i.get("contents") is not None]
+    summary(f"Found **{n_models}** models and **{len(scraped) - n_models}** rules/bands/accessories - "
+            f"{new_count} new, {restocked} back in stock, {gone} no longer listed.")
+    for b in bands:
+        summary(f"* {b['name']}: " + (", ".join(c['name'] for c in b['contents']) or "contents not found"))
     return 0
 
 

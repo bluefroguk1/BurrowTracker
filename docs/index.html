@@ -115,6 +115,43 @@ tr.gone td { opacity: .6; }
 .price small { display: block; font-weight: 400; color: var(--ink-3); font-size: 12px; }
 .empty { padding: 48px 16px; text-align: center; color: var(--ink-2); }
 
+.tabs { display: flex; gap: 4px; margin-top: 18px; overflow-x: auto; }
+.tab { all: unset; cursor: pointer; padding: 10px 16px 11px; border-radius: 10px 10px 0 0; font: 600 14px Inter, sans-serif; color: var(--ink-2);
+  border: 1px solid transparent; border-bottom: 0; white-space: nowrap; display: inline-flex; gap: 8px; align-items: center; }
+.tab:hover { color: var(--ink); }
+.tab[aria-selected="true"] { background: var(--bg); color: var(--ink); border-color: var(--line); margin-bottom: -1px; }
+.tab:focus-visible { outline: 2px solid var(--focus); }
+.tab .n { font-weight: 500; color: var(--ink-3); }
+.tab .dot-new { background: var(--new); color: #fff; font-size: 10.5px; font-weight: 700; padding: 1px 6px; border-radius: 999px; letter-spacing: .3px; }
+header { padding-bottom: 0; }
+.head { padding-bottom: 4px; }
+
+.xfilters { display: flex; flex-wrap: wrap; gap: 10px; align-items: flex-end; padding-top: 14px; padding-bottom: 12px; }
+.xbar { border-bottom: 1px solid var(--line); }
+.xfilters label.f { flex: 1 1 180px; }
+.xfilters label.f.wide { flex: 2 1 260px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; margin: 16px 0 40px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; box-shadow: var(--shadow); display: flex; flex-direction: column; overflow: hidden; }
+.card.is-new { box-shadow: inset 0 3px 0 var(--new), var(--shadow); }
+.card.band { grid-column: span 2; }
+.card .top { display: grid; grid-template-columns: 96px 1fr; gap: 14px; padding: 14px; }
+.card .thumb { width: 96px; height: 96px; }
+.card .cat { font-size: 12px; color: var(--ink-3); text-transform: uppercase; letter-spacing: .4px; font-weight: 600; margin-bottom: 2px; }
+.card .row { display: flex; flex-wrap: wrap; gap: 8px 12px; align-items: center; margin-top: 8px; }
+.box { border-top: 1px solid var(--line); background: var(--surface-2); padding: 12px 14px 14px; }
+.box h3 { margin: 0 0 8px; font: 600 12px Inter, sans-serif; text-transform: uppercase; letter-spacing: .4px; color: var(--ink-3); }
+.box ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 6px; }
+.box li { display: grid; grid-template-columns: 40px 1fr; gap: 10px; align-items: center; background: var(--surface); border: 1px solid var(--line); border-radius: 8px; padding: 6px 8px; min-height: 52px; }
+.box li .mini { width: 40px; height: 40px; border-radius: 6px; object-fit: contain; background: var(--surface-2); display: block; }
+.box li .mini.ph { display: grid; place-items: center; font-size: 18px; color: var(--ink-3); }
+.box li .nm { font-weight: 600; font-size: 14px; line-height: 1.25; }
+.box li .sm { font-size: 12px; color: var(--ink-3); }
+.box li .sm .status { font-size: 11px; padding: 1px 7px; margin-left: 2px; }
+.box .note { font-size: 12px; color: var(--ink-3); margin-top: 8px; }
+.tab .short { display: none; }
+@media (max-width: 640px) { .tab .long { display: none; } .tab .short { display: inline; } .tab { padding: 10px 12px 11px; }
+  .card.band { grid-column: auto; } .grid { grid-template-columns: 1fr; } }
+
 dialog { border: 0; padding: 0; border-radius: 12px; background: var(--surface); color: var(--ink); max-width: min(92vw, 720px); box-shadow: 0 10px 40px rgba(0,0,0,.35); }
 dialog::backdrop { background: rgba(20,14,6,.7); }
 dialog img { display: block; max-width: 100%; max-height: 75vh; margin: 0 auto; background: #fff; }
@@ -151,14 +188,19 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
   <div class="wrap head">
     <div>
       <h1>Burrows &amp; Badgers Models</h1>
-      <p class="sub">Every miniature in the Oathsworn Miniatures store, in one searchable list. Updated every Friday at 6:30pm, just after the store restocks.</p>
+      <p class="sub">Every miniature, rulebook, starter band and accessory in the Oathsworn Miniatures store, in one searchable list. Updated every Friday at 6:30pm, just after the store restocks.</p>
     </div>
     <div class="meta" id="meta">
       <div>Loading…</div>
     </div>
   </div>
+  <nav class="wrap tabs" role="tablist" aria-label="Sections">
+    <button class="tab" role="tab" id="tab-models" aria-controls="view-models" data-view="models">Models <span class="n" id="nModels"></span></button>
+    <button class="tab" role="tab" id="tab-extras" aria-controls="view-extras" data-view="extras"><span class="long">Rules, Starter Bands &amp; Accessories</span><span class="short">Rules &amp; Extras</span> <span class="n" id="nExtras"></span></button>
+  </nav>
 </header>
 
+<section id="view-models" role="tabpanel" aria-labelledby="tab-models">
 <div class="filters">
   <div class="wrap">
     <div class="frow">
@@ -202,6 +244,21 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     <tbody id="rows"></tbody>
   </table>
 </main>
+</section>
+
+<section id="view-extras" role="tabpanel" aria-labelledby="tab-extras" hidden>
+  <div class="xbar"><div class="wrap xfilters">
+    <label class="f wide">Search<input type="search" id="xq" placeholder="Rulebook, dice, starter band…" autocomplete="off"></label>
+    <label class="f">Category<select id="xCat"><option value="">All categories</option></select></label>
+    <label class="f">Stock<select id="xStatus">
+      <option value="">Any stock</option>
+      <option value="available">In stock (incl. low)</option>
+      <option value="Out of stock">Out of stock</option>
+    </select></label>
+    <span class="count" id="xcount" aria-live="polite"></span>
+  </div></div>
+  <main class="wrap"><div class="grid" id="xgrid"></div></main>
+</section>
 
 <footer class="wrap">
   Data from <a id="src" href="https://www.oathswornminiatures.co.uk/c/4553237/1/burrows-badgers.html" rel="noopener">oathswornminiatures.co.uk</a>.
@@ -228,6 +285,10 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
   };
 
   let data = { models: [] };
+  let extras = [];
+  let byId = {};
+  const isExtra = (m) => m.section === "extras" || (!m.section && /starter band/i.test(m.title || ""));
+  const isBand = (m) => Array.isArray(m.contents) || /starter band/i.test(m.title || "");
   let sort = store.get("sort") || { key: "name", dir: 1 };
 
   function repoSlug() {
@@ -411,13 +472,125 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
   $("zoomClose").addEventListener("click", () => $("zoom").close());
   $("zoom").addEventListener("click", (e) => { if (e.target === $("zoom")) $("zoom").close(); });
 
+
+  // ---------------------------------------------------------------- extras tab
+  function statusPill(m) {
+    return `<span class="status ${STATUS_CLASS[m.status] || "s-unk"}">${esc(m.status)}</span>`;
+  }
+  function categoryOf(m) {
+    const cats = (m.categories || []).filter((c) => c !== "Miniatures");
+    if (cats.length) return cats[0];
+    return isBand(m) ? "Game Rules & Starter Bands" : "Supplements & Accessories";
+  }
+  function fillExtras() {
+    const sel = $("xCat"); sel.length = 1;
+    [...new Set(extras.map(categoryOf))].sort().forEach((c) => sel.add(new Option(c, c)));
+    const c = store.get("xCat"); if (c && [...sel.options].some((o) => o.value === c)) sel.value = c;
+    $("xq").value = store.get("xq") || ""; $("xStatus").value = store.get("xStatus") || "";
+  }
+  function bandBox(m) {
+    const items = m.contents || [];
+    if (!items.length) return `<div class="box"><h3>In the box</h3><div class="note">Contents will appear after the next poll. <a href="${esc(m.url)}" target="_blank" rel="noopener">See the store page ↗</a></div></div>`;
+    const lis = items.map((c) => {
+      const mm = c.model_id ? byId[c.model_id] : null;
+      const pic = mm && mm.image
+        ? `<img class="mini" loading="lazy" src="${esc(mm.image)}" alt="" referrerpolicy="no-referrer">`
+        : `<span class="mini ph" aria-hidden="true">${/dice/i.test(c.name) ? "⚄" : /objective/i.test(c.name) ? "◆" : "•"}</span>`;
+      const name = mm ? `<a href="${esc(mm.url)}" target="_blank" rel="noopener">${esc(c.name)}</a>` : esc(c.name);
+      const sub = mm
+        ? `${esc([mm.species, mm.size].filter(Boolean).join(" · "))} · also sold alone ${gbp(mm.price)} ${statusPill(mm)}`
+        : esc([c.code, c.code && /^BB/i.test(c.code) ? "only in this band" : ""].filter(Boolean).join(" · "));
+      return `<li>${pic}<div><div class="nm">${name}</div><div class="sm">${sub}</div></div></li>`;
+    }).join("");
+    const minis = items.filter((c) => c.model_id).length;
+    return `<div class="box"><h3>In the box · ${items.length} items${minis ? `, ${minis} sold separately too` : ""}</h3><ul>${lis}</ul></div>`;
+  }
+  function card(m) {
+    const band = isBand(m);
+    const img = m.image
+      ? `<img class="thumb" loading="lazy" src="${esc(m.image)}" data-full="${esc(m.image_full || m.image)}" alt="${esc(m.name)}" referrerpolicy="no-referrer">`
+      : `<span class="thumb missing" aria-hidden="true"></span>`;
+    const badges = (m.is_new ? `<span class="badge new">New</span>` : "") + (m.is_restocked ? `<span class="badge back">Back in stock</span>` : "");
+    const qty = m.listed !== false && m.stock_qty > 0 ? `<span class="qty" style="display:inline;margin:0">${m.stock_qty} available</span>` : "";
+    return `<article class="card ${band ? "band" : ""} ${m.is_new ? "is-new" : ""}">
+      <div class="top">${img}<div>
+        <div class="cat">${esc(categoryOf(m))}</div>
+        <div>${badges}<span class="name">${esc(m.name)}</span></div>
+        <div class="row"><span class="price">${gbp(m.price)}${m.price_ex_vat != null && m.price !== m.price_ex_vat ? `<small>${gbp(m.price_ex_vat)} ex VAT</small>` : ""}</span>
+          ${statusPill(m)} ${qty}
+          <a href="${esc(m.url)}" target="_blank" rel="noopener">View ↗</a></div>
+      </div></div>
+      ${band ? bandBox(m) : ""}
+    </article>`;
+  }
+  function renderExtras() {
+    const q = $("xq").value.trim().toLowerCase(), cat = $("xCat").value, st = $("xStatus").value;
+    const list = extras.filter((m) => {
+      if (m.listed === false) return false;
+      if (cat && categoryOf(m) !== cat) return false;
+      if (st === "available" && !(m.status === "In stock" || m.status === "Low stock")) return false;
+      if (st === "Out of stock" && m.status !== "Out of stock") return false;
+      if (q) {
+        const hay = [m.name, m.title, categoryOf(m), ...(m.contents || []).map((c) => c.name)].join(" ").toLowerCase();
+        if (!q.split(/\s+/).every((w) => hay.includes(w))) return false;
+      }
+      return true;
+    }).sort((a, b) => (a.is_new !== b.is_new ? (a.is_new ? -1 : 1) : (isBand(b) - isBand(a)) || categoryOf(a).localeCompare(categoryOf(b)) || a.name.localeCompare(b.name)));
+    $("xgrid").innerHTML = list.length ? list.map(card).join("")
+      : `<div class="empty" style="grid-column:1/-1">${extras.length ? "Nothing matches these filters." : "No rules or accessories yet. They'll appear after the next poll."}</div>`;
+    $("xcount").textContent = `${list.length} of ${extras.filter((m) => m.listed !== false).length} items`;
+    ["xq", "xCat", "xStatus"].forEach((id) => store.set(id, $(id).value));
+  }
+  function renderTabs() {
+    const live = (arr) => arr.filter((m) => m.listed !== false);
+    const tag = (arr) => { const n = live(arr).filter((m) => m.is_new).length; return n ? ` <span class="dot-new">${n} new</span>` : ""; };
+    $("nModels").innerHTML = `(${live(data.models).length})${tag(data.models)}`;
+    $("nExtras").innerHTML = `(${live(extras).length})${tag(extras)}`;
+  }
+  function currentView() {
+    const h = location.hash.replace("#", "");
+    return h === "extras" || h === "models" ? h : (store.get("view") || "models");
+  }
+  function showView(v) {
+    document.querySelectorAll(".tab").forEach((t) => {
+      const on = t.dataset.view === v;
+      t.setAttribute("aria-selected", on); t.tabIndex = on ? 0 : -1;
+      $("view-" + t.dataset.view).hidden = !on;
+    });
+    store.set("view", v);
+    if (location.hash !== "#" + v) history.replaceState(null, "", "#" + v);
+  }
+  document.querySelectorAll(".tab").forEach((t) => t.addEventListener("click", () => showView(t.dataset.view)));
+  document.querySelector(".tabs").addEventListener("keydown", (e) => {
+    if (e.key !== "ArrowRight" && e.key !== "ArrowLeft") return;
+    const tabs = [...document.querySelectorAll(".tab")];
+    const i = tabs.findIndex((t) => t.getAttribute("aria-selected") === "true");
+    const n = tabs[(i + (e.key === "ArrowRight" ? 1 : tabs.length - 1)) % tabs.length];
+    showView(n.dataset.view); n.focus();
+  });
+  window.addEventListener("hashchange", () => showView(currentView()));
+  ["xq", "xCat", "xStatus"].forEach((id) => $(id).addEventListener("input", renderExtras));
+  $("xgrid").addEventListener("click", (e) => {
+    const img = e.target.closest("img.thumb"); if (!img) return;
+    $("zoomImg").src = img.dataset.full; $("zoomImg").alt = img.alt; $("zoomCap").textContent = img.alt;
+    $("zoom").showModal();
+  });
+  $("xgrid").addEventListener("error", (e) => {
+    const img = e.target; if (img.tagName !== "IMG") return;
+    const ph = document.createElement("span"); ph.className = img.className.includes("mini") ? "mini ph" : "thumb missing"; img.replaceWith(ph);
+  }, true);
+
   fetch("data/models.json?v=" + Date.now(), { cache: "no-store" })
     .then((r) => (r.ok ? r.json() : { models: [] }))
     .catch(() => ({ models: [] }))
     .then((d) => {
       data = d && Array.isArray(d.models) ? d : { models: [] };
+      const all = data.models;
+      byId = Object.fromEntries(all.map((m) => [m.id, m]));
+      extras = all.filter(isExtra);
+      data.models = all.filter((m) => !isExtra(m));
       if (data.source) $("src").href = data.source;
-      fillFilters(); renderMeta(); render();
+      fillFilters(); renderMeta(); render(); fillExtras(); renderExtras(); renderTabs(); showView(currentView());
     });
 })();
 </script>

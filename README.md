@@ -4,6 +4,10 @@ A filterable list of every **Burrows & Badgers** miniature in the
 [Oathsworn Miniatures store](https://www.oathswornminiatures.co.uk/c/4553237/1/burrows-badgers.html),
 showing faction, species, size, image, price (inc. VAT), stock level and a link to each model.
 
+A second tab, **Rules, Starter Bands & Accessories**, covers the *Game Rules & Starter Bands* and
+*Supplements & Accessories* store categories. Each starter band lists what's in the box, read from its
+store page; any item that's also sold on its own links to that model.
+
 Live page: **https://bluefroguk1.github.io/BurrowTracker/**
 
 ## How it works
@@ -30,7 +34,7 @@ Live page: **https://bluefroguk1.github.io/BurrowTracker/**
 * **Safety check:** if a poll finds fewer than half the models seen last time (site down or layout
   changed), the data is left unchanged and the run is marked as failed.
 
-The scraper only reads the 19 or so listing pages, one per second, so a poll takes about 30 seconds.
+The scraper reads about 21 listing pages plus the two starter band pages, one request per second, so a poll takes under a minute.
 
 ## One-time setup
 
@@ -43,6 +47,8 @@ The scraper only reads the 19 or so listing pages, one per second, so a poll tak
 
 ## Tweaking
 
+* Store categories scraped: `CATEGORIES` in `scraper/scrape.py` (each one goes to the "models" or "extras" tab).
+  When you add a category, its existing items count as the baseline, so they aren't all marked New.
 * Faction names: edit the `FACTIONS` map in `scraper/scrape.py`. The store's tags become factions;
   models with no faction tag show as "Unaligned".
 * Low-stock threshold: `LOW_STOCK` in `scraper/scrape.py`.

@@ -54,6 +54,33 @@ Live page: **https://bluefroguk1.github.io/BurrowTracker/**
    This first run takes a baseline snapshot, so nothing is marked New yet.
    The page is live a minute or two later.
 
+## "Check the store now" button (no GitHub account needed)
+
+Starting a poll needs a GitHub token, which can't go in a public web page, so the button talks to a tiny
+relay on Cloudflare Workers (free plan is plenty). The relay holds the token as a secret, refuses requests
+that don't come from the tracker page, and enforces the one-check-per-hour limit. The code is
+`worker/poll-worker.js`. Until it's set up, the button links to the GitHub Actions page instead.
+
+1. **Create a GitHub token:** https://github.com/settings/personal-access-tokens/new
+   * Name: `BurrowTracker poll button`; Expiration: the longest offered (set yourself a reminder)
+   * Repository access: **Only select repositories** → `BurrowTracker`
+   * Permissions → Repository permissions → **Actions: Read and write** (nothing else)
+   * Generate, and copy the token.
+2. **Create the Worker:** https://dash.cloudflare.com → sign up / log in → **Workers & Pages** → **Create** →
+   **Create Worker** (Hello World) → name it `burrowtracker-poll` → **Deploy** → **Edit code** →
+   replace everything with the contents of `worker/poll-worker.js` → **Deploy**.
+3. **Settings → Variables and Secrets** on the Worker → add:
+   | Type | Name | Value |
+   |---|---|---|
+   | Text | `REPO` | `bluefroguk1/BurrowTracker` |
+   | Text | `SITE_ORIGIN` | `https://bluefroguk1.github.io` |
+   | Text | `DATA_URL` | `https://bluefroguk1.github.io/BurrowTracker/data/models.json` |
+   | Secret | `GITHUB_TOKEN` | the token from step 1 |
+4. Copy the Worker's address (like `https://burrowtracker-poll.<you>.workers.dev`) and put it in
+   `docs/index.html`: `<meta name="poll-endpoint" content="https://burrowtracker-poll.<you>.workers.dev">`.
+
+(Command-line alternative: `cd worker && npx wrangler deploy && npx wrangler secret put GITHUB_TOKEN`.)
+
 ## Tweaking
 
 * Store categories scraped: `CATEGORIES` in `scraper/scrape.py` (each one goes to the "models" or "extras" tab).

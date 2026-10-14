@@ -7,6 +7,8 @@
 <meta name="description" content="Every Burrows & Badgers miniature in the Oathsworn store, with faction, species, price and stock - updated every Friday evening.">
 <!-- Optional: set to "owner/repo" if the page isn't served from owner.github.io/repo -->
 <meta name="github-repo" content="bluefroguk1/BurrowTracker">
+<!-- URL of the poll relay (Cloudflare Worker, see worker/ in the repo). Leave empty to link to GitHub instead. -->
+<meta name="poll-endpoint" content="">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -66,6 +68,11 @@ h1 { font: 700 clamp(28px, 4vw, 40px)/1.05 "Cormorant Garamond", Georgia, serif;
 .btn.ghost { background: transparent; color: var(--accent); }
 .btn[aria-disabled="true"] { opacity: .55; pointer-events: none; }
 .hint { font-size: 12px; color: var(--ink-3); text-align: right; max-width: 34ch; }
+.btn:disabled { cursor: default; }
+.btn.ghost:disabled { opacity: .75; }
+.spin { width: 12px; height: 12px; border: 2px solid currentColor; border-right-color: transparent; border-radius: 50%; animation: spin .8s linear infinite; }
+@keyframes spin { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .spin { animation-duration: 2.4s; } }
 
 .filters { position: sticky; top: 0; z-index: 5; background: var(--bg); padding: 14px 0 12px; border-bottom: 1px solid var(--line); }
 .frow { display: grid; grid-template-columns: 1.6fr repeat(5, 1fr); gap: 10px; }
@@ -316,28 +323,117 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     return null;
   }
 
+  const POLL_ENDPOINT = document.querySelector('meta[name="poll-endpoint"]').content.trim().replace(/\/$/, "");
+  const poll = { state: "idle", nextAllowed: null, message: "", startedFrom: null, timer: null };
+  const hhmm = (iso) => ukTime(iso, { hour: "2-digit", minute: "2-digit" });
+
   function renderMeta() {
     const el = $("meta");
-    const slug = repoSlug();
-    const actions = slug ? `https://github.com/${slug}/actions/workflows/poll.yml` : null;
-    if (!data.last_poll) {
-      el.innerHTML = `<div>No data yet. The first poll will fill this table.</div>` +
-        (actions ? `<a class="btn" href="${actions}" target="_blank" rel="noopener">Poll the store now ↗</a>` : "");
+    const nf = nextFriday();
+    el.innerHTML = (data.last_poll ? `
+      <div>Last checked <b>${esc(ukTime(data.last_poll, { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }))}</b>
+        ${data.last_poll_trigger === "manual" ? "(on request)" : ""}</div>` : `<div>No data yet.</div>`) + `
+      <div>Next automatic check: <b>${nf ? esc(ukTime(nf.toISOString(), { weekday: "short", day: "numeric", month: "short" })) + ", 18:30" : "Friday 18:30"}</b></div>
+      <div id="pollBox" style="display:contents"></div>`;
+    renderPoll();
+  }
+
+  function cooldownReadyAt() {
+    const cool = (data.manual_cooldown_minutes || 60) * 60000;
+    const t = [data.last_poll ? new Date(data.last_poll).getTime() + cool : 0, poll.nextAllowed ? new Date(poll.nextAllowed).getTime() : 0];
+    return new Date(Math.max(...t));
+  }
+
+  function renderPoll() {
+    const box = $("pollBox"); if (!box) return;
+    if (!POLL_ENDPOINT) {
+      // No relay configured: fall back to GitHub (repo owner only).
+      const slug = repoSlug();
+      if (!slug) { box.innerHTML = ""; return; }
+      const readyAt = cooldownReadyAt(); const ready = Date.now() >= readyAt.getTime();
+      box.innerHTML = `<a class="btn ${ready ? "" : "ghost"}" href="https://github.com/${slug}/actions/workflows/poll.yml" target="_blank" rel="noopener" ${ready ? "" : 'aria-disabled="true"'}>
+        ${ready ? "Check the store now ↗" : "Next check available at " + esc(hhmm(readyAt.toISOString()))}</a>
+        <div class="hint">${ready ? "Opens GitHub. Click “Run workflow” there." : "Checks are limited to one per hour."}</div>`;
       return;
     }
-    const last = new Date(data.last_poll);
-    const cool = (data.manual_cooldown_minutes || 60) * 60000;
-    const readyAt = new Date(last.getTime() + cool);
+    const readyAt = cooldownReadyAt();
     const ready = Date.now() >= readyAt.getTime();
-    const nf = nextFriday();
-    el.innerHTML = `
-      <div>Last polled <b>${esc(ukTime(data.last_poll, { weekday: "short", day: "numeric", month: "short", hour: "2-digit", minute: "2-digit" }))}</b>
-        ${data.last_poll_trigger === "manual" ? "(manual)" : ""}</div>
-      <div>Next scheduled poll: <b>${nf ? esc(ukTime(nf.toISOString(), { weekday: "short", day: "numeric", month: "short" })) + ", 18:30" : "Friday 18:30"}</b></div>
-      ${actions ? `<a class="btn ${ready ? "" : "ghost"}" href="${actions}" target="_blank" rel="noopener" ${ready ? "" : 'aria-disabled="true"'}>
-        ${ready ? "Poll the store now ↗" : "Manual poll available at " + esc(ukTime(readyAt.toISOString(), { hour: "2-digit", minute: "2-digit" }))}</a>
-        <div class="hint">${ready ? "Opens GitHub. Click “Run workflow” there. The table updates a couple of minutes after the run finishes. Limited to one poll per hour." : "Manual polls are limited to one per hour."}</div>` : ""}`;
+    let btn, hint;
+    if (poll.state === "starting" || poll.state === "running") {
+      btn = `<button class="btn" type="button" disabled aria-busy="true"><span class="spin" aria-hidden="true"></span> Checking the store…</button>`;
+      hint = "Usually takes 2–3 minutes. This list updates by itself when it's done.";
+    } else if (poll.state === "updating") {
+      btn = `<button class="btn" type="button" disabled aria-busy="true"><span class="spin" aria-hidden="true"></span> Publishing results…</button>`;
+      hint = "Almost there.";
+    } else if (!ready) {
+      btn = `<button class="btn ghost" type="button" disabled>Next check available at ${esc(hhmm(readyAt.toISOString()))}</button>`;
+      hint = poll.message || "Checks are limited to one per hour to go easy on the store.";
+    } else {
+      btn = `<button class="btn" type="button" id="pollBtn">Check the store now</button>`;
+      hint = poll.message || "Gets the latest stock and new models. Limited to one check per hour.";
+    }
+    box.innerHTML = `${btn}<div class="hint" aria-live="polite">${esc(hint)}</div>`;
+    const b = $("pollBtn"); if (b) b.addEventListener("click", startPoll);
   }
+
+  async function startPoll() {
+    poll.state = "starting"; poll.message = ""; poll.startedFrom = data.last_poll || null; renderPoll();
+    try {
+      const res = await fetch(POLL_ENDPOINT + "/poll", { method: "POST" });
+      const body = await res.json().catch(() => ({}));
+      if (res.status === 429) {
+        poll.state = "idle"; poll.nextAllowed = body.next_allowed || null;
+        poll.message = "The store was checked recently."; renderPoll(); return;
+      }
+      if (!res.ok) throw new Error(body.error || res.status);
+      poll.state = "running"; renderPoll(); watchPoll();
+    } catch (e) {
+      poll.state = "idle"; poll.message = "Couldn't start a check just now. Please try again later."; renderPoll();
+    }
+  }
+
+  function watchPoll() {
+    clearTimeout(poll.timer);
+    let finishedAt = null;
+    const tick = async () => {
+      try {
+        if (!finishedAt) {
+          const st = await fetch(POLL_ENDPOINT + "/status").then((r) => r.json());
+          if (st.next_allowed) poll.nextAllowed = st.next_allowed;
+          if (!st.running) { finishedAt = Date.now(); poll.state = "updating"; renderPoll(); }
+        }
+        if (finishedAt) {
+          // The run is done; wait for GitHub Pages to publish the new data file.
+          const fresh = await fetchData();
+          if (fresh.last_poll && fresh.last_poll !== poll.startedFrom) {
+            applyData(fresh);
+            const n = (fresh.polls || []).slice(-1)[0] || {};
+            poll.state = "idle";
+            poll.message = `Updated just now: ${n.new || 0} new, ${n.restocked || 0} back in stock.`;
+            renderMeta(); return;
+          }
+          if (Date.now() - finishedAt > 4 * 60000) {
+            poll.state = "idle"; poll.message = "The check finished. If nothing changed, refresh the page in a minute.";
+            renderPoll(); return;
+          }
+        }
+      } catch { /* network blip - keep trying */ }
+      poll.timer = setTimeout(tick, finishedAt ? 15000 : 20000);
+    };
+    poll.timer = setTimeout(tick, 15000);
+  }
+
+  async function checkRunningOnLoad() {
+    if (!POLL_ENDPOINT) return;
+    try {
+      const st = await fetch(POLL_ENDPOINT + "/status").then((r) => r.json());
+      if (st.next_allowed) poll.nextAllowed = st.next_allowed;
+      if (st.running) { poll.state = "running"; poll.startedFrom = data.last_poll || null; watchPoll(); }
+      renderPoll();
+    } catch { /* relay unreachable: button still works or shows an error on click */ }
+  }
+  // Re-enable the button when the cooldown passes while the page is open.
+  setInterval(() => { if (poll.state === "idle") renderPoll(); }, 30000);
 
   // The ten Allegiances in the 2nd Edition rulebook - the only values shown as factions.
   const VALID_FACTIONS = ["Royalists", "Rogues", "Freebeasts", "Kindred", "Witch Hunters", "Wildlings",
@@ -605,18 +701,21 @@ footer { color: var(--ink-3); font-size: 13px; padding: 0 0 40px; }
     const ph = document.createElement("span"); ph.className = img.className.includes("mini") ? "mini ph" : "thumb missing"; img.replaceWith(ph);
   }, true);
 
-  fetch("data/models.json?v=" + Date.now(), { cache: "no-store" })
-    .then((r) => (r.ok ? r.json() : { models: [] }))
-    .catch(() => ({ models: [] }))
-    .then((d) => {
-      data = d && Array.isArray(d.models) ? d : { models: [] };
-      const all = data.models.map(normalise);
-      byId = Object.fromEntries(all.map((m) => [m.id, m]));
-      extras = all.filter(isExtra);
-      data.models = all.filter((m) => !isExtra(m));
-      if (data.source) $("src").href = data.source;
-      fillFilters(); renderMeta(); render(); fillExtras(); renderExtras(); renderTabs(); showView(currentView());
-    });
+  function fetchData() {
+    return fetch("data/models.json?v=" + Date.now(), { cache: "no-store" })
+      .then((r) => (r.ok ? r.json() : { models: [] }))
+      .catch(() => ({ models: [] }));
+  }
+  function applyData(d) {
+    data = d && Array.isArray(d.models) ? d : { models: [] };
+    const all = data.models.map(normalise);
+    byId = Object.fromEntries(all.map((m) => [m.id, m]));
+    extras = all.filter(isExtra);
+    data.models = all.filter((m) => !isExtra(m));
+    if (data.source) $("src").href = data.source;
+    fillFilters(); renderMeta(); render(); fillExtras(); renderExtras(); renderTabs();
+  }
+  fetchData().then((d) => { applyData(d); showView(currentView()); checkRunningOnLoad(); });
 })();
 </script>
 </body>

@@ -1,0 +1,12 @@
+# Optional: deploy from the command line with `npx wrangler deploy` (run inside this folder),
+# then add the token with `npx wrangler secret put GITHUB_TOKEN`.
+# Or paste poll-worker.js into a new Worker in the Cloudflare dashboard - see README.
+name = "burrowtracker-poll"
+main = "poll-worker.js"
+compatibility_date = "2024-09-23"
+
+[vars]
+REPO = "bluefroguk1/BurrowTracker"
+SITE_ORIGIN = "https://bluefroguk1.github.io"
+DATA_URL = "https://bluefroguk1.github.io/BurrowTracker/data/models.json"
+COOLDOWN_MINUTES = "60"

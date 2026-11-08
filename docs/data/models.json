@@ -1,6 +1,6 @@
 {
  "source": "https://www.oathswornminiatures.co.uk/c/4553237/1/burrows-badgers.html",
- "last_poll": "2026-11-07T20:59:29Z",
+ "last_poll": "2026-11-08T21:15:21Z",
  "last_poll_trigger": "scheduled",
  "seed_poll": "2026-10-14T09:25:53Z",
  "new_since": "2026-10-30T21:37:51Z",
@@ -259,6 +259,15 @@
    "new": 0,
    "restocked": 0,
    "delisted": 0
+  },
+  {
+   "time": "2026-11-08T21:15:21Z",
+   "trigger": "scheduled",
+   "initial": false,
+   "count": 227,
+   "new": 0,
+   "restocked": 0,
+   "delisted": 0
   }
  ],
  "models": [
@@ -288,7 +297,7 @@
    "codes": [
     "BB166a"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -319,7 +328,7 @@
    "codes": [
     "BB158"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -338,7 +347,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F7/87737847.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 5,
+   "stock_qty": 4,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -348,7 +357,7 @@
    "codes": [
     "BB26"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -377,7 +386,7 @@
    "codes": [
     "BB77"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -409,7 +418,7 @@
    "codes": [
     "BB38"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -442,7 +451,7 @@
    "codes": [
     "BB182"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -473,7 +482,7 @@
    "codes": [
     "BB206"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -502,7 +511,7 @@
    "codes": [
     "BB85"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -531,7 +540,7 @@
    "codes": [
     "BB04"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -562,7 +571,7 @@
    "codes": [
     "BB205"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -581,7 +590,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/B9/87603129.jpg",
    "price": 13.75,
    "price_ex_vat": 11.46,
-   "stock_qty": 65,
+   "stock_qty": 64,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -591,7 +600,7 @@
    "codes": [
     "BB142"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -620,7 +629,7 @@
    "codes": [
     "BB52"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -649,7 +658,7 @@
    "codes": [
     "BB54"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -681,7 +690,7 @@
    "codes": [
     "BB176"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -710,7 +719,7 @@
    "codes": [
     "BB36"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -741,7 +750,7 @@
    "codes": [
     "BB131"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -770,7 +779,7 @@
    "codes": [
     "BB213"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -799,7 +808,7 @@
    "codes": [
     "BB86"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -831,7 +840,7 @@
    "codes": [
     "BB42"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -863,7 +872,7 @@
    "codes": [
     "BB125"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -892,7 +901,7 @@
    "codes": [
     "BB24"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -921,7 +930,7 @@
    "codes": [
     "BB23"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -953,7 +962,7 @@
    "codes": [
     "BB169"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -982,7 +991,7 @@
    "codes": [
     "BB22"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1011,7 +1020,7 @@
    "codes": [
     "BB118"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1040,7 +1049,7 @@
    "codes": [
     "BB74"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1072,7 +1081,7 @@
    "codes": [
     "BB40"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1101,7 +1110,7 @@
    "codes": [
     "BB119"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1120,7 +1129,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/02/87838210.jpg",
    "price": 30.0,
    "price_ex_vat": 25.0,
-   "stock_qty": 6,
+   "stock_qty": 5,
    "status": "In stock",
    "section": "extras",
    "categories": [
@@ -1128,7 +1137,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1155,7 +1164,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1182,7 +1191,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1254,7 +1263,7 @@
     "BB217",
     "BB218"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -1326,7 +1335,7 @@
     "BB222",
     "BB223"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -1355,7 +1364,7 @@
    "codes": [
     "BB112"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -1386,7 +1395,7 @@
    "codes": [
     "BB143"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-30T21:37:51Z",
    "is_new": false,
@@ -1415,7 +1424,7 @@
    "codes": [
     "BB84"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-30T21:37:51Z",
    "is_new": false,
@@ -1447,7 +1456,7 @@
    "codes": [
     "BB167"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1478,7 +1487,7 @@
    "codes": [
     "BB91"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1509,7 +1518,7 @@
    "codes": [
     "BB55"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1528,7 +1537,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/E1/87474913.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 2,
+   "stock_qty": 1,
    "status": "Low stock",
    "section": "models",
    "categories": [
@@ -1538,7 +1547,7 @@
    "codes": [
     "BB69"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1567,7 +1576,7 @@
    "codes": [
     "BB06"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1596,7 +1605,7 @@
    "codes": [
     "BB50"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1625,7 +1634,7 @@
    "codes": [
     "BB21"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1656,7 +1665,7 @@
    "codes": [
     "BB183"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1685,7 +1694,7 @@
    "codes": [
     "BB147"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1714,7 +1723,7 @@
    "codes": [
     "BB181"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1733,8 +1742,8 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/D9/87474905.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 1,
-   "status": "Low stock",
+   "stock_qty": 0,
+   "status": "Out of stock",
    "section": "models",
    "categories": [
     "Miniatures"
@@ -1743,7 +1752,7 @@
    "codes": [
     "BB67"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1772,7 +1781,7 @@
    "codes": [
     "BB113"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1801,7 +1810,7 @@
    "codes": [
     "BB11"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1828,7 +1837,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1857,7 +1866,7 @@
    "codes": [
     "BB35"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1886,7 +1895,7 @@
    "codes": [
     "BB19"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1907,7 +1916,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/A5/87603109.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 9,
+   "stock_qty": 8,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -1917,7 +1926,7 @@
    "codes": [
     "BB133"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1936,7 +1945,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/03/87828227.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 8,
+   "stock_qty": 7,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -1946,7 +1955,7 @@
    "codes": [
     "BB190"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1965,7 +1974,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/B5/87603125.jpg",
    "price": 7.5,
    "price_ex_vat": 6.25,
-   "stock_qty": 6,
+   "stock_qty": 5,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -1975,7 +1984,7 @@
    "codes": [
     "BB140"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -1994,8 +2003,8 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/FC/87737852.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 2,
+   "status": "Low stock",
    "section": "models",
    "categories": [
     "Miniatures"
@@ -2004,7 +2013,7 @@
    "codes": [
     "BB93"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2023,8 +2032,8 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F3/87474675.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 1,
-   "status": "Low stock",
+   "stock_qty": 0,
+   "status": "Out of stock",
    "section": "models",
    "categories": [
     "Miniatures"
@@ -2033,7 +2042,7 @@
    "codes": [
     "BB12"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2062,7 +2071,7 @@
    "codes": [
     "BB94"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2091,7 +2100,7 @@
    "codes": [
     "BB43"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2122,7 +2131,7 @@
    "codes": [
     "BB144"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2151,7 +2160,7 @@
    "codes": [
     "BB150"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2182,7 +2191,7 @@
    "codes": [
     "BB25"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2211,7 +2220,7 @@
    "codes": [
     "BB17"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2240,7 +2249,7 @@
    "codes": [
     "BB186"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2269,7 +2278,7 @@
    "codes": [
     "BB198"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2288,8 +2297,8 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/19/87828249.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 3,
+   "status": "Low stock",
    "section": "models",
    "categories": [
     "Miniatures"
@@ -2298,7 +2307,7 @@
    "codes": [
     "BB196"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2327,7 +2336,7 @@
    "codes": [
     "BB193"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2358,7 +2367,7 @@
    "codes": [
     "BB13"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-23T20:32:30Z",
    "is_new": false,
@@ -2389,7 +2398,7 @@
    "codes": [
     "BB27"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2418,7 +2427,7 @@
    "codes": [
     "BB200"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2450,7 +2459,7 @@
    "codes": [
     "BB41"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2479,7 +2488,7 @@
    "codes": [
     "BB95"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2508,7 +2517,7 @@
    "codes": [
     "BB114"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2537,7 +2546,7 @@
    "codes": [
     "BB210"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2566,7 +2575,7 @@
    "codes": [
     "BB53"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2595,7 +2604,7 @@
    "codes": [
     "BB73"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2626,7 +2635,7 @@
    "codes": [
     "BB164"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2645,7 +2654,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/DB/87474651.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 11,
+   "stock_qty": 10,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -2655,7 +2664,7 @@
    "codes": [
     "BB08"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2684,7 +2693,7 @@
    "codes": [
     "BB141"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2713,7 +2722,7 @@
    "codes": [
     "BB63"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2742,7 +2751,7 @@
    "codes": [
     "BB47"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2773,7 +2782,7 @@
    "codes": [
     "BB163"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2802,7 +2811,7 @@
    "codes": [
     "BB107"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2821,7 +2830,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/FC/87828220.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 6,
+   "stock_qty": 5,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -2831,7 +2840,7 @@
    "codes": [
     "BB188"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2860,7 +2869,7 @@
    "codes": [
     "BB02"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2892,7 +2901,7 @@
    "codes": [
     "BB173"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2923,7 +2932,7 @@
    "codes": [
     "BB134"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2952,7 +2961,7 @@
    "codes": [
     "BB187"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -2984,7 +2993,7 @@
    "codes": [
     "BB166b"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3013,7 +3022,7 @@
    "codes": [
     "BB191"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3042,7 +3051,7 @@
    "codes": [
     "BB96"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3073,7 +3082,7 @@
    "codes": [
     "BB30"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3102,7 +3111,7 @@
    "codes": [
     "BB197"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3131,7 +3140,7 @@
    "codes": [
     "BB115"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3162,7 +3171,7 @@
    "codes": [
     "BB155"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3191,7 +3200,7 @@
    "codes": [
     "BB211"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3220,7 +3229,7 @@
    "codes": [
     "BB05"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3253,7 +3262,7 @@
    "codes": [
     "BB208"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3286,7 +3295,7 @@
    "codes": [
     "BB129"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3319,7 +3328,7 @@
    "codes": [
     "BB122"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3352,7 +3361,7 @@
    "codes": [
     "BB130"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3381,7 +3390,7 @@
    "codes": [
     "BB199"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3410,7 +3419,7 @@
    "codes": [
     "BB07"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3439,7 +3448,7 @@
    "codes": [
     "BB62"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3468,7 +3477,7 @@
    "codes": [
     "BB108"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3497,7 +3506,7 @@
    "codes": [
     "BB79"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3526,7 +3535,7 @@
    "codes": [
     "BB97"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3555,7 +3564,7 @@
    "codes": [
     "BB178"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3584,7 +3593,7 @@
    "codes": [
     "BB03"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3616,7 +3625,7 @@
    "codes": [
     "BB174"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3647,7 +3656,7 @@
    "codes": [
     "BB106"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3678,7 +3687,7 @@
    "codes": [
     "BB162"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3709,7 +3718,7 @@
    "codes": [
     "BB81"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3738,7 +3747,7 @@
    "codes": [
     "BB192"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3757,8 +3766,8 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/B3/87474611.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 3,
+   "status": "Low stock",
    "section": "models",
    "categories": [
     "Miniatures"
@@ -3767,7 +3776,7 @@
    "codes": [
     "BB01"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3796,7 +3805,7 @@
    "codes": [
     "BB204"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3825,7 +3834,7 @@
    "codes": [
     "BB148"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3844,7 +3853,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F2/87474930.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 6,
+   "stock_qty": 4,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -3854,7 +3863,7 @@
    "codes": [
     "BB75"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3883,7 +3892,7 @@
    "codes": [
     "BB45"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3914,7 +3923,7 @@
    "codes": [
     "BB153"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3943,7 +3952,7 @@
    "codes": [
     "BB78"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3962,7 +3971,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/BE/87474878.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 8,
+   "stock_qty": 7,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -3972,7 +3981,7 @@
    "codes": [
     "BB60"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -3991,7 +4000,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/B5/87474869.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 13,
+   "stock_qty": 12,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -4001,7 +4010,7 @@
    "codes": [
     "BB57"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4030,7 +4039,7 @@
    "codes": [
     "BB59"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4049,7 +4058,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/BE/87720638.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 10,
+   "stock_qty": 9,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -4059,7 +4068,7 @@
    "codes": [
     "BB46"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4088,7 +4097,7 @@
    "codes": [
     "BB177"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4117,7 +4126,7 @@
    "codes": [
     "BB195"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4148,7 +4157,7 @@
    "codes": [
     "BB136"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4169,7 +4178,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/35/87828277.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 2,
+   "stock_qty": 1,
    "status": "Low stock",
    "section": "models",
    "categories": [
@@ -4179,7 +4188,7 @@
    "codes": [
     "BB203"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4208,7 +4217,7 @@
    "codes": [
     "BB80"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4237,7 +4246,7 @@
    "codes": [
     "BB146"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4264,7 +4273,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4293,7 +4302,7 @@
    "codes": [
     "BB151"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4325,7 +4334,7 @@
    "codes": [
     "BB39"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-23T20:32:30Z",
    "is_new": false,
@@ -4354,7 +4363,7 @@
    "codes": [
     "BB121"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4373,7 +4382,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/80/87603072.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 6,
+   "stock_qty": 5,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -4383,7 +4392,7 @@
    "codes": [
     "BB44"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4412,7 +4421,7 @@
    "codes": [
     "BB126"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4441,7 +4450,7 @@
    "codes": [
     "BB92"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4468,7 +4477,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4495,7 +4504,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4522,7 +4531,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4549,7 +4558,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4578,7 +4587,7 @@
    "codes": [
     "BB212"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4607,7 +4616,7 @@
    "codes": [
     "BB194"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -4636,7 +4645,7 @@
    "codes": [
     "BB225"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -4665,7 +4674,7 @@
    "codes": [
     "BB99"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4686,7 +4695,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/13/87474963.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 6,
+   "stock_qty": 5,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -4696,7 +4705,7 @@
    "codes": [
     "BB87"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4725,7 +4734,7 @@
    "codes": [
     "BB72"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4756,7 +4765,7 @@
    "codes": [
     "BB31"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4778,7 +4787,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/F8/87720696.jpg",
    "price": 6.74,
    "price_ex_vat": 5.62,
-   "stock_qty": 3,
+   "stock_qty": 2,
    "status": "Low stock",
    "section": "models",
    "categories": [
@@ -4788,7 +4797,7 @@
    "codes": [
     "BB175"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4819,7 +4828,7 @@
    "codes": [
     "BB132"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -4850,7 +4859,7 @@
    "codes": [
     "BB82"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4881,7 +4890,7 @@
    "codes": [
     "BB156"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4912,7 +4921,7 @@
    "codes": [
     "BB157"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4941,7 +4950,7 @@
    "codes": [
     "BB201"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-23T20:32:30Z",
    "is_new": false,
@@ -4968,7 +4977,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -4997,7 +5006,7 @@
    "codes": [
     "BB100"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5016,7 +5025,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/B3/87603123.jpg",
    "price": 9.0,
    "price_ex_vat": 7.5,
-   "stock_qty": 10,
+   "stock_qty": 9,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -5026,7 +5035,7 @@
    "codes": [
     "BB139"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5055,7 +5064,7 @@
    "codes": [
     "BB34"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5084,7 +5093,7 @@
    "codes": [
     "BB68"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5115,7 +5124,7 @@
    "codes": [
     "BB145"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5144,7 +5153,7 @@
    "codes": [
     "BB32"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5175,7 +5184,7 @@
    "codes": [
     "BB154"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5204,7 +5213,7 @@
    "codes": [
     "BB179"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5235,7 +5244,7 @@
    "codes": [
     "BB159"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5264,7 +5273,7 @@
    "codes": [
     "BB18"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5295,7 +5304,7 @@
    "codes": [
     "BB109"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5324,7 +5333,7 @@
    "codes": [
     "BB16"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5353,7 +5362,7 @@
    "codes": [
     "BB71"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5382,7 +5391,7 @@
    "codes": [
     "BB120"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5413,7 +5422,7 @@
    "codes": [
     "BB124"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5442,7 +5451,7 @@
    "codes": [
     "BB89"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5473,7 +5482,7 @@
    "codes": [
     "BB161"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5504,7 +5513,7 @@
    "codes": [
     "BB137"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5533,7 +5542,7 @@
    "codes": [
     "BB105"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5562,7 +5571,7 @@
    "codes": [
     "BB58"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5593,7 +5602,7 @@
    "codes": [
     "BB152"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5624,7 +5633,7 @@
    "codes": [
     "BB202"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5655,7 +5664,7 @@
    "codes": [
     "BB207"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5684,7 +5693,7 @@
    "codes": [
     "BB51"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5713,7 +5722,7 @@
    "codes": [
     "BB61"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5744,7 +5753,7 @@
    "codes": [
     "BB48"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5773,7 +5782,7 @@
    "codes": [
     "BB10"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5795,7 +5804,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/EE/87720686.jpg",
    "price": 3.74,
    "price_ex_vat": 3.12,
-   "stock_qty": 6,
+   "stock_qty": 5,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -5805,7 +5814,7 @@
    "codes": [
     "BB171"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5834,7 +5843,7 @@
    "codes": [
     "BB29"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5863,7 +5872,7 @@
    "codes": [
     "BB149"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5890,7 +5899,7 @@
    ],
    "first_seen": "2026-10-14T09:25:53Z",
    "codes": [],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5919,7 +5928,7 @@
    "codes": [
     "BB65"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5940,7 +5949,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/BC/87720636.jpg",
    "price": 4.5,
    "price_ex_vat": 3.75,
-   "stock_qty": 2,
+   "stock_qty": 1,
    "status": "Low stock",
    "section": "models",
    "categories": [
@@ -5950,7 +5959,7 @@
    "codes": [
     "BB28"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -5982,7 +5991,7 @@
    "codes": [
     "BB172"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6011,7 +6020,7 @@
    "codes": [
     "BB76"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6042,7 +6051,7 @@
    "codes": [
     "BB110"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6073,7 +6082,7 @@
    "codes": [
     "BB160"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6102,7 +6111,7 @@
    "codes": [
     "BB209"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6121,7 +6130,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/CD/87474893.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 2,
+   "stock_qty": 1,
    "status": "Low stock",
    "section": "models",
    "categories": [
@@ -6131,7 +6140,7 @@
    "codes": [
     "BB64"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6150,8 +6159,8 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/30/87474992.jpg",
    "price": 5.0,
    "price_ex_vat": 4.17,
-   "stock_qty": 4,
-   "status": "In stock",
+   "stock_qty": 3,
+   "status": "Low stock",
    "section": "models",
    "categories": [
     "Miniatures"
@@ -6160,7 +6169,7 @@
    "codes": [
     "BB98"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6189,7 +6198,7 @@
    "codes": [
     "BB09"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6221,7 +6230,7 @@
    "codes": [
     "BB170"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6250,7 +6259,7 @@
    "codes": [
     "BB49"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6283,7 +6292,7 @@
    "codes": [
     "BB128"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6316,7 +6325,7 @@
    "codes": [
     "BB127"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6347,7 +6356,7 @@
    "codes": [
     "BB138"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6376,7 +6385,7 @@
    "codes": [
     "BB83"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6407,7 +6416,7 @@
    "codes": [
     "BB165"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6426,7 +6435,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/3D/87475005.jpg",
    "price": 15.0,
    "price_ex_vat": 12.5,
-   "stock_qty": 3,
+   "stock_qty": 2,
    "status": "Low stock",
    "section": "models",
    "categories": [
@@ -6436,7 +6445,7 @@
    "codes": [
     "BB101"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6465,7 +6474,7 @@
    "codes": [
     "BB103"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -6494,7 +6503,7 @@
    "codes": [
     "BB102"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -6525,7 +6534,7 @@
    "codes": [
     "BB185"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6556,7 +6565,7 @@
    "codes": [
     "BB15"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6587,7 +6596,7 @@
    "codes": [
     "BB66"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6618,7 +6627,7 @@
    "codes": [
     "BB116"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-16T19:59:42Z",
    "is_new": false,
@@ -6647,7 +6656,7 @@
    "codes": [
     "BB90"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6676,7 +6685,7 @@
    "codes": [
     "BB104"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6705,7 +6714,7 @@
    "codes": [
     "BB117"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-30T21:37:51Z",
    "is_new": false,
@@ -6736,7 +6745,7 @@
    "codes": [
     "BB33"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6765,7 +6774,7 @@
    "codes": [
     "BB189"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6794,7 +6803,7 @@
    "codes": [
     "BB184"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6813,7 +6822,7 @@
    "image_full": "https://static.shop033.com/resources/E9/167913/picture/15/87474965.jpg",
    "price": 5.75,
    "price_ex_vat": 4.79,
-   "stock_qty": 8,
+   "stock_qty": 7,
    "status": "In stock",
    "section": "models",
    "categories": [
@@ -6823,7 +6832,7 @@
    "codes": [
     "BB88"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6852,7 +6861,7 @@
    "codes": [
     "BB20"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6881,7 +6890,7 @@
    "codes": [
     "BB70"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6910,7 +6919,7 @@
    "codes": [
     "BB180"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6941,7 +6950,7 @@
    "codes": [
     "BB135"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -6973,7 +6982,7 @@
    "codes": [
     "BB37"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -7004,7 +7013,7 @@
    "codes": [
     "BB111"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": "2026-10-30T21:37:51Z",
    "is_new": false,
@@ -7033,7 +7042,7 @@
    "codes": [
     "BB56"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -7062,7 +7071,7 @@
    "codes": [
     "BB14"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
@@ -7094,7 +7103,7 @@
    "codes": [
     "BB168"
    ],
-   "last_seen": "2026-11-07T20:59:29Z",
+   "last_seen": "2026-11-08T21:15:21Z",
    "listed": true,
    "restocked_at": null,
    "is_new": false,
